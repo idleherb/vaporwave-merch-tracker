@@ -2,7 +2,9 @@
 #
 # Check https://circleci.com/docs/2.0/language-python/ for more details
 #
-version: 2
+version: 2.1
+orbs:
+  aws-s3: circleci/aws-s3@1.0.11
 jobs:
   unit_tests:
     docker:
@@ -71,13 +73,23 @@ jobs:
 
       # run scraper
       - run:
-          name: run tests
+          name: run scraper
           command: |
             . venv/bin/activate
             cd src/bandcamp_merch_availability
             rm -f bandcamp_merch.jl
             scrapy crawl bandcamp_merch -o bandcamp_merch.jl
             cat bandcamp_merch.jl
+
+      - aws-s3/copy:
+          from: bandcamp_merch.jl
+          to: 's3://bandcamp-merch-availability'
+          aws-access-key-id: AWS_ACCESS_KEY_ID
+          aws-secret-access-key: AWS_SECRET_ACCESS_KEY
+          aws-region: AWS_REGION
+          arguments: |
+            --acl public-read
+          overwrite: true
 
 
 workflows:
