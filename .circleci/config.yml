@@ -79,7 +79,7 @@ jobs:
             cd src/bandcamp_merch_availability
             rm -f frontend/bandcamp_merch.json
             scrapy crawl bandcamp_merch -o frontend/bandcamp_merch.json
-            cat bandcamp_merch.json
+            cat frontend/bandcamp_merch.json
 
       - aws-s3/sync:
           from: src/bandcamp_merch_availability/frontend
