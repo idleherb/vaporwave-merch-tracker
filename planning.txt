@@ -1,0 +1,32 @@
+MVP:
+
+    WHAT     <foo> lists all available cassettes on bandcamp for a curated list of vaporwave music labels
+    HOW      by automatically scraping the bandcamp label merch sites regularily
+    FOR WHOM so that vaporwave cassette consumers
+    VALUE    don't have to remember anymore who released what and when and
+             don't have to check manually if there are still cassettes available.
+
+Out of scope:
+    formats other than cassettes
+    labels other than vaporwave
+    realtime release information
+    custom sorting or filtering in UI
+
+label list
+for each label
+    for each album in merch
+        if "Cassette" and not "Sold out"
+            display
+              link to release
+              remaining number if present
+
+order by appearance date desc (most recents first)
+available cassettes asc (smallest number first)
+
+detail info:
+    timestamp of scraping (last updated)
+
+
+v1.1:
+    sort by remaining number or release date
+    filter by label (store in localstorage)
