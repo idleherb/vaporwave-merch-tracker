@@ -77,18 +77,19 @@ jobs:
           command: |
             . venv/bin/activate
             cd src/bandcamp_merch_availability
-            rm -f bandcamp_merch.jl
-            scrapy crawl bandcamp_merch -o bandcamp_merch.jl
-            cat bandcamp_merch.jl
+            rm -f frontend/bandcamp_merch.json
+            scrapy crawl bandcamp_merch -o frontend/bandcamp_merch.json
+            cat bandcamp_merch.json
 
-      - aws-s3/copy:
-          from: src/bandcamp_merch_availability/bandcamp_merch.jl
+      - aws-s3/sync:
+          from: src/bandcamp_merch_availability/frontend
           to: 's3://bandcamp-merch-availability'
           aws-access-key-id: AWS_ACCESS_KEY_ID
           aws-secret-access-key: AWS_SECRET_ACCESS_KEY
           aws-region: AWS_REGION
           arguments: |
             --acl public-read
+          overwrite: true
 
 
 workflows:
@@ -102,12 +103,12 @@ workflows:
               only: master
 
   scrape_daily:
-    # triggers:
-    #   - schedule:
-    #       cron: "0 7 * * *"
-            # filters:
-            #   branches:
-            #     only:
-            #       - master
+    triggers:
+      - schedule:
+          cron: "0 7 * * *"
+            filters:
+              branches:
+                only:
+                  - master
     jobs:
       - run_scraper
