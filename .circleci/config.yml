@@ -75,7 +75,7 @@ jobs:
           command: |
             . venv/bin/activate
             cd src/bandcamp_merch_availability
-            rm bandcamp_merch.jl
+            rm -f bandcamp_merch.jl
             scrapy crawl bandcamp_merch -o bandcamp_merch.jl
             cat bandcamp_merch.jl
 
