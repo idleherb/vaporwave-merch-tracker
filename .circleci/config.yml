@@ -103,12 +103,12 @@ workflows:
               only: master
 
   scrape_daily:
-    triggers:
-      - schedule:
-          cron: "0 7 * * *"
-            filters:
-              branches:
-                only:
-                  - master
+    # triggers:
+    #   - schedule:
+    #       cron: "0 7 * * *"
+    #       filters:
+    #         branches:
+    #           only:
+    #             - master
     jobs:
       - run_scraper
