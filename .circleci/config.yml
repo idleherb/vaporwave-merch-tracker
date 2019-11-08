@@ -89,7 +89,6 @@ jobs:
           aws-region: AWS_REGION
           arguments: |
             --acl public-read
-          overwrite: true
 
 
 workflows:
