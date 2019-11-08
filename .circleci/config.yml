@@ -82,7 +82,7 @@ jobs:
             cat bandcamp_merch.jl
 
       - aws-s3/copy:
-          from: bandcamp_merch.jl
+          from: src/bandcamp_merch.jl
           to: 's3://bandcamp-merch-availability'
           aws-access-key-id: AWS_ACCESS_KEY_ID
           aws-secret-access-key: AWS_SECRET_ACCESS_KEY
