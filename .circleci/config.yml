@@ -3,10 +3,12 @@
 # Check https://circleci.com/docs/2.0/language-python/ for more details
 #
 version: 2.1
+
 orbs:
   aws-s3: circleci/aws-s3@1.0.11
+  
 jobs:
-  unit_tests:
+  test_and_deploy_frontend:
     docker:
       # specify the version you desire here
       - image: circleci/python:3.6.1
@@ -42,6 +44,18 @@ jobs:
             . venv/bin/activate
             pytest
 
+      # deploy frontend
+      - aws-s3/sync:
+          from: src/bandcamp_merch_availability/frontend
+          to: 's3://bandcamp-merch-availability'
+          aws-access-key-id: AWS_ACCESS_KEY_ID
+          aws-secret-access-key: AWS_SECRET_ACCESS_KEY
+          aws-region: AWS_REGION
+          arguments: |
+            --acl public-read
+          overwrite: true
+
+
   run_scraper:
     docker:
       # specify the version you desire here
@@ -71,33 +85,32 @@ jobs:
             - ./venv
           key: v1-dependencies-{{ checksum "requirements.txt" }}
 
-      # run scraper
       - run:
-          name: run scraper
+          name: run scraper and deploy results
           command: |
             . venv/bin/activate
             cd src/bandcamp_merch_availability
-            rm -f frontend/bandcamp_merch.json
-            scrapy crawl bandcamp_merch -o frontend/bandcamp_merch.json
-            cat frontend/bandcamp_merch.json
+            rm -f bandcamp_merch.json
+            scrapy crawl bandcamp_merch -o bandcamp_merch.json
+            cat bandcamp_merch.json
 
-      - aws-s3/sync:
-          from: src/bandcamp_merch_availability/frontend
+      - aws-s3/copy:
+          from: src/bandcamp_merch_availability/bandcamp_merch.json
           to: 's3://bandcamp-merch-availability'
           aws-access-key-id: AWS_ACCESS_KEY_ID
           aws-secret-access-key: AWS_SECRET_ACCESS_KEY
           aws-region: AWS_REGION
           arguments: |
             --acl public-read
-          overwrite: true
+            --delete false
 
 
 workflows:
   version: 2
 
-  unit_tests:
+  test_and_deploy_frontend:
     jobs:
-      - unit_tests:
+      - test_and_deploy_frontend:
           filters:
             branches:
               only: master
