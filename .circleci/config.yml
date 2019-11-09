@@ -1,52 +1,61 @@
-# Python CircleCI 2.0 configuration file
-#
-# Check https://circleci.com/docs/2.0/language-python/ for more details
-#
 version: 2.1
 
 orbs:
   aws-s3: circleci/aws-s3@1.0.11
   
 jobs:
-  test_and_deploy_frontend:
+  test_scraper:
     docker:
-      # specify the version you desire here
       - image: circleci/python:3.6.1
 
     working_directory: ~/repo
 
     steps:
       - checkout
-
-      # Download and cache dependencies
       - restore_cache:
           keys:
             - v1-dependencies-{{ checksum "requirements.txt" }}
-            # fallback to using the latest cache if no exact match is found
             - v1-dependencies-
-
       - run:
           name: install dependencies
           command: |
             python3 -m venv venv
             . venv/bin/activate
             pip install -r requirements.txt
-
       - save_cache:
           paths:
             - ./venv
           key: v1-dependencies-{{ checksum "requirements.txt" }}
-
-      # run tests!
       - run:
           name: run tests
           command: |
             . venv/bin/activate
             pytest
 
+  deploy_frontend:
+    docker:
+      - image: circleci/node:10
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - dependency-cache-{{ checksum "src/bandcamp_merch_availability/frontend/package.json" }}
+            - v1-dependencies-
+      - run:
+          name: Install, test, and build frontend
+          command: |
+            cd src/bandcamp_merch_availability/frontend
+            npm install
+            npm run test
+            npm run build
+      - save_cache:
+          key: dependency-cache-{{ checksum "src/bandcamp_merch_availability/frontend/package.json" }}
+          paths:
+            - src/bandcamp_merch_availability/frontend/node_modules
+
       # deploy frontend
       - aws-s3/sync:
-          from: src/bandcamp_merch_availability/frontend
+          from: src/bandcamp_merch_availability/frontend/build
           to: 's3://bandcamp-merch-availability'
           aws-access-key-id: AWS_ACCESS_KEY_ID
           aws-secret-access-key: AWS_SECRET_ACCESS_KEY
@@ -65,26 +74,20 @@ jobs:
 
     steps:
       - checkout
-
-      # Download and cache dependencies
       - restore_cache:
           keys:
             - v1-dependencies-{{ checksum "requirements.txt" }}
-            # fallback to using the latest cache if no exact match is found
             - v1-dependencies-
-
       - run:
           name: install dependencies
           command: |
             python3 -m venv venv
             . venv/bin/activate
             pip install -r requirements.txt
-
       - save_cache:
           paths:
             - ./venv
           key: v1-dependencies-{{ checksum "requirements.txt" }}
-
       - run:
           name: run scraper and deploy results
           command: |
@@ -93,7 +96,7 @@ jobs:
             rm -f bandcamp_merch.json
             scrapy crawl bandcamp_merch -o bandcamp_merch.json
             cat bandcamp_merch.json
-
+      # Deploy scraped data
       - aws-s3/copy:
           from: src/bandcamp_merch_availability/bandcamp_merch.json
           to: 's3://bandcamp-merch-availability'
@@ -107,14 +110,18 @@ jobs:
 workflows:
   version: 2
 
-  test_and_deploy_frontend:
+  deploy_app:
     jobs:
-      - test_and_deploy_frontend:
+      - test_scraper:
+          filters:
+            branches:
+              only: master
+      - deploy_frontend:
           filters:
             branches:
               only: master
 
-  scrape_scrape_and_deploy_data_daily:
+  scrape_and_deploy_data:
     triggers:
       - schedule:
           cron: "0 6 * * *"
@@ -123,4 +130,7 @@ workflows:
               only:
                 - master
     jobs:
+      - test_scraper
       - scrape_and_deploy_data
+          requires:
+            test_scraper

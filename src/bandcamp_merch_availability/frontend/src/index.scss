@@ -1,0 +1,29 @@
+@import-normalize; 
+
+$font-size-normal: 1.6rem;
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Helvetica Neue", sans-serif;
+  line-height: 1.5;
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-size: $font-size-normal;
+  line-height: 130%;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+}

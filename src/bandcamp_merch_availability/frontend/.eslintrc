@@ -1,0 +1,22 @@
+{
+  "extends": [
+    "airbnb",
+    "airbnb/hooks"
+  ],
+  "env": {
+    "browser": true
+  },
+  "overrides": [
+    {
+      "files":["*.test.jsx", "*.test.js"],
+      "env": {
+        "jest": true
+      }
+    }
+  ],
+  "rules": {
+    "no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
+    "no-use-before-define": "off",
+    "no-param-reassign": ["error", { "props": true, "ignorePropertyModificationsFor": ["draftState"] }]
+  }
+}
