@@ -27,9 +27,10 @@ class BandcampMerchSpider(scrapy.Spider):
     def parse_merch_page_html(html):
         return Selector(text=html).xpath(f'''
             //li[
-                starts-with(@class,"merch-grid-item")
+                (contains(@class,"merch-grid-item")
+                    or contains(@class,"featured-item"))
                     and ./div[
-                        starts-with(@class,"merchtype")
+                        contains(@class,"merchtype")
                     ]/text()[
                         normalize-space()="{MERCH_TYPE_CASSETTE}"
                     ]
