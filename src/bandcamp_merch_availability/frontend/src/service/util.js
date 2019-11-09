@@ -11,3 +11,20 @@ function normalizeDateStr(str) {
 export function formatTimestamp(str) {
   return dateFormat(str, 'mmm d yyyy hh:MM:ss TT');
 }
+
+export function sortItems(items) {
+  return items.sort((item1, item2) => {
+    if (item1.remainingCassettes && !item2.remainingCassettes) {
+      return -1;
+    }
+    if (item2.remainingCassettes && !item1.remainingCassettes) {
+      return 1;
+    }
+    if (item1.remainingCassettes < item2.remainingCassettes) {
+      return -1; 
+    }
+    if (item2.remainingCassettes < item1.remainingCassettes) {
+      return 1; 
+    }
+  });
+}
