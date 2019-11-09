@@ -22,5 +22,6 @@ describe('MerchItem', () => {
     expect(await findByText(item.title)).not.toBeNull;
     expect(await findByText(item.releaseDate)).not.toBeNull;
     expect(await findByText(item.timestamp)).not.toBeNull;
+    expect(await findByText('∞')).not.toBeNull;
   });
 });

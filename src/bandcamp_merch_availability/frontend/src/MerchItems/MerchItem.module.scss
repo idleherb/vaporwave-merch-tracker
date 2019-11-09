@@ -10,6 +10,14 @@
             display: flex;
             padding: 1rem 1rem;
 
+            &.gray {
+                color: $gray-color;
+            }
+
+            &.lightGray {
+                color: $light-gray-color;
+            }
+
             &.warn {
                 color: $warn-color;
                 font-weight: bold;
