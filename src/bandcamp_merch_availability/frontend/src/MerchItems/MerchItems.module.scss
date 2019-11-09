@@ -1,0 +1,19 @@
+@import "../variables.scss";
+
+.merchItems {
+    border: none;
+    border-spacing: 0;
+
+    .tableHeader {
+        color: $primary-accent-color;
+        font-weight: bold;
+    }
+
+    tr:nth-child(even) {
+        background-color: $secondary-accent-color;
+    }
+
+    tr:nth-child(odd) {
+        background-color: $bg-color;
+    }
+}

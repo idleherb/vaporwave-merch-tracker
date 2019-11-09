@@ -1,0 +1,15 @@
+@import "../variables.scss";
+
+.merchItem {
+    margin: 20px;
+
+    .attribute {
+        color: $fg-color;
+        padding: 1rem 2rem;
+
+        &.warn {
+            color: $warn-color;
+            font-weight: bold;
+        }
+    }
+}

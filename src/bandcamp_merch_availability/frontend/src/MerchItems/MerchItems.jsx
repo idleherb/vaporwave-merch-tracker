@@ -1,5 +1,6 @@
 import React from 'react';
 import * as PropTypes from 'prop-types';
+import styles from './MerchItems.module.scss';
 
 import MerchItem from './MerchItem';
 
@@ -19,7 +20,22 @@ function MerchItems(props) {
   const { items } = props;
 
   return (
-    <ol>{items.map((item) => <MerchItem item={item} key={item.url} />)}</ol>
+    <table className={styles.merchItems}>
+      <thead className={styles.tableHeader}>
+        <tr>
+          <th>Label</th>
+          <th>Artist</th>
+          <th>Release Title</th>
+          <th>Release Date</th>
+          <th>Cassettes Left</th>
+          <th>Last Checked</th>
+          <th>Bandcamp Link</th>
+        </tr>
+      </thead>
+      <tbody>
+        {items.map((item) => <MerchItem className={styles.merchItem} item={item} key={item.url} />)}
+      </tbody>
+    </table>
   );
 }
 

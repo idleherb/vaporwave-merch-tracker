@@ -1,11 +1,13 @@
-@import-normalize; 
+@import-normalize;
 
-$font-size-normal: 1.6rem;
+@import "./variables";
 
 *,
 ::after,
 ::before {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
@@ -16,12 +18,15 @@ html {
 }
 
 body {
-  margin: 0;
   font-size: $font-size-normal;
   line-height: 130%;
   font-weight: normal;
   -webkit-font-smoothing: antialiased;
   height: 100%;
+}
+
+a, a:visited, a:active {
+  color: $link-color;
 }
 
 #root {

@@ -1,5 +1,6 @@
 import React from 'react';
 import * as PropTypes from 'prop-types';
+import styles from './MerchItem.module.scss';
 
 MerchItem.propTypes = {
   item: PropTypes.shape({
@@ -20,15 +21,17 @@ function MerchItem(props) {
   } = item;
 
   return (
-    <li>
-      <span>{label}</span>
-      <span>{artist}</span>
-      <span>{title}</span>
-      <span>{releaseDate}</span>
-      <span>{remainingCassettes}</span>
-      <span>{timestamp}</span>
-      <span>{url}</span>
-    </li>
+    <tr className={styles.merchItem}>
+      <td className={styles.attribute}>{label}</td>
+      <td className={styles.attribute}>{artist}</td>
+      <td className={styles.attribute}>{title}</td>
+      <td className={styles.attribute}>{releaseDate}</td>
+      <td className={`${styles.attribute} ${styles.warn}`}>{remainingCassettes}</td>
+      <td className={styles.attribute}>{timestamp}</td>
+      <td className={styles.attribute}>
+        <a href={url} target="_blank" rel="noopener noreferrer">{url}</a>
+      </td>
+    </tr>
   );
 }
 
