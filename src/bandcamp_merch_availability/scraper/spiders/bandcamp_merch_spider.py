@@ -10,11 +10,7 @@ MERCH_TYPE_CASSETTE = 'Cassette'
 
 class BandcampMerchSpider(scrapy.Spider):
     name = 'bandcamp_merch'
-    start_urls = [
-        'https://aurawire.xyz/merch',
-        'https://dreamcatalogue.bandcamp.com/merch',
-    ]
-
+    start_urls = open('labels.txt').read().strip().split()
 
     def parse(self, response):
         base_url = response.url[:response.url.rfind('/')]
