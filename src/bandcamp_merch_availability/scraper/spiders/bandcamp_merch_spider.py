@@ -10,7 +10,11 @@ MERCH_TYPE_CASSETTE = 'Cassette'
 
 class BandcampMerchSpider(scrapy.Spider):
     name = 'bandcamp_merch'
-    raw_start_urls = open('labels.txt').read().strip().split()
+    raw_start_urls = None
+    try:
+        raw_start_urls = open('labels.txt').read().strip().split()
+    except FileNotFoundError:
+        raw_start_urls = open('src/bandcamp_merch_availability/labels.txt').read().strip('\n').split()
     start_urls = [url for url in raw_start_urls if not url.startswith('#')]
 
     def parse(self, response):

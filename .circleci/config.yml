@@ -30,7 +30,7 @@ jobs:
           name: run tests
           command: |
             . venv/bin/activate
-            pytest
+            pytest --ignore src/bandcamp_merch_availability/frontend
 
   deploy_frontend:
     docker:
