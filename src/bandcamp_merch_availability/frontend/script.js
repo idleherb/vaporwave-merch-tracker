@@ -7,5 +7,5 @@ document.addEventListener('DOMContentLoaded', async () => {
 async function fetchContent() {
   const res = await fetch('/bandcamp_merch.json', { method: 'GET' });
   const data = await res.json();
-  document.getElementById('root').value = JSON.stringify(data, null, 2);
+  document.getElementById('root').innerHTML = JSON.stringify(data, null, 2);
 }
