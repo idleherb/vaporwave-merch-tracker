@@ -3,11 +3,12 @@
 .merchItem {
     .attribute {
         border-right: 1px solid $primary-accent-color;
-        padding: 1rem 1rem;
 
         a {
             color: $fg-color;
             text-decoration: none;
+            display: flex;
+            padding: 1rem 1rem;
 
             &.warn {
                 color: $warn-color;
