@@ -53,8 +53,7 @@ jobs:
           aws-region: AWS_REGION
           arguments: |
             --acl public-read
-            --delete false
-          overwrite: true
+          overwrite: false
 
 
   run_scraper:
