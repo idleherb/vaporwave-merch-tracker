@@ -51,6 +51,10 @@ class BandcampMerchSpider(scrapy.Spider):
             //meta[
                 @property="og:url"
             ]/@content''').get()
+        label = Selector(text=html).xpath('''
+            //meta[
+                @property="og:site_name"
+            ]/@content''').get()
         artist = Selector(text=html).xpath('''
             //span[
                 @itemprop="byArtist"
@@ -65,6 +69,7 @@ class BandcampMerchSpider(scrapy.Spider):
                 @itemprop="datePublished"
             ]/@content''').get()
         result = {
+            'label': label,
             'artist': BandcampMerchSpider.normalize_text(artist),
             'title': BandcampMerchSpider.normalize_text(title),
             'release_date': release_date,
