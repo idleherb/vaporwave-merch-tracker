@@ -3,7 +3,7 @@ import { formatDate, formatTimestamp } from './util';
 describe('util', () => {
   it('should format a date as mmm d yyyy', () => {
     const actual = formatDate('20180928');
-    const expected = 'Sep 28, 2018';
+    const expected = 'Sep 28 2018';
 
     expect(actual).toBe(expected);
   });

@@ -9,5 +9,5 @@ function normalizeDateStr(str) {
 }
 
 export function formatTimestamp(str) {
-  return dateFormat(str, 'mmm d yyyy, hh:MM:ss TT');
+  return dateFormat(str, 'mmm d yyyy hh:MM:ss TT');
 }
