@@ -10,8 +10,8 @@ describe('MerchItem', () => {
       label: 'aurawire',
       artist: 'Renjā',
       title: 'Xenon',
-      releaseDate: '20180727',
-      timestamp: '2019-11-09T06:03:18.962686',
+      releaseDate: 'Jul 27 2018',
+      timestamp: 'Nov 9 2019 06:03:18 AM CET',
       url: 'https://aurawire.bandcamp.com/album/xenon',
     };
     const { findByText } = render(<MerchItem item={item} />);

@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "axios": "^0.19.0",
+    "dateformat": "^3.0.3",
     "node-sass": "^4.13.0",
     "prop-types": "^15.7.2",
     "react": "^16.11.0",
@@ -13,7 +14,7 @@
   "proxy": "http://localhost:3004",
   "scripts": {
     "start": "react-scripts start",
-    "dev-db": "npx json-server --port 3004 --watch test_data_bandcamp_merch.json", 
+    "dev-db": "npx json-server --port 3004 --watch test_data_bandcamp_merch.json",
     "build": "react-scripts build",
     "test": "npm run lint && react-scripts test",
     "eject": "react-scripts eject",

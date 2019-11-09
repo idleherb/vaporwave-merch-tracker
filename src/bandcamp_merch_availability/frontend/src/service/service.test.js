@@ -1,11 +1,16 @@
 import axios from 'axios';
 import { when } from 'jest-when';
 
+import { formatDate, formatTimestamp } from './util';
 import fetchMerchItems from './service';
 
 jest.mock('axios');
+jest.mock('./util');
 
 describe('service', () => {
+  formatDate.mockImplementation((str) => str);
+  formatTimestamp.mockImplementation((str) => str);
+
   it('should call backend and return list of merch items', async () => {
     const merchItems = [
       {
@@ -31,7 +36,7 @@ describe('service', () => {
     when(axios.get).calledWith('/bandcamp_merch.json').mockResolvedValue(responseMock);
 
     const actual = await fetchMerchItems();
-    expect(actual).toBe(merchItems);
+    expect(actual).toStrictEqual(merchItems);
     expect(axios.get).toHaveBeenCalledWith('/bandcamp_merch.json');
   });
 });
