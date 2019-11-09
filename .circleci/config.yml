@@ -120,6 +120,8 @@ workflows:
           filters:
             branches:
               only: master
+          requires:
+            - test_scraper
 
   scrape_and_deploy_data:
     triggers:
@@ -130,7 +132,4 @@ workflows:
               only:
                 - master
     jobs:
-      - test_scraper
       - scrape_and_deploy_data
-          requires:
-            test_scraper
