@@ -28,19 +28,49 @@ describe('MerchItems', () => {
     const { findByText } = render(<MerchItems items={items} />);
 
     /* eslint-disable no-unused-expressions */
-    expect(await findByText(items[0].label)).not.toBeNull;
-    expect(await findByText(items[0].artist)).not.toBeNull;
-    expect(await findByText(items[0].title)).not.toBeNull;
-    expect(await findByText(items[0].releaseDate)).not.toBeNull;
-    expect(await findByText(items[0].timestamp)).not.toBeNull;
-    expect(await findByText(items[0].url)).not.toBeNull;
-    expect(await findByText(`${items[0].remainingCassettes}`)).not.toBeNull;
+    let elem = null;
 
-    expect(await findByText(items[1].label)).not.toBeNull;
-    expect(await findByText(items[1].artist)).not.toBeNull;
-    expect(await findByText(items[1].title)).not.toBeNull;
-    expect(await findByText(items[1].releaseDate)).not.toBeNull;
-    expect(await findByText(items[1].timestamp)).not.toBeNull;
-    expect(await findByText(items[1].url)).not.toBeNull;
+    elem = await findByText(items[0].label);
+    notNull(elem);
+    hrefIs(elem, items[0].url);
+    elem = await findByText(items[0].artist);
+    notNull(elem);
+    hrefIs(elem, items[0].url);
+    elem = await findByText(items[0].title);
+    notNull(elem);
+    hrefIs(elem, items[0].url);
+    elem = await findByText(items[0].releaseDate);
+    notNull(elem);
+    hrefIs(elem, items[0].url);
+    elem = await findByText(items[0].timestamp);
+    notNull(elem);
+    hrefIs(elem, items[0].url);
+    elem = await findByText(`${items[0].remainingCassettes}`);
+    notNull(elem);
+    hrefIs(elem, items[0].url);
+
+    elem = await findByText(items[1].label);
+    notNull(elem);
+    hrefIs(elem, items[1].url);
+    elem = await findByText(items[1].artist);
+    notNull(elem);
+    hrefIs(elem, items[1].url);
+    elem = await findByText(items[1].title);
+    notNull(elem);
+    hrefIs(elem, items[1].url);
+    elem = await findByText(items[1].releaseDate);
+    notNull(elem);
+    hrefIs(elem, items[1].url);
+    elem = await findByText(items[1].timestamp);
+    notNull(elem);
+    hrefIs(elem, items[1].url);
   });
+
+  function notNull(elem) {
+    expect(elem).not.toBeNull;
+  }
+
+  function hrefIs(elem, url) {
+    expect(elem.getAttribute('href')).toBe(url);
+  }
 });

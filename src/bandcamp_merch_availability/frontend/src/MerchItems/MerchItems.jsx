@@ -23,13 +23,12 @@ function MerchItems(props) {
     <table className={styles.merchItems}>
       <thead className={styles.tableHeader}>
         <tr>
-          <th>Label</th>
-          <th>Artist</th>
-          <th>Release Title</th>
-          <th>Release Date</th>
-          <th>Cassettes Left</th>
-          <th>Last Checked</th>
-          <th>Bandcamp Link</th>
+          <th className={styles.tableHeaderCell}>Label</th>
+          <th className={styles.tableHeaderCell}>Artist</th>
+          <th className={styles.tableHeaderCell}>Release&nbsp;Title</th>
+          <th className={styles.tableHeaderCell}>Cassettes&nbsp;Left</th>
+          <th className={styles.tableHeaderCell}>Release&nbsp;Date</th>
+          <th className={styles.tableHeaderCell}>Last&nbsp;Checked</th>
         </tr>
       </thead>
       <tbody>

@@ -22,14 +22,23 @@ function MerchItem(props) {
 
   return (
     <tr className={styles.merchItem}>
-      <td className={styles.attribute}>{label}</td>
-      <td className={styles.attribute}>{artist}</td>
-      <td className={styles.attribute}>{title}</td>
-      <td className={styles.attribute}>{releaseDate}</td>
-      <td className={`${styles.attribute} ${styles.warn}`}>{remainingCassettes}</td>
-      <td className={styles.attribute}>{timestamp}</td>
       <td className={styles.attribute}>
-        <a href={url} target="_blank" rel="noopener noreferrer">{url}</a>
+        <a href={url} target="_blank" rel="noopener noreferrer">{label}</a>
+      </td>
+      <td className={styles.attribute}>
+        <a href={url} target="_blank" rel="noopener noreferrer">{artist}</a>
+      </td>
+      <td className={styles.attribute}>
+        <a href={url} target="_blank" rel="noopener noreferrer">{title}</a>
+      </td>
+      <td className={styles.attribute}>
+        <a href={url} target="_blank" rel="noopener noreferrer" className={styles.warn}>{remainingCassettes}</a>
+      </td>
+      <td className={styles.attribute}>
+        <a href={url} target="_blank" rel="noopener noreferrer">{releaseDate}</a>
+      </td>
+      <td className={styles.attribute}>
+        <a href={url} target="_blank" rel="noopener noreferrer">{timestamp}</a>
       </td>
     </tr>
   );

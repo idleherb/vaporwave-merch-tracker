@@ -5,8 +5,16 @@
     border-spacing: 0;
 
     .tableHeader {
-        color: $primary-accent-color;
         font-weight: bold;
+        text-align: left;
+        word-wrap: none;
+    }
+
+    .tableHeaderCell {
+        background-color: $primary-accent-color;
+        color: $bg-color;
+        border-right: 1px solid $primary-accent-color;
+        padding: 1rem 1rem;
     }
 
     tr:nth-child(even) {
@@ -15,5 +23,9 @@
 
     tr:nth-child(odd) {
         background-color: $bg-color;
+    }
+    
+    tr:hover {
+        background-color: #fbe2f0;
     }
 }
