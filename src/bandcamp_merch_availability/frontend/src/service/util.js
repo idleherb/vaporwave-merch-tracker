@@ -21,10 +21,10 @@ export function sortItems(items) {
       return 1;
     }
     if (item1.remainingCassettes < item2.remainingCassettes) {
-      return -1; 
+      return -1;
     }
     if (item2.remainingCassettes < item1.remainingCassettes) {
-      return 1; 
+      return 1;
     }
     if (item1.releaseDate > item2.releaseDate) {
       return -1;

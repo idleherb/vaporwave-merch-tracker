@@ -5,14 +5,14 @@ describe('util', () => {
     it('should format a date as mmm d yyyy', () => {
       const actual = formatDate('20180928');
       const expected = 'Sep 28 2018';
-  
+
       expect(actual).toBe(expected);
     });
-  
+
     it('should format a timestamp as mmm d yyyy hh:MM:ss TT', () => {
       const actual = formatTimestamp('2019-11-09T06:03:24.056069');
       const expected = 'Nov 9 2019 06:03:24 AM';
-  
+
       expect(actual).toBe(expected);
     });
   });
@@ -21,139 +21,139 @@ describe('util', () => {
     it('should sort items by remaining cassettes asc', () => {
       const items = [
         {
-            "label": "",
-            "artist": "",
-            "title": "",
-            "releaseDate": "",
-            "timestamp": "",
-            "url": "",
-            "remainingCassettes": 10
+          label: '',
+          artist: '',
+          title: '',
+          releaseDate: '',
+          timestamp: '',
+          url: '',
+          remainingCassettes: 10,
         },
         {
-            "label": "",
-            "artist": "",
-            "title": "",
-            "releaseDate": "",
-            "timestamp": "",
-            "url": "",
-            "remainingCassettes": 1
+          label: '',
+          artist: '',
+          title: '',
+          releaseDate: '',
+          timestamp: '',
+          url: '',
+          remainingCassettes: 1,
         },
       ];
 
       const actual = sortItems(items);
       const expected = [
         {
-            "label": "",
-            "artist": "",
-            "title": "",
-            "releaseDate": "",
-            "timestamp": "",
-            "url": "",
-            "remainingCassettes": 1
+          label: '',
+          artist: '',
+          title: '',
+          releaseDate: '',
+          timestamp: '',
+          url: '',
+          remainingCassettes: 1,
         },
         {
-            "label": "",
-            "artist": "",
-            "title": "",
-            "releaseDate": "",
-            "timestamp": "",
-            "url": "",
-            "remainingCassettes": 10
+          label: '',
+          artist: '',
+          title: '',
+          releaseDate: '',
+          timestamp: '',
+          url: '',
+          remainingCassettes: 10,
         },
       ];
-      expect(actual).toStrictEqual(expected)
+      expect(actual).toStrictEqual(expected);
     });
 
     it('should sort items by release date desc', () => {
       const items = [
         {
-            "label": "",
-            "artist": "",
-            "title": "",
-            "releaseDate": "20151231",
-            "timestamp": "",
-            "url": "",
-            "remainingCassettes": 1
+          label: '',
+          artist: '',
+          title: '',
+          releaseDate: '20151231',
+          timestamp: '',
+          url: '',
+          remainingCassettes: 1,
         },
         {
-            "label": "",
-            "artist": "",
-            "title": "",
-            "releaseDate": "20190101",
-            "timestamp": "",
-            "url": "",
-            "remainingCassettes": 1
+          label: '',
+          artist: '',
+          title: '',
+          releaseDate: '20190101',
+          timestamp: '',
+          url: '',
+          remainingCassettes: 1,
         },
       ];
 
       const actual = sortItems(items);
       const expected = [
         {
-            "label": "",
-            "artist": "",
-            "title": "",
-            "releaseDate": "20190101",
-            "timestamp": "",
-            "url": "",
-            "remainingCassettes": 1
+          label: '',
+          artist: '',
+          title: '',
+          releaseDate: '20190101',
+          timestamp: '',
+          url: '',
+          remainingCassettes: 1,
         },
         {
-            "label": "",
-            "artist": "",
-            "title": "",
-            "releaseDate": "20151231",
-            "timestamp": "",
-            "url": "",
-            "remainingCassettes": 1
+          label: '',
+          artist: '',
+          title: '',
+          releaseDate: '20151231',
+          timestamp: '',
+          url: '',
+          remainingCassettes: 1,
         },
       ];
-      expect(actual).toStrictEqual(expected)
+      expect(actual).toStrictEqual(expected);
     });
 
     it('should sort items by artist asc', () => {
       const items = [
         {
-            "label": "",
-            "artist": "z",
-            "title": "",
-            "releaseDate": "20190101",
-            "timestamp": "",
-            "url": "",
-            "remainingCassettes": 1
+          label: '',
+          artist: 'z',
+          title: '',
+          releaseDate: '20190101',
+          timestamp: '',
+          url: '',
+          remainingCassettes: 1,
         },
         {
-            "label": "",
-            "artist": "a",
-            "title": "",
-            "releaseDate": "20190101",
-            "timestamp": "",
-            "url": "",
-            "remainingCassettes": 1
+          label: '',
+          artist: 'a',
+          title: '',
+          releaseDate: '20190101',
+          timestamp: '',
+          url: '',
+          remainingCassettes: 1,
         },
       ];
 
       const actual = sortItems(items);
       const expected = [
         {
-            "label": "",
-            "artist": "a",
-            "title": "",
-            "releaseDate": "20190101",
-            "timestamp": "",
-            "url": "",
-            "remainingCassettes": 1
+          label: '',
+          artist: 'a',
+          title: '',
+          releaseDate: '20190101',
+          timestamp: '',
+          url: '',
+          remainingCassettes: 1,
         },
         {
-            "label": "",
-            "artist": "z",
-            "title": "",
-            "releaseDate": "20190101",
-            "timestamp": "",
-            "url": "",
-            "remainingCassettes": 1
+          label: '',
+          artist: 'z',
+          title: '',
+          releaseDate: '20190101',
+          timestamp: '',
+          url: '',
+          remainingCassettes: 1,
         },
       ];
-      expect(actual).toStrictEqual(expected)
+      expect(actual).toStrictEqual(expected);
     });
   });
 });

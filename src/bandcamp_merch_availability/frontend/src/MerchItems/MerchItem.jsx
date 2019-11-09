@@ -32,10 +32,12 @@ function MerchItem(props) {
         <a href={url} target="_blank" rel="noopener noreferrer">{title}</a>
       </td>
       <td className={styles.attribute}>
-        <a href={url} 
-           target="_blank"
-           rel="noopener noreferrer"
-           className={remainingCassettes ? styles.warn : styles.lightGray}>
+        <a
+          href={url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={remainingCassettes ? styles.warn : styles.lightGray}
+        >
           {remainingCassettes || '∞'}
         </a>
       </td>
