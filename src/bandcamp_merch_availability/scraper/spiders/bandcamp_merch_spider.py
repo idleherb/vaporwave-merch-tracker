@@ -47,6 +47,10 @@ class BandcampMerchSpider(scrapy.Spider):
     @staticmethod
     def parse_album_page_html(html):
         timestamp = datetime.now().isoformat()
+        url = Selector(text=html).xpath('''
+            //meta[
+                @property="og:url"
+            ]/@content''').get()
         artist = Selector(text=html).xpath('''
             //span[
                 @itemprop="byArtist"
@@ -65,6 +69,7 @@ class BandcampMerchSpider(scrapy.Spider):
             'title': BandcampMerchSpider.normalize_text(title),
             'release_date': release_date,
             'timestamp': timestamp,
+            'url': url,
         }
 
         remaining_cassettes = Selector(text=html) \

@@ -44,6 +44,7 @@ def test_parse_album_page_html():
         'title': 'Miracle Lounge มิราเคิล เลานจ์',
         'release_date': '20191012',
         'timestamp': NOW,
+        'url': 'https://mypetflamingo.bandcamp.com/album/miracle-lounge'
     }
 
     assert actual == expected
@@ -62,6 +63,7 @@ def test_parse_album_page_html_with_remaining():
         'release_date': '20190719',
         'remaining_cassettes': 16,
         'timestamp': NOW,
+        'url': 'https://mypetflamingo.bandcamp.com/album/va-10-a-vaporwave-anniversary'
     }
 
     assert actual == expected
