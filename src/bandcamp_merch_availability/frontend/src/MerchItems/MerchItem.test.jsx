@@ -10,16 +10,17 @@ describe('MerchItem', () => {
       label: 'aurawire',
       artist: 'Renjā',
       title: 'Xenon',
-      release_date: '20180727',
+      releaseDate: '20180727',
       timestamp: '2019-11-09T06:03:18.962686',
       url: 'https://aurawire.bandcamp.com/album/xenon',
     };
-    const { findByText } = render(<MerchItem item={item}/>);
+    const { findByText } = render(<MerchItem item={item} />);
 
+    /* eslint-disable no-unused-expressions */
     expect(await findByText(item.label)).not.toBeNull;
     expect(await findByText(item.artist)).not.toBeNull;
     expect(await findByText(item.title)).not.toBeNull;
-    expect(await findByText(item.release_date)).not.toBeNull;
+    expect(await findByText(item.releaseDate)).not.toBeNull;
     expect(await findByText(item.timestamp)).not.toBeNull;
     expect(await findByText(item.url)).not.toBeNull;
   });

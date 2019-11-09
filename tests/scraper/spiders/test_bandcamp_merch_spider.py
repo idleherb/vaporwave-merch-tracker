@@ -43,7 +43,7 @@ def test_parse_album_page_html():
         'label': 'My Pet Flamingo',
         'artist': 'Donor Lens',
         'title': 'Miracle Lounge มิราเคิล เลานจ์',
-        'release_date': '20191012',
+        'releaseDate': '20191012',
         'timestamp': NOW,
         'url': 'https://mypetflamingo.bandcamp.com/album/miracle-lounge'
     }
@@ -62,8 +62,8 @@ def test_parse_album_page_html_with_remaining():
         'label': 'My Pet Flamingo',
         'artist': 'Various Artists',
         'title': 'VA\u200b:\u200b10 (A Vaporwave Anniversary)',
-        'release_date': '20190719',
-        'remaining_cassettes': 16,
+        'releaseDate': '20190719',
+        'remainingCassettes': 16,
         'timestamp': NOW,
         'url': 'https://mypetflamingo.bandcamp.com/album/va-10-a-vaporwave-anniversary'
     }

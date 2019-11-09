@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
-import fetchMerchItems from './service';
+import fetchMerchItems from './service/service';
 
 function App() {
   const [initialized, setInitialized] = useState(false);
@@ -9,11 +9,12 @@ function App() {
   useEffect(() => {
     async function initialize() {
       try {
-        const merchItems = await fetchMerchItems();
-        if (merchItems) {
-          setMerchItems(merchItems);
+        const newMerchItems = await fetchMerchItems();
+        if (newMerchItems) {
+          setMerchItems(newMerchItems);
         }
       } catch (error) {
+        /* eslint-disable no-console */
         console.error(error);
       } finally {
         setInitialized(true);
@@ -21,9 +22,9 @@ function App() {
     }
     initialize();
   }, []);
-  
+
   const loading = <div />;
-  return initialized ? <div>Hello, World!</div> : loading;
+  return initialized ? <div>{merchItems}</div> : loading;
 }
 
 export default App;

@@ -72,7 +72,7 @@ class BandcampMerchSpider(scrapy.Spider):
             'label': label,
             'artist': BandcampMerchSpider.normalize_text(artist),
             'title': BandcampMerchSpider.normalize_text(title),
-            'release_date': release_date,
+            'releaseDate': release_date,
             'timestamp': timestamp,
             'url': url,
         }
@@ -88,7 +88,7 @@ class BandcampMerchSpider(scrapy.Spider):
             raw_number = (remaining_cassettes
                 .rstrip('remaining')
                 .strip())
-            result['remaining_cassettes'] = int(raw_number)
+            result['remainingCassettes'] = int(raw_number)
 
         return result
 
