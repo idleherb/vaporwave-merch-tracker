@@ -26,5 +26,18 @@ export function sortItems(items) {
     if (item2.remainingCassettes < item1.remainingCassettes) {
       return 1; 
     }
+    if (item1.releaseDate > item2.releaseDate) {
+      return -1;
+    }
+    if (item2.releaseDate > item1.releaseDate) {
+      return 1;
+    }
+    if (item1.artist < item2.artist) {
+      return -1;
+    }
+    if (item2.artist < item1.artist) {
+      return 1;
+    }
+    return 0;
   });
 }

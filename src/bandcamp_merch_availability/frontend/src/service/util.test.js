@@ -63,5 +63,97 @@ describe('util', () => {
       ];
       expect(actual).toStrictEqual(expected)
     });
+
+    it('should sort items by release date desc', () => {
+      const items = [
+        {
+            "label": "",
+            "artist": "",
+            "title": "",
+            "releaseDate": "20151231",
+            "timestamp": "",
+            "url": "",
+            "remainingCassettes": 1
+        },
+        {
+            "label": "",
+            "artist": "",
+            "title": "",
+            "releaseDate": "20190101",
+            "timestamp": "",
+            "url": "",
+            "remainingCassettes": 1
+        },
+      ];
+
+      const actual = sortItems(items);
+      const expected = [
+        {
+            "label": "",
+            "artist": "",
+            "title": "",
+            "releaseDate": "20190101",
+            "timestamp": "",
+            "url": "",
+            "remainingCassettes": 1
+        },
+        {
+            "label": "",
+            "artist": "",
+            "title": "",
+            "releaseDate": "20151231",
+            "timestamp": "",
+            "url": "",
+            "remainingCassettes": 1
+        },
+      ];
+      expect(actual).toStrictEqual(expected)
+    });
+
+    it('should sort items by artist asc', () => {
+      const items = [
+        {
+            "label": "",
+            "artist": "z",
+            "title": "",
+            "releaseDate": "20190101",
+            "timestamp": "",
+            "url": "",
+            "remainingCassettes": 1
+        },
+        {
+            "label": "",
+            "artist": "a",
+            "title": "",
+            "releaseDate": "20190101",
+            "timestamp": "",
+            "url": "",
+            "remainingCassettes": 1
+        },
+      ];
+
+      const actual = sortItems(items);
+      const expected = [
+        {
+            "label": "",
+            "artist": "a",
+            "title": "",
+            "releaseDate": "20190101",
+            "timestamp": "",
+            "url": "",
+            "remainingCassettes": 1
+        },
+        {
+            "label": "",
+            "artist": "z",
+            "title": "",
+            "releaseDate": "20190101",
+            "timestamp": "",
+            "url": "",
+            "remainingCassettes": 1
+        },
+      ];
+      expect(actual).toStrictEqual(expected)
+    });
   });
 });

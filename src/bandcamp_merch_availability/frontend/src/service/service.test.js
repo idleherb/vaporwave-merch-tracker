@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { when } from 'jest-when';
 
-import { formatDate, formatTimestamp } from './util';
+import { formatDate, formatTimestamp, sortItems } from './util';
 import fetchMerchItems from './service';
 
 jest.mock('axios');
@@ -10,6 +10,7 @@ jest.mock('./util');
 describe('service', () => {
   formatDate.mockImplementation((str) => str);
   formatTimestamp.mockImplementation((str) => str);
+  sortItems.mockImplementation((items) => items);
 
   it('should call backend and return list of merch items', async () => {
     const merchItems = [
@@ -38,5 +39,6 @@ describe('service', () => {
     const actual = await fetchMerchItems();
     expect(actual).toStrictEqual(merchItems);
     expect(axios.get).toHaveBeenCalledWith('/bandcamp_merch.json');
+    expect(sortItems).toHaveBeenCalledWith(merchItems);
   });
 });
