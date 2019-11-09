@@ -1,5 +1,5 @@
 import React from 'react';
-import { wait, render } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 
 import App from './App';
@@ -8,7 +8,7 @@ import fetchMerchItems from './service';
 jest.mock('./service');
 
 describe('App', () => {
-  it('should call service method when application loads', async() => {
+  it('should call service method when application loads', async () => {
     const merchItems = [
       {
         label: 'aurawire',
