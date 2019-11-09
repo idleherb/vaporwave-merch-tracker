@@ -53,6 +53,7 @@ jobs:
           aws-region: AWS_REGION
           arguments: |
             --acl public-read
+            --delete false
           overwrite: true
 
 
@@ -102,7 +103,6 @@ jobs:
           aws-region: AWS_REGION
           arguments: |
             --acl public-read
-            --delete false
 
 
 workflows:
