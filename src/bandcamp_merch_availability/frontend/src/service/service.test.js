@@ -25,7 +25,10 @@ describe('service', () => {
         url: 'https://aurawire.bandcamp.com/album/remix-m-taphysique',
       },
     ];
-    when(axios.get).calledWith('/bandcamp_merch.json').mockResolvedValue(merchItems);
+    const responseMock = {
+      data: merchItems,
+    };
+    when(axios.get).calledWith('/bandcamp_merch.json').mockResolvedValue(responseMock);
 
     const actual = await fetchMerchItems();
     expect(actual).toBe(merchItems);
