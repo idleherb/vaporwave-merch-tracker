@@ -1,7 +1,7 @@
 import React from 'react';
 
 function MerchItem(props) {
-  const { label, artist, title, timestamp, cassettes_remaining, release_date, url } = props.attributes;
+  const { label, artist, title, timestamp, remaining_cassettes, release_date, url } = props.item;
 
   return (
     <li>
@@ -9,7 +9,7 @@ function MerchItem(props) {
       <span>{artist}</span>
       <span>{title}</span>
       <span>{release_date}</span>
-      <span>{cassettes_remaining}</span>
+      <span>{remaining_cassettes}</span>
       <span>{timestamp}</span>
       <span>{url}</span>
     </li>
