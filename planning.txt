@@ -12,19 +12,19 @@ Out of scope:
     realtime release information
     custom sorting or filtering in UI
 
-label list
-for each label
-    for each album in merch
-        if "Cassette" and not "Sold out"
-            display
-              link to release
-              remaining number if present
+X label list
+X for each label
+X     for each album in merch
+X         if "Cassette" and not "Sold out"
+X             display
+X               link to release
+X               remaining number if present
 
-order by appearance date desc (most recents first)
-available cassettes asc (smallest number first)
+X order by appearance date desc (most recents first)
+X available cassettes asc (smallest number first)
 
 detail info:
-    timestamp of scraping (last updated)
+    X timestamp of scraping (last updated)
 
 
 v1.1:
