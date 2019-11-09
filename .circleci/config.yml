@@ -56,7 +56,7 @@ jobs:
           overwrite: false
 
 
-  run_scraper:
+  scrape_and_deploy_data:
     docker:
       # specify the version you desire here
       - image: circleci/python:3.6.1
@@ -114,13 +114,13 @@ workflows:
             branches:
               only: master
 
-  scrape_daily:
-    # triggers:
-    #   - schedule:
-    #       cron: "0 7 * * *"
-    #       filters:
-    #         branches:
-    #           only:
-    #             - master
+  scrape_scrape_and_deploy_data_daily:
+    triggers:
+      - schedule:
+          cron: "0 6 * * *"
+          filters:
+            branches:
+              only:
+                - master
     jobs:
-      - run_scraper
+      - scrape_and_deploy_data
