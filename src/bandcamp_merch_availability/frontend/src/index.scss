@@ -23,6 +23,10 @@ body {
   font-weight: normal;
   -webkit-font-smoothing: antialiased;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem 0;
 }
 
 a, a:visited, a:active {

@@ -24,4 +24,8 @@
             }
         }
     }
+
+    .attribute:first-child {
+        border-left: 1px solid $primary-accent-color;
+    }
 }
