@@ -1,9 +1,9 @@
 import axios from 'axios';
-import { when } from 'jest-when'
+import { when } from 'jest-when';
 
 import fetchMerchItems from './service';
 
-jest.mock('axios')
+jest.mock('axios');
 
 describe('service', () => {
   it('should call backend and return list of merch items', async () => {

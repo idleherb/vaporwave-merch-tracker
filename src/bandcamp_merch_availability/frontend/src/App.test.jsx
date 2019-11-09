@@ -5,7 +5,7 @@ import '@testing-library/jest-dom/extend-expect';
 import App from './App';
 
 describe('App', () => {
-  it('should display the application', async() => {
+  it('should display the application', async () => {
     const { findByText } = render(<App />);
 
     const actual = await findByText('Hello, World!');
