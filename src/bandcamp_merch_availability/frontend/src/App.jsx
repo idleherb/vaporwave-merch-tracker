@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
+import MerchItems from './MerchItems/MerchItems';
 import fetchMerchItems from './service/service';
 
 function App() {
@@ -24,7 +25,7 @@ function App() {
   }, []);
 
   const loading = <div />;
-  return initialized ? <pre>{JSON.stringify(merchItems, null, 2)}</pre> : loading;
+  return initialized ? <MerchItems items={merchItems} /> : loading;
 }
 
 export default App;

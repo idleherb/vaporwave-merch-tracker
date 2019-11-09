@@ -7,6 +7,11 @@ import fetchMerchItems from './service/service';
 
 jest.mock('./service/service');
 
+jest.mock('./MerchItems/MerchItems', () => ({
+  __esModule: true,
+  default: (props) => JSON.stringify(props.items),
+}));
+
 describe('App', () => {
   it('should call service method when application loads', async () => {
     const merchItems = [
