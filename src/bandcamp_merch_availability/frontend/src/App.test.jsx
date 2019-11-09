@@ -31,7 +31,7 @@ describe('App', () => {
 
     const { findByText } = render(<App />);
 
-    const actual = await findByText('Hello, World!');
+    const actual = await findByText('aurawire', { exact: false });
     expect(actual).not.toBeNull();
     expect(fetchMerchItems).toHaveBeenCalled();
   });

@@ -24,7 +24,7 @@ function App() {
   }, []);
 
   const loading = <div />;
-  return initialized ? <div>{merchItems}</div> : loading;
+  return initialized ? <pre>{JSON.stringify(merchItems, null, 2)}</pre> : loading;
 }
 
 export default App;
