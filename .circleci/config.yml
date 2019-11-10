@@ -32,7 +32,7 @@ jobs:
           command: |
             cd scraper
             . venv/bin/activate
-            pytest --vv
+            pytest -vv
 
   deploy_frontend:
     docker:
