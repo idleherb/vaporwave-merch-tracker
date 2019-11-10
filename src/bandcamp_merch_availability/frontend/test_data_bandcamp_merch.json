@@ -1,13 +1,13 @@
 {
     "bandcamp_merch.json": [
         {
-            "artworkUrl": "https://f4.bcbits.com/img/0014735290_37.jpg",
-            "label": "Alien Garage",
-            "artist": "The Rubies",
-            "title": "Sleeping World",
-            "releaseDate": "20181024",
-            "timestamp": "2019-11-10T01:10:07.566892",
-            "url": "https://aliengarage.bandcamp.com/album/sleeping-world"
+            "artworkUrl": "https://f4.bcbits.com/img/0011377500_37.jpg",
+            "label": "aurawire",
+            "artist": "HANTASI",
+            "title": "CRYSTAL",
+            "releaseDate": "20170929",
+            "timestamp": "2019-11-10T03:29:19.873870",
+            "url": "https://aurawire.bandcamp.com/album/crystal"
         },
         {
             "artworkUrl": "https://f4.bcbits.com/img/0015031618_37.jpg",
@@ -15,27 +15,17 @@
             "artist": "Zhurnal Mod",
             "title": "\u0412\u0415\u0413\u0410jams",
             "releaseDate": "20181212",
-            "timestamp": "2019-11-10T01:10:07.907571",
+            "timestamp": "2019-11-10T03:29:21.623189",
             "url": "https://cultureagency.bandcamp.com/album/jams"
         },
         {
-            "artworkUrl": "https://f4.bcbits.com/img/0008206550_37.jpg",
-            "label": "\u00c6scape Sounds",
-            "artist": "Baby Feet",
-            "title": "Glass Families",
-            "releaseDate": "20160830",
-            "timestamp": "2019-11-10T01:10:08.235270",
-            "url": "https://aescapesounds.bandcamp.com/album/glass-families",
-            "remainingCassettes": 5
-        },
-        {
-            "artworkUrl": "https://f4.bcbits.com/img/0015031618_37.jpg",
-            "label": "Culture Agency\u6587\u5316\u5e81",
-            "artist": "Relevant Advertising",
-            "title": "Cheap Champagne and Copacabana Propaganda",
-            "releaseDate": "20190423",
-            "timestamp": "2019-11-10T01:10:09.158212",
-            "url": "https://cultureagency.bandcamp.com/album/cheap-champagne-and-copacabana-propaganda"
+            "artworkUrl": "https://f4.bcbits.com/img/0010422849_37.jpg",
+            "label": "aurawire",
+            "artist": "Only Swallow",
+            "title": "Mood Obsidian",
+            "releaseDate": "20170526",
+            "timestamp": "2019-11-10T03:29:22.396567",
+            "url": "https://aurawire.bandcamp.com/album/mood-obsidian"
         },
         {
             "artworkUrl": "https://f4.bcbits.com/img/0015988132_37.jpg",
@@ -43,8 +33,17 @@
             "artist": "Hypervision",
             "title": "COMME des GAR\u00c7ONS",
             "releaseDate": "20190503",
-            "timestamp": "2019-11-10T01:10:09.239415",
+            "timestamp": "2019-11-10T03:29:22.889502",
             "url": "https://airlinesrecords.bandcamp.com/album/comme-des-gar-ons"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0016414826_37.jpg",
+            "label": "Culture Agency\u6587\u5316\u5e81",
+            "artist": "Relevant Advertising",
+            "title": "Cheap Champagne and Copacabana Propaganda",
+            "releaseDate": "20190423",
+            "timestamp": "2019-11-10T03:29:23.321335",
+            "url": "https://cultureagency.bandcamp.com/album/cheap-champagne-and-copacabana-propaganda"
         },
         {
             "artworkUrl": "https://f4.bcbits.com/img/0016025247_37.jpg",
@@ -52,17 +51,17 @@
             "artist": "\u7a7a\u6c17\u7cfb",
             "title": "scenery",
             "releaseDate": "20190406",
-            "timestamp": "2019-11-10T01:10:10.198459",
+            "timestamp": "2019-11-10T03:29:23.696965",
             "url": "https://darkwebrecordings.bandcamp.com/album/scenery"
         },
         {
-            "artworkUrl": "https://f4.bcbits.com/img/0011377512_37.jpg",
-            "label": "aurawire",
-            "artist": "HANTASI",
-            "title": "CRYSTAL",
-            "releaseDate": "20170929",
-            "timestamp": "2019-11-10T01:10:10.734528",
-            "url": "https://aurawire.bandcamp.com/album/crystal"
+            "artworkUrl": "https://f4.bcbits.com/img/0017749827_37.jpg",
+            "label": "Aloe City Records",
+            "artist": "Nostalgia Plus & Global Worldwide",
+            "title": "Nonstop | High End",
+            "releaseDate": "20191026",
+            "timestamp": "2019-11-10T03:29:23.934806",
+            "url": "https://aloecityrecords.bandcamp.com/album/nonstop-high-end"
         },
         {
             "artworkUrl": "https://f4.bcbits.com/img/0012241887_37.jpg",
@@ -70,18 +69,8 @@
             "artist": "Slime Domain",
             "title": "Slime Pop",
             "releaseDate": "20160824",
-            "timestamp": "2019-11-10T01:10:11.102794",
+            "timestamp": "2019-11-10T03:29:25.104025",
             "url": "https://andoptions.bandcamp.com/album/slime-pop"
-        },
-        {
-            "artworkUrl": "https://f4.bcbits.com/img/0013538288_37.jpg",
-            "label": "DIY Trashyteria",
-            "artist": "DJ Yung Lil Xany",
-            "title": "Suitable Remixes",
-            "releaseDate": "20180602",
-            "timestamp": "2019-11-10T01:10:11.152846",
-            "url": "https://diytrashyteria.bandcamp.com/album/suitable-remixes",
-            "remainingCassettes": 8
         },
         {
             "artworkUrl": "https://f4.bcbits.com/img/0015736587_37.jpg",
@@ -89,56 +78,45 @@
             "artist": "Gallery Of Low Art",
             "title": "Dark Future",
             "releaseDate": "20190304",
-            "timestamp": "2019-11-10T01:10:11.703840",
+            "timestamp": "2019-11-10T03:29:25.177251",
             "url": "https://385northmusic.bandcamp.com/album/dark-future",
             "remainingCassettes": 6
         },
         {
-            "artworkUrl": "https://f4.bcbits.com/img/0011377512_37.jpg",
-            "label": "aurawire",
-            "artist": "Only Swallow",
-            "title": "Mood Obsidian",
-            "releaseDate": "20170526",
-            "timestamp": "2019-11-10T01:10:11.748219",
-            "url": "https://aurawire.bandcamp.com/album/mood-obsidian"
+            "artworkUrl": "https://f4.bcbits.com/img/0014735290_37.jpg",
+            "label": "Alien Garage",
+            "artist": "The Rubies",
+            "title": "Sleeping World",
+            "releaseDate": "20181024",
+            "timestamp": "2019-11-10T03:29:26.938154",
+            "url": "https://aliengarage.bandcamp.com/album/sleeping-world"
         },
         {
-            "artworkUrl": "https://f4.bcbits.com/img/0016382705_37.jpg",
-            "label": "Aloe City Records",
-            "artist": "Forbidden Cremme",
-            "title": "BOON",
-            "releaseDate": "20190512",
-            "timestamp": "2019-11-10T01:10:11.847164",
-            "url": "https://aloecityrecords.bandcamp.com/album/boon"
+            "artworkUrl": "https://f4.bcbits.com/img/0017743361_37.jpg",
+            "label": "\u00c6scape Sounds",
+            "artist": "PJS",
+            "title": "Gills",
+            "releaseDate": "20191031",
+            "timestamp": "2019-11-10T03:29:28.151204",
+            "url": "https://aescapesounds.bandcamp.com/album/gills"
         },
         {
-            "artworkUrl": "https://f4.bcbits.com/img/0013538288_37.jpg",
-            "label": "DIY Trashyteria",
-            "artist": "Ken-Oh Beats & Lobstar",
-            "title": "Don\u2019t H8 Da Player Haight Tha Game",
-            "releaseDate": "20180601",
-            "timestamp": "2019-11-10T01:10:12.283001",
-            "url": "https://diytrashyteria.bandcamp.com/album/don-t-h8-da-player-haight-tha-game",
-            "remainingCassettes": 7
+            "artworkUrl": "https://f4.bcbits.com/img/0016087234_37.jpg",
+            "label": "Dark Web Recordings",
+            "artist": "identity crisis",
+            "title": "clinical death",
+            "releaseDate": "20181207",
+            "timestamp": "2019-11-10T03:29:28.242018",
+            "url": "https://darkwebrecordings.bandcamp.com/album/clinical-death"
         },
         {
-            "artworkUrl": "https://f4.bcbits.com/img/0013279283_37.jpg",
-            "label": "Dream Catalogue",
-            "artist": "Chesumasuta",
-            "title": "Return Of The High Intellect Nymphomaniac Anime Legend 3000",
-            "releaseDate": "20180329",
-            "timestamp": "2019-11-10T01:10:12.347081",
-            "url": "https://dreamcatalogue.bandcamp.com/album/return-of-the-high-intellect-nymphomaniac-anime-legend-3000"
-        },
-        {
-            "artworkUrl": "https://f4.bcbits.com/img/0013538288_37.jpg",
-            "label": "DIY Trashyteria",
-            "artist": "BLAK_CAMO",
-            "title": "Slouching Towards Branson",
-            "releaseDate": "20180608",
-            "timestamp": "2019-11-10T01:10:12.742656",
-            "url": "https://diytrashyteria.bandcamp.com/album/slouching-towards-branson",
-            "remainingCassettes": 8
+            "artworkUrl": "https://f4.bcbits.com/img/0012241821_37.jpg",
+            "label": "& Options",
+            "artist": "Slime Domain",
+            "title": "ALL I HAD",
+            "releaseDate": "20161226",
+            "timestamp": "2019-11-10T03:29:28.728093",
+            "url": "https://andoptions.bandcamp.com/album/all-i-had"
         },
         {
             "artworkUrl": "https://f4.bcbits.com/img/0010469135_37.jpg",
@@ -146,8 +124,3141 @@
             "artist": "DISPLAY",
             "title": "005\u200b/\u200b006 - Know V\u200b.\u200bA. & fknsyd",
             "releaseDate": "20170602",
-            "timestamp": "2019-11-10T01:10:13.078016",
+            "timestamp": "2019-11-10T03:29:29.129297",
             "url": "https://displayseries.bandcamp.com/album/005-006-know-v-a-fknsyd"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0014953588_37.jpg",
+            "label": "Equip",
+            "artist": "Equip",
+            "title": "I Dreamed Of A Palace In The Sky",
+            "releaseDate": "20161011",
+            "timestamp": "2019-11-10T03:29:29.237812",
+            "url": "https://equip100p.bandcamp.com/album/i-dreamed-of-a-palace-in-the-sky",
+            "remainingCassettes": 33
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0013279283_37.jpg",
+            "label": "Dream Catalogue",
+            "artist": "Chesumasuta",
+            "title": "Return Of The High Intellect Nymphomaniac Anime Legend 3000",
+            "releaseDate": "20180329",
+            "timestamp": "2019-11-10T03:29:30.943399",
+            "url": "https://dreamcatalogue.bandcamp.com/album/return-of-the-high-intellect-nymphomaniac-anime-legend-3000"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0016202423_37.jpg",
+            "label": "Dark Web Recordings",
+            "artist": "Cologne Terminal",
+            "title": "Wall",
+            "releaseDate": "20190427",
+            "timestamp": "2019-11-10T03:29:31.338490",
+            "url": "https://darkwebrecordings.bandcamp.com/album/wall"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0013471623_37.jpg",
+            "label": "DISPLAY",
+            "artist": "DISPLAY",
+            "title": "011\u200b/\u200b012 - Ptwiggs & Pope",
+            "releaseDate": "20180525",
+            "timestamp": "2019-11-10T03:29:32.086030",
+            "url": "https://displayseries.bandcamp.com/album/011-012-ptwiggs-pope"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0015050281_37.jpg",
+            "label": "Alien Garage",
+            "artist": "Kyle Landstra",
+            "title": "Two Portraits",
+            "releaseDate": "20181214",
+            "timestamp": "2019-11-10T03:29:32.182184",
+            "url": "https://aliengarage.bandcamp.com/album/two-portraits"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0013251115_37.jpg",
+            "label": "DISPLAY",
+            "artist": "DISPLAY",
+            "title": "009\u200b/\u200b010 - Kelman Duran & Asha Mirr",
+            "releaseDate": "20180427",
+            "timestamp": "2019-11-10T03:29:34.088668",
+            "url": "https://displayseries.bandcamp.com/album/009-010-kelman-duran-asha-mirr"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0013279367_37.jpg",
+            "label": "Dream Catalogue",
+            "artist": "Halo Acid",
+            "title": "Lines Of Fracture",
+            "releaseDate": "20180126",
+            "timestamp": "2019-11-10T03:29:35.026110",
+            "url": "https://dreamcatalogue.bandcamp.com/album/lines-of-fracture"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0016577106_37.jpg",
+            "label": "Alien Garage",
+            "artist": "Light Blending In",
+            "title": "Ideas Of A Shapeless Form",
+            "releaseDate": "20190510",
+            "timestamp": "2019-11-10T03:29:36.184074",
+            "url": "https://aliengarage.bandcamp.com/album/ideas-of-a-shapeless-form",
+            "remainingCassettes": 9
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0014728426_37.jpg",
+            "label": "DISPLAY",
+            "artist": "DISPLAY",
+            "title": "013\u200b/\u200b014 - duTaureau & BTTTL\u200b\\\u200bNGEL",
+            "releaseDate": "20181116",
+            "timestamp": "2019-11-10T03:29:38.184616",
+            "url": "https://displayseries.bandcamp.com/album/013-014-dutaureau-btttl-ngel"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0013279379_37.jpg",
+            "label": "Dream Catalogue",
+            "artist": "Slime Mask",
+            "title": "Foretoken",
+            "releaseDate": "20180217",
+            "timestamp": "2019-11-10T03:29:38.918878",
+            "url": "https://dreamcatalogue.bandcamp.com/album/foretoken"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0015345947_37.jpg",
+            "label": "DISPLAY",
+            "artist": "Held",
+            "title": "8\u200b.\u200b20",
+            "releaseDate": "20190208",
+            "timestamp": "2019-11-10T03:29:42.494117",
+            "url": "https://displayseries.bandcamp.com/album/820"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0013279539_37.jpg",
+            "label": "Dream Catalogue",
+            "artist": "Jade Statues",
+            "title": "Executive Towers",
+            "releaseDate": "20150928",
+            "timestamp": "2019-11-10T03:29:45.055104",
+            "url": "https://dreamcatalogue.bandcamp.com/album/executive-towers"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0015664664_37.jpg",
+            "label": "DISPLAY",
+            "artist": "DISPLAY",
+            "title": "015\u200b/\u200b016 - Inchindown & Specimens",
+            "releaseDate": "20190308",
+            "timestamp": "2019-11-10T03:29:46.690531",
+            "url": "https://displayseries.bandcamp.com/album/015-016-inchindown-specimens"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0013279306_37.jpg",
+            "label": "Dream Catalogue",
+            "artist": "Chungking Mansions",
+            "title": "ShowView",
+            "releaseDate": "20150311",
+            "timestamp": "2019-11-10T03:29:49.392840",
+            "url": "https://dreamcatalogue.bandcamp.com/album/showview"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0016035753_37.jpg",
+            "label": "DISPLAY",
+            "artist": "Sangam & Kid Smpl",
+            "title": "Dwelling Descender",
+            "releaseDate": "20190419",
+            "timestamp": "2019-11-10T03:29:50.091879",
+            "url": "https://displayseries.bandcamp.com/album/dwelling-descender"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0012331817_37.jpg",
+            "label": "Dream Catalogue",
+            "artist": "Bruised Skies",
+            "title": "Remnants",
+            "releaseDate": "20180115",
+            "timestamp": "2019-11-10T03:29:53.359577",
+            "url": "https://dreamcatalogue.bandcamp.com/album/remnants"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0016281512_37.jpg",
+            "label": "DISPLAY",
+            "artist": "Ruined Spirit",
+            "title": "Black Metal's Redemptive Arc",
+            "releaseDate": "20190517",
+            "timestamp": "2019-11-10T03:29:53.806435",
+            "url": "https://displayseries.bandcamp.com/album/black-metals-redemptive-arc"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0012241784_37.jpg",
+            "label": "& Options",
+            "artist": "methyr",
+            "title": "BLOOPERS",
+            "releaseDate": "20170403",
+            "timestamp": "2019-11-10T03:29:54.421809",
+            "url": "https://andoptions.bandcamp.com/album/bloopers"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0017293351_37.jpg",
+            "label": "DISPLAY",
+            "artist": "Thugwidow",
+            "title": "Goliath's Twin",
+            "releaseDate": "20190920",
+            "timestamp": "2019-11-10T03:29:54.825765",
+            "url": "https://displayseries.bandcamp.com/album/goliaths-twin"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0010216894_37.jpg",
+            "label": "Dream Catalogue",
+            "artist": "The Jewel Ship",
+            "title": "Integrating Clouds",
+            "releaseDate": "20170502",
+            "timestamp": "2019-11-10T03:29:57.182171",
+            "url": "https://dreamcatalogue.bandcamp.com/album/integrating-clouds"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0017486578_33.jpg",
+            "label": "DISPLAY",
+            "artist": "DISPLAY",
+            "title": "017\u200b/\u200b018 - Laura Luna Castillo & Lensk",
+            "releaseDate": "20191021",
+            "timestamp": "2019-11-10T03:29:57.454248",
+            "url": "https://displayseries.bandcamp.com/album/017-018-laura-luna-castillo-lensk"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0010299780_37.jpg",
+            "label": "Dream Catalogue",
+            "artist": "Shinatama",
+            "title": "Astrocide (Part I)",
+            "releaseDate": "20170516",
+            "timestamp": "2019-11-10T03:29:58.412341",
+            "url": "https://dreamcatalogue.bandcamp.com/album/astrocide-part-i"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0014986067_37.jpg",
+            "label": "Dream Catalogue",
+            "artist": "Sangam",
+            "title": "Mount To Nothing",
+            "releaseDate": "20180315",
+            "timestamp": "2019-11-10T03:30:01.204500",
+            "url": "https://dreamcatalogue.bandcamp.com/album/mount-to-nothing"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0015825691_37.jpg",
+            "label": "& Options",
+            "artist": "Slime Domain",
+            "title": "yourmusic",
+            "releaseDate": "20180105",
+            "timestamp": "2019-11-10T03:30:03.111245",
+            "url": "https://andoptions.bandcamp.com/album/yourmusic",
+            "remainingCassettes": 4
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0014701255_37.jpg",
+            "label": "Dream Catalogue",
+            "artist": "Yoshimi",
+            "title": "Island",
+            "releaseDate": "20181102",
+            "timestamp": "2019-11-10T03:30:03.742292",
+            "url": "https://dreamcatalogue.bandcamp.com/album/island"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0014836010_37.jpg",
+            "label": "Dream Catalogue",
+            "artist": "Lau\u0308st",
+            "title": "EDELIS",
+            "releaseDate": "20181119",
+            "timestamp": "2019-11-10T03:30:04.659488",
+            "url": "https://dreamcatalogue.bandcamp.com/album/edelis"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0013925090_37.jpg",
+            "label": "& Options",
+            "artist": "Wasn't",
+            "title": "Without",
+            "releaseDate": "20180725",
+            "timestamp": "2019-11-10T03:30:05.877873",
+            "url": "https://andoptions.bandcamp.com/album/without"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0014869864_37.jpg",
+            "label": "Dream Catalogue",
+            "artist": "AUT2M",
+            "title": "Corrupt",
+            "releaseDate": "20181123",
+            "timestamp": "2019-11-10T03:30:07.585933",
+            "url": "https://dreamcatalogue.bandcamp.com/album/corrupt"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0013538288_37.jpg",
+            "label": "DIY Trashyteria",
+            "artist": "DJ Yung Lil Xany",
+            "title": "Suitable Remixes",
+            "releaseDate": "20180602",
+            "timestamp": "2019-11-10T03:30:08.000858",
+            "url": "https://diytrashyteria.bandcamp.com/album/suitable-remixes",
+            "remainingCassettes": 8
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0014942690_37.jpg",
+            "label": "Dream Catalogue",
+            "artist": "Lighght",
+            "title": "The Skin Falls Off The Body",
+            "releaseDate": "20181202",
+            "timestamp": "2019-11-10T03:30:08.455894",
+            "url": "https://dreamcatalogue.bandcamp.com/album/the-skin-falls-off-the-body"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0013984085_37.jpg",
+            "label": "& Options",
+            "artist": "Cares",
+            "title": "Regular Unconscious",
+            "releaseDate": "20180803",
+            "timestamp": "2019-11-10T03:30:08.771613",
+            "url": "https://andoptions.bandcamp.com/album/regular-unconscious"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0013531058_37.jpg",
+            "label": "DIY Trashyteria",
+            "artist": "Ken-Oh Beats & Lobstar",
+            "title": "Don\u2019t H8 Da Player Haight Tha Game",
+            "releaseDate": "20180601",
+            "timestamp": "2019-11-10T03:30:09.265762",
+            "url": "https://diytrashyteria.bandcamp.com/album/don-t-h8-da-player-haight-tha-game",
+            "remainingCassettes": 7
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0008206550_37.jpg",
+            "label": "\u00c6scape Sounds",
+            "artist": "Baby Feet",
+            "title": "Glass Families",
+            "releaseDate": "20160830",
+            "timestamp": "2019-11-10T03:30:09.677910",
+            "url": "https://aescapesounds.bandcamp.com/album/glass-families",
+            "remainingCassettes": 5
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0015048177_37.jpg",
+            "label": "& Options",
+            "artist": "\u7a7a\u9699",
+            "title": "void",
+            "releaseDate": "20181214",
+            "timestamp": "2019-11-10T03:30:11.625894",
+            "url": "https://andoptions.bandcamp.com/album/void",
+            "remainingCassettes": 8
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0015054266_37.jpg",
+            "label": "Dream Catalogue",
+            "artist": "Halo Acid",
+            "title": "Body Dares",
+            "releaseDate": "20181209",
+            "timestamp": "2019-11-10T03:30:12.483770",
+            "url": "https://dreamcatalogue.bandcamp.com/album/body-dares"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0015583402_37.jpg",
+            "label": "& Options",
+            "artist": "Vagrant",
+            "title": "Downpour Recovery",
+            "releaseDate": "20190215",
+            "timestamp": "2019-11-10T03:30:12.582444",
+            "url": "https://andoptions.bandcamp.com/album/downpour-recovery",
+            "remainingCassettes": 4
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0015451036_37.jpg",
+            "label": "DIY Trashyteria",
+            "artist": "BLAK_CAMO",
+            "title": "Slouching Towards Branson",
+            "releaseDate": "20180608",
+            "timestamp": "2019-11-10T03:30:12.916710",
+            "url": "https://diytrashyteria.bandcamp.com/album/slouching-towards-branson",
+            "remainingCassettes": 8
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0015838215_37.jpg",
+            "label": "& Options",
+            "artist": "ehh hahah",
+            "title": "fissure",
+            "releaseDate": "20190316",
+            "timestamp": "2019-11-10T03:30:13.768584",
+            "url": "https://andoptions.bandcamp.com/album/fissure",
+            "remainingCassettes": 7
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0008295918_37.jpg",
+            "label": "\u00c6scape Sounds",
+            "artist": "Audishape",
+            "title": "Replicant",
+            "releaseDate": "20160913",
+            "timestamp": "2019-11-10T03:30:14.032238",
+            "url": "https://aescapesounds.bandcamp.com/album/replicant",
+            "remainingCassettes": 9
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0015021296_37.jpg",
+            "label": "Dream Catalogue",
+            "artist": "Ross Khmil",
+            "title": "Invisible Empire",
+            "releaseDate": "20181211",
+            "timestamp": "2019-11-10T03:30:15.618545",
+            "url": "https://dreamcatalogue.bandcamp.com/album/invisible-empire"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0015028948_37.jpg",
+            "label": "Dream Catalogue",
+            "artist": "HKE",
+            "title": "Aesthetic 2013\u200b-\u200b2018",
+            "releaseDate": "20181212",
+            "timestamp": "2019-11-10T03:30:16.698328",
+            "url": "https://dreamcatalogue.bandcamp.com/album/aesthetic-2013-2018"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0009845427_37.jpg",
+            "label": "\u00c6scape Sounds",
+            "artist": "Mercury Severinsen",
+            "title": "Planet Amerika",
+            "releaseDate": "20170321",
+            "timestamp": "2019-11-10T03:30:17.230355",
+            "url": "https://aescapesounds.bandcamp.com/album/planet-amerika"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0016176369_37.jpg",
+            "label": "& Options",
+            "artist": "Sangam",
+            "title": "Roads",
+            "releaseDate": "20190423",
+            "timestamp": "2019-11-10T03:30:17.447789",
+            "url": "https://andoptions.bandcamp.com/album/roads"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0016782517_37.jpg",
+            "label": "& Options",
+            "artist": "CRYOSAUNA",
+            "title": "City Spectres",
+            "releaseDate": "20190621",
+            "timestamp": "2019-11-10T03:30:18.704953",
+            "url": "https://andoptions.bandcamp.com/album/city-spectres"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0009312324_37.jpg",
+            "label": "\u00c6scape Sounds",
+            "artist": "Baby Feet",
+            "title": "Christ Fit 3000",
+            "releaseDate": "20170124",
+            "timestamp": "2019-11-10T03:30:20.740401",
+            "url": "https://aescapesounds.bandcamp.com/album/christ-fit-3000",
+            "remainingCassettes": 3
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0016936359_37.jpg",
+            "label": "Dream Catalogue",
+            "artist": "LILLITH twin",
+            "title": "of flame & love",
+            "releaseDate": "20190725",
+            "timestamp": "2019-11-10T03:30:20.835321",
+            "url": "https://dreamcatalogue.bandcamp.com/album/of-flame-love"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0016817186_37.jpg",
+            "label": "& Options",
+            "artist": "Thugwidow",
+            "title": "Weaponised Soul",
+            "releaseDate": "20190711",
+            "timestamp": "2019-11-10T03:30:21.261121",
+            "url": "https://andoptions.bandcamp.com/album/weaponised-soul"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0009595180_37.jpg",
+            "label": "\u00c6scape Sounds",
+            "artist": "DR00",
+            "title": "Guitar Samples",
+            "releaseDate": "20170221",
+            "timestamp": "2019-11-10T03:30:21.688625",
+            "url": "https://aescapesounds.bandcamp.com/album/guitar-samples",
+            "remainingCassettes": 2
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0016817802_37.jpg",
+            "label": "& Options",
+            "artist": "Thugwidow",
+            "title": "Sinking Feeling",
+            "releaseDate": "20190711",
+            "timestamp": "2019-11-10T03:30:21.965393",
+            "url": "https://andoptions.bandcamp.com/album/sinking-feeling",
+            "remainingCassettes": 9
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0016975649_37.jpg",
+            "label": "Dream Catalogue",
+            "artist": "2814",
+            "title": "Lost Fragments",
+            "releaseDate": "20190705",
+            "timestamp": "2019-11-10T03:30:22.338467",
+            "url": "https://dreamcatalogue.bandcamp.com/album/lost-fragments-2"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0017451301_37.jpg",
+            "label": "& Options",
+            "artist": "MC 469",
+            "title": "The Bed You Live In",
+            "releaseDate": "20170612",
+            "timestamp": "2019-11-10T03:30:24.653799",
+            "url": "https://andoptions.bandcamp.com/album/the-bed-you-live-in"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0010115645_37.jpg",
+            "label": "\u00c6scape Sounds",
+            "artist": "White Hat",
+            "title": "A City We Can Set On Fire",
+            "releaseDate": "20170420",
+            "timestamp": "2019-11-10T03:30:24.738951",
+            "url": "https://aescapesounds.bandcamp.com/album/a-city-we-can-set-on-fire"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0011000964_37.jpg",
+            "label": "\u00c6scape Sounds",
+            "artist": "Baron",
+            "title": "Bastion of Undeserved Privilege",
+            "releaseDate": "20170627",
+            "timestamp": "2019-11-10T03:30:26.624213",
+            "url": "https://aescapesounds.bandcamp.com/album/bastion-of-undeserved-privilege",
+            "remainingCassettes": 6
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0011163214_37.jpg",
+            "label": "\u00c6scape Sounds",
+            "artist": "qualchan./effed",
+            "title": "Lizard Kings of North Vietnam.",
+            "releaseDate": "20170829",
+            "timestamp": "2019-11-10T03:30:28.829651",
+            "url": "https://aescapesounds.bandcamp.com/album/lizard-kings-of-north-vietnam"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0011338848_37.jpg",
+            "label": "\u00c6scape Sounds",
+            "artist": "Tony Lien",
+            "title": "Fantastic Characters",
+            "releaseDate": "20170919",
+            "timestamp": "2019-11-10T03:30:31.491549",
+            "url": "https://aescapesounds.bandcamp.com/album/fantastic-characters"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0011948975_37.jpg",
+            "label": "\u00c6scape Sounds",
+            "artist": "SHIFT99",
+            "title": "SHIFT99",
+            "releaseDate": "20171201",
+            "timestamp": "2019-11-10T03:30:31.906849",
+            "url": "https://aescapesounds.bandcamp.com/album/shift99",
+            "remainingCassettes": 9
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0012558272_37.jpg",
+            "label": "\u00c6scape Sounds",
+            "artist": "skipism",
+            "title": "air from here",
+            "releaseDate": "20180209",
+            "timestamp": "2019-11-10T03:30:35.043207",
+            "url": "https://aescapesounds.bandcamp.com/album/air-from-here",
+            "remainingCassettes": 9
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0012691232_37.jpg",
+            "label": "\u00c6scape Sounds",
+            "artist": "Takahiro Mukai",
+            "title": "Drunk Biking",
+            "releaseDate": "20180223",
+            "timestamp": "2019-11-10T03:30:36.487300",
+            "url": "https://aescapesounds.bandcamp.com/album/drunk-biking"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0013134306_37.jpg",
+            "label": "\u00c6scape Sounds",
+            "artist": "Tarantula Nebula",
+            "title": "Tarantula Nebula",
+            "releaseDate": "20180413",
+            "timestamp": "2019-11-10T03:30:39.247588",
+            "url": "https://aescapesounds.bandcamp.com/album/tarantula-nebula"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0013887382_37.jpg",
+            "label": "\u00c6scape Sounds",
+            "artist": "Mortuus Auris & the Black Hand",
+            "title": "KOSMOS",
+            "releaseDate": "20180701",
+            "timestamp": "2019-11-10T03:30:39.809065",
+            "url": "https://aescapesounds.bandcamp.com/album/kosmos"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0013915977_37.jpg",
+            "label": "\u00c6scape Sounds",
+            "artist": "\u00c6scape Sounds",
+            "title": "Sotelawave",
+            "releaseDate": "20180724",
+            "timestamp": "2019-11-10T03:30:40.554683",
+            "url": "https://aescapesounds.bandcamp.com/album/sotelawave",
+            "remainingCassettes": 4
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0016719173_37.jpg",
+            "label": "Alien Garage",
+            "artist": "No Death",
+            "title": "Lily Loops",
+            "releaseDate": "20190705",
+            "timestamp": "2019-11-10T03:30:41.821086",
+            "url": "https://aliengarage.bandcamp.com/album/lily-loops",
+            "remainingCassettes": 1
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0014113654_37.jpg",
+            "label": "\u00c6scape Sounds",
+            "artist": "qualchan.",
+            "title": "vera's dream.",
+            "releaseDate": "20170606",
+            "timestamp": "2019-11-10T03:30:45.354720",
+            "url": "https://aescapesounds.bandcamp.com/album/veras-dream",
+            "remainingCassettes": 8
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0014415526_37.jpg",
+            "label": "\u00c6scape Sounds",
+            "artist": "w. baer x lila tirando a violeta",
+            "title": "stonewalls",
+            "releaseDate": "20180928",
+            "timestamp": "2019-11-10T03:30:45.891515",
+            "url": "https://aescapesounds.bandcamp.com/album/stonewalls",
+            "remainingCassettes": 2
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0015443726_37.jpg",
+            "label": "DreamShore",
+            "artist": "\u304a\u59c9\u3055\u3093 M-14",
+            "title": "Ja Boi\u306e\u6700\u60aa\u306e\u30d2\u30c3\u30c8\u66f2",
+            "releaseDate": "20190131",
+            "timestamp": "2019-11-10T03:30:46.247631",
+            "url": "https://dreamshoretapes.bandcamp.com/album/ja-boi"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0017042904_37.jpg",
+            "label": "Alien Garage",
+            "artist": "Puppy Seeds",
+            "title": "Alcove EP",
+            "releaseDate": "20190820",
+            "timestamp": "2019-11-10T03:30:46.862897",
+            "url": "https://aliengarage.bandcamp.com/album/alcove-ep",
+            "remainingCassettes": 6
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0016388262_37.jpg",
+            "label": "Dark Web Recordings",
+            "artist": "vcr-classique",
+            "title": "soft nostalgic",
+            "releaseDate": "20190518",
+            "timestamp": "2019-11-10T03:30:49.227925",
+            "url": "https://darkwebrecordings.bandcamp.com/album/soft-nostalgic"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0014531268_37.jpg",
+            "label": "\u00c6scape Sounds",
+            "artist": "_entity",
+            "title": "Crisis Culture",
+            "releaseDate": "20181012",
+            "timestamp": "2019-11-10T03:30:49.640755",
+            "url": "https://aescapesounds.bandcamp.com/album/crisis-culture"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0015708965_37.jpg",
+            "label": "DreamShore",
+            "artist": "Princess Commodore 64",
+            "title": "because i luv u",
+            "releaseDate": "20190301",
+            "timestamp": "2019-11-10T03:30:50.115237",
+            "url": "https://dreamshoretapes.bandcamp.com/album/because-i-luv-u"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0014641710_37.jpg",
+            "label": "\u00c6scape Sounds",
+            "artist": "First Kings",
+            "title": "Remedios Pieces",
+            "releaseDate": "20180820",
+            "timestamp": "2019-11-10T03:30:50.859747",
+            "url": "https://aescapesounds.bandcamp.com/album/remedios-pieces",
+            "remainingCassettes": 2
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0016976396_37.jpg",
+            "label": "Crash Symbols",
+            "artist": "Luurel Varas",
+            "title": "New World",
+            "releaseDate": "20190814",
+            "timestamp": "2019-11-10T03:30:53.225592",
+            "url": "https://crashsymbols.bandcamp.com/album/new-world",
+            "remainingCassettes": 1
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0015443250_37.jpg",
+            "label": "DreamShore",
+            "artist": "Slow Dancing Society",
+            "title": "f a n t o s m e s",
+            "releaseDate": "20190131",
+            "timestamp": "2019-11-10T03:30:53.477563",
+            "url": "https://dreamshoretapes.bandcamp.com/album/f-a-n-t-o-s-m-e-s"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0014776641_37.jpg",
+            "label": "\u00c6scape Sounds",
+            "artist": "Audisigil",
+            "title": "The Twilight Project",
+            "releaseDate": "20181112",
+            "timestamp": "2019-11-10T03:30:53.957474",
+            "url": "https://aescapesounds.bandcamp.com/album/the-twilight-project"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0013076201_37.jpg",
+            "label": "Crash Symbols",
+            "artist": "I am just a pupil",
+            "title": "The White Album",
+            "releaseDate": "20180413",
+            "timestamp": "2019-11-10T03:30:54.327093",
+            "url": "https://crashsymbols.bandcamp.com/album/the-white-album",
+            "remainingCassettes": 1
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0016693096_37.jpg",
+            "label": "Airlines Records",
+            "artist": "Surfing",
+            "title": "Surfing EP",
+            "releaseDate": "20110101",
+            "timestamp": "2019-11-10T03:30:55.073518",
+            "url": "https://airlinesrecords.bandcamp.com/album/surfing-ep"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0014981997_37.jpg",
+            "label": "\u00c6scape Sounds",
+            "artist": "Astral \u5922",
+            "title": "Empyreal",
+            "releaseDate": "20181207",
+            "timestamp": "2019-11-10T03:30:55.156772",
+            "url": "https://aescapesounds.bandcamp.com/album/empyreal"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0016693091_37.jpg",
+            "label": "Airlines Records",
+            "artist": "Surfing",
+            "title": "Chrome",
+            "releaseDate": "20160906",
+            "timestamp": "2019-11-10T03:30:56.042658",
+            "url": "https://airlinesrecords.bandcamp.com/album/chrome"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0016883013_37.jpg",
+            "label": "Dark Web Recordings",
+            "artist": "\uff33\uff50\uff4f\uff52\uff54\uff13\uff10\uff10\uff10",
+            "title": "\uff53\uff50\uff45\uff43\uff54\uff45\uff52",
+            "releaseDate": "20190718",
+            "timestamp": "2019-11-10T03:30:57.974156",
+            "url": "https://darkwebrecordings.bandcamp.com/album/--10"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0016323328_37.jpg",
+            "label": "Crash Symbols",
+            "artist": "Sea Moss",
+            "title": "Bidet Dreaming",
+            "releaseDate": "20190510",
+            "timestamp": "2019-11-10T03:30:58.421340",
+            "url": "https://crashsymbols.bandcamp.com/album/bidet-dreaming",
+            "remainingCassettes": 3
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0016693085_37.jpg",
+            "label": "Airlines Records",
+            "artist": "Surfing",
+            "title": "Incubo\u2122",
+            "releaseDate": "20180713",
+            "timestamp": "2019-11-10T03:30:58.538805",
+            "url": "https://airlinesrecords.bandcamp.com/album/incubo"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0015103572_37.jpg",
+            "label": "\u00c6scape Sounds",
+            "artist": "Jamie Awakshidar",
+            "title": "Wavecrash",
+            "releaseDate": "20181221",
+            "timestamp": "2019-11-10T03:30:59.088385",
+            "url": "https://aescapesounds.bandcamp.com/album/wavecrash",
+            "remainingCassettes": 8
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0016693076_37.jpg",
+            "label": "Airlines Records",
+            "artist": "Surfing",
+            "title": "Deep Fantasy",
+            "releaseDate": "20120403",
+            "timestamp": "2019-11-10T03:30:59.367120",
+            "url": "https://airlinesrecords.bandcamp.com/album/deep-fantasy"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0016382705_37.jpg",
+            "label": "Aloe City Records",
+            "artist": "Forbidden Cremme",
+            "title": "BOON",
+            "releaseDate": "20190512",
+            "timestamp": "2019-11-10T03:30:59.765805",
+            "url": "https://aloecityrecords.bandcamp.com/album/boon"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0016909804_37.jpg",
+            "label": "Airlines Records",
+            "artist": "CREEPS",
+            "title": "NIGHT THEMES",
+            "releaseDate": "20190712",
+            "timestamp": "2019-11-10T03:30:59.976024",
+            "url": "https://airlinesrecords.bandcamp.com/album/night-themes"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0016774702_37.jpg",
+            "label": "Culture Agency\u6587\u5316\u5e81",
+            "artist": "\u5922\u60f3\u7684\u983b\u9053",
+            "title": "\u53c8\u5bc2\u5bde\u4e86\u3002",
+            "releaseDate": "20190311",
+            "timestamp": "2019-11-10T03:31:00.368955",
+            "url": "https://cultureagency.bandcamp.com/album/--6",
+            "remainingCassettes": 8
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0010673269_37.jpg",
+            "label": "aurawire",
+            "artist": "VVV x Sangam",
+            "title": "Wanderers Lane",
+            "releaseDate": "20170630",
+            "timestamp": "2019-11-10T03:31:00.928524",
+            "url": "https://aurawire.bandcamp.com/album/wanderers-lane"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0016774797_37.jpg",
+            "label": "Culture Agency\u6587\u5316\u5e81",
+            "artist": "Azuresands\u5927\u9ebb",
+            "title": "Newport to Bermuda",
+            "releaseDate": "20190704",
+            "timestamp": "2019-11-10T03:31:01.215835",
+            "url": "https://cultureagency.bandcamp.com/album/newport-to-bermuda"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0015390251_37.jpg",
+            "label": "\u00c6scape Sounds",
+            "artist": "whisker floater",
+            "title": "NoZinC",
+            "releaseDate": "20190125",
+            "timestamp": "2019-11-10T03:31:01.922969",
+            "url": "https://aescapesounds.bandcamp.com/album/nozinc",
+            "remainingCassettes": 8
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0010938393_37.jpg",
+            "label": "aurawire",
+            "artist": "Renj\u0101",
+            "title": "Titania of the North",
+            "releaseDate": "20170728",
+            "timestamp": "2019-11-10T03:31:02.134186",
+            "url": "https://aurawire.bandcamp.com/album/titania-of-the-north",
+            "remainingCassettes": 6
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0016013017_37.jpg",
+            "label": "Crash Symbols",
+            "artist": "Frank Hurricane and Hurricanes of Love",
+            "title": "Life is Spiritual",
+            "releaseDate": "20190524",
+            "timestamp": "2019-11-10T03:31:02.339660",
+            "url": "https://crashsymbols.bandcamp.com/album/life-is-spiritual",
+            "remainingCassettes": 15
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0013376412_37.jpg",
+            "label": "aurawire",
+            "artist": "pure light",
+            "title": "EULOGY",
+            "releaseDate": "20170804",
+            "timestamp": "2019-11-10T03:31:02.684762",
+            "url": "https://aurawire.bandcamp.com/album/eulogy",
+            "remainingCassettes": 4
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0017742537_37.jpg",
+            "label": "Dark Web Recordings",
+            "artist": "Lindsheaven Virtual Plaza",
+            "title": "Watch Their Loneliness",
+            "releaseDate": "20191031",
+            "timestamp": "2019-11-10T03:31:03.030765",
+            "url": "https://darkwebrecordings.bandcamp.com/album/watch-their-loneliness"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0011377524_37.jpg",
+            "label": "aurawire",
+            "artist": "SOCECO",
+            "title": "Heaven",
+            "releaseDate": "20170929",
+            "timestamp": "2019-11-10T03:31:03.825739",
+            "url": "https://aurawire.bandcamp.com/album/heaven",
+            "remainingCassettes": 7
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0011651691_37.jpg",
+            "label": "aurawire",
+            "artist": "Kagami Smile",
+            "title": "Under",
+            "releaseDate": "20171027",
+            "timestamp": "2019-11-10T03:31:04.792689",
+            "url": "https://aurawire.bandcamp.com/album/under"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0015640942_37.jpg",
+            "label": "\u00c6scape Sounds",
+            "artist": "Bagaski",
+            "title": "Peer",
+            "releaseDate": "20190222",
+            "timestamp": "2019-11-10T03:31:05.065891",
+            "url": "https://aescapesounds.bandcamp.com/album/peer"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0016720892_37.jpg",
+            "label": "Aloe City Records",
+            "artist": "\u30a2\u30ca\u30ed\u30af\u3099MESSIAH",
+            "title": "\u1111\u1161\u11af\u1103\u1161\u110b\u1161\u110b\u116e\u11ba",
+            "releaseDate": "20190623",
+            "timestamp": "2019-11-10T03:31:05.624744",
+            "url": "https://aloecityrecords.bandcamp.com/album/--21"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0011999549_37.jpg",
+            "label": "aurawire",
+            "artist": "VVV x Sangam",
+            "title": "Tomorrow Comes",
+            "releaseDate": "20180101",
+            "timestamp": "2019-11-10T03:31:06.102363",
+            "url": "https://aurawire.bandcamp.com/album/tomorrow-comes"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0015938295_37.jpg",
+            "label": "\u00c6scape Sounds",
+            "artist": "LIFE EDUCATION",
+            "title": "Ancient Machines",
+            "releaseDate": "20190329",
+            "timestamp": "2019-11-10T03:31:06.194606",
+            "url": "https://aescapesounds.bandcamp.com/album/ancient-machines"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0011999538_37.jpg",
+            "label": "aurawire",
+            "artist": "Lucid Sound Driver",
+            "title": "Gradient Departure",
+            "releaseDate": "20171124",
+            "timestamp": "2019-11-10T03:31:06.377619",
+            "url": "https://aurawire.bandcamp.com/album/gradient-departure"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0012436769_37.jpg",
+            "label": "aurawire",
+            "artist": "International Debris",
+            "title": "Eclipsis",
+            "releaseDate": "20180126",
+            "timestamp": "2019-11-10T03:31:06.707354",
+            "url": "https://aurawire.bandcamp.com/album/eclipsis"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0016882443_37.jpg",
+            "label": "Aloe City Records",
+            "artist": "Mitch Porsche",
+            "title": "Laced Liquid Lies",
+            "releaseDate": "20190713",
+            "timestamp": "2019-11-10T03:31:06.811525",
+            "url": "https://aloecityrecords.bandcamp.com/album/laced-liquid-lies",
+            "remainingCassettes": 5
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0013475367_37.jpg",
+            "label": "aurawire",
+            "artist": "Sour Gout",
+            "title": "As You Leave",
+            "releaseDate": "20180330",
+            "timestamp": "2019-11-10T03:31:07.662956",
+            "url": "https://aurawire.bandcamp.com/album/as-you-leave",
+            "remainingCassettes": 9
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0013840822_37.jpg",
+            "label": "aurawire",
+            "artist": "Animalman",
+            "title": "a\u200b.\u200bm",
+            "releaseDate": "20180525",
+            "timestamp": "2019-11-10T03:31:08.793185",
+            "url": "https://aurawire.bandcamp.com/album/a-m-2"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0013475419_37.jpg",
+            "label": "aurawire",
+            "artist": "Glass Double",
+            "title": "Corona",
+            "releaseDate": "20180525",
+            "timestamp": "2019-11-10T03:31:09.635723",
+            "url": "https://aurawire.bandcamp.com/album/corona"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0016143694_37.jpg",
+            "label": "\u00c6scape Sounds",
+            "artist": "Animalman",
+            "title": "Nerve Halo",
+            "releaseDate": "20190419",
+            "timestamp": "2019-11-10T03:31:09.810152",
+            "url": "https://aescapesounds.bandcamp.com/album/nerve-halo"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0013840715_37.jpg",
+            "label": "aurawire",
+            "artist": "Renj\u0101",
+            "title": "Xenon",
+            "releaseDate": "20180727",
+            "timestamp": "2019-11-10T03:31:10.813535",
+            "url": "https://aurawire.bandcamp.com/album/xenon"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0014368201_37.jpg",
+            "label": "aurawire",
+            "artist": "HYPERMEDIA",
+            "title": "Dream Sequencer",
+            "releaseDate": "20180822",
+            "timestamp": "2019-11-10T03:31:11.999685",
+            "url": "https://aurawire.bandcamp.com/album/dream-sequencer"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0014368203_37.jpg",
+            "label": "aurawire",
+            "artist": "\ud68c\uc0acAUTO",
+            "title": "Remix M\u00e9taphysique",
+            "releaseDate": "20180831",
+            "timestamp": "2019-11-10T03:31:12.193170",
+            "url": "https://aurawire.bandcamp.com/album/remix-m-taphysique"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0014420942_37.jpg",
+            "label": "aurawire",
+            "artist": "Streymoyer",
+            "title": "Where",
+            "releaseDate": "20180928",
+            "timestamp": "2019-11-10T03:31:13.033030",
+            "url": "https://aurawire.bandcamp.com/album/where",
+            "remainingCassettes": 8
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0014614764_37.jpg",
+            "label": "Asura Revolver",
+            "artist": "valyri",
+            "title": "expanses",
+            "releaseDate": "20181023",
+            "timestamp": "2019-11-10T03:31:13.134782",
+            "url": "https://asurarevolver.bandcamp.com/album/expanses"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0015417589_37.jpg",
+            "label": "aurawire",
+            "artist": "No Death",
+            "title": "Cold",
+            "releaseDate": "20181026",
+            "timestamp": "2019-11-10T03:31:13.978349",
+            "url": "https://aurawire.bandcamp.com/album/cold"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0016655986_37.jpg",
+            "label": "\u00c6scape Sounds",
+            "artist": "FKM2007",
+            "title": "Psychedelicate",
+            "releaseDate": "20190624",
+            "timestamp": "2019-11-10T03:31:14.916408",
+            "url": "https://aescapesounds.bandcamp.com/album/psychedelicate",
+            "remainingCassettes": 2
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0015417489_37.jpg",
+            "label": "aurawire",
+            "artist": "VHS MIDNIGHT STYLE",
+            "title": "Cure for Pharma",
+            "releaseDate": "20181221",
+            "timestamp": "2019-11-10T03:31:15.162929",
+            "url": "https://aurawire.bandcamp.com/album/cure-for-pharma"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0014845942_37.jpg",
+            "label": "Asura Revolver",
+            "artist": "Plexidotorg",
+            "title": "Offpunk",
+            "releaseDate": "20181120",
+            "timestamp": "2019-11-10T03:31:15.255091",
+            "url": "https://asurarevolver.bandcamp.com/album/offpunk"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0015911428_37.jpg",
+            "label": "aurawire",
+            "artist": "Sangam",
+            "title": "Aspect",
+            "releaseDate": "20190222",
+            "timestamp": "2019-11-10T03:31:16.232769",
+            "url": "https://aurawire.bandcamp.com/album/aspect",
+            "remainingCassettes": 7
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0015080373_37.jpg",
+            "label": "Asura Revolver",
+            "artist": "Ursula's Cartridges / Kizunaut",
+            "title": "07\u200b:\u200b15\u200b:\u200b14\u200b:\u200b05 OFFLINE",
+            "releaseDate": "20181218",
+            "timestamp": "2019-11-10T03:31:16.580449",
+            "url": "https://asurarevolver.bandcamp.com/album/07-15-14-05-offline"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0016198244_37.jpg",
+            "label": "aurawire",
+            "artist": "saihatenoshima",
+            "title": "No Feelings",
+            "releaseDate": "20180223",
+            "timestamp": "2019-11-10T03:31:16.783605",
+            "url": "https://aurawire.bandcamp.com/album/no-feelings",
+            "remainingCassettes": 7
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0017276032_37.jpg",
+            "label": "\u00c6scape Sounds",
+            "artist": "Lucid Sound Driver",
+            "title": "Serenity in the Vast Darkness",
+            "releaseDate": "20190906",
+            "timestamp": "2019-11-10T03:31:17.269945",
+            "url": "https://aescapesounds.bandcamp.com/album/serenity-in-the-vast-darkness",
+            "remainingCassettes": 7
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0016198231_37.jpg",
+            "label": "aurawire",
+            "artist": "valyri",
+            "title": "incon",
+            "releaseDate": "20180622",
+            "timestamp": "2019-11-10T03:31:17.678117",
+            "url": "https://aurawire.bandcamp.com/album/incon"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0016380674_37.jpg",
+            "label": "aurawire",
+            "artist": "Vagrant",
+            "title": "Oracle",
+            "releaseDate": "20190315",
+            "timestamp": "2019-11-10T03:31:18.562639",
+            "url": "https://aurawire.bandcamp.com/album/oracle"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0015616711_37.jpg",
+            "label": "Asura Revolver",
+            "artist": "Bruised Skies & Sangam",
+            "title": "Division",
+            "releaseDate": "20190219",
+            "timestamp": "2019-11-10T03:31:19.025415",
+            "url": "https://asurarevolver.bandcamp.com/album/division"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0016661927_37.jpg",
+            "label": "aurawire",
+            "artist": "K\u00f6SHRiMP",
+            "title": "MACROBiOTOPiA",
+            "releaseDate": "20190726",
+            "timestamp": "2019-11-10T03:31:19.385991",
+            "url": "https://aurawire.bandcamp.com/album/macrobiotopia"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0017472949_37.jpg",
+            "label": "\u00c6scape Sounds",
+            "artist": "P U D E R P O L L I",
+            "title": "\u7121\u9650\u306e\u4e2d\u3066\u3099\u3042\u306a\u305f\u3068",
+            "releaseDate": "20190930",
+            "timestamp": "2019-11-10T03:31:19.675929",
+            "url": "https://aescapesounds.bandcamp.com/album/--5"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0016355590_37.jpg",
+            "label": "Asura Revolver",
+            "artist": "Leaaves",
+            "title": "Unwanted",
+            "releaseDate": "20190514",
+            "timestamp": "2019-11-10T03:31:20.350498",
+            "url": "https://asurarevolver.bandcamp.com/album/unwanted"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0016237153_37.jpg",
+            "label": "Asura Revolver",
+            "artist": "THUGWIDOW",
+            "title": "CREATIONIST",
+            "releaseDate": "20190430",
+            "timestamp": "2019-11-10T03:31:20.477543",
+            "url": "https://asurarevolver.bandcamp.com/album/creationist",
+            "remainingCassettes": 8
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0017046803_37.jpg",
+            "label": "aurawire",
+            "artist": "VHS MIDNIGHT STYLE",
+            "title": "Exiting Little Pharma",
+            "releaseDate": "20190810",
+            "timestamp": "2019-11-10T03:31:20.590641",
+            "url": "https://aurawire.bandcamp.com/album/exiting-little-pharma"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0017046736_37.jpg",
+            "label": "aurawire",
+            "artist": "HELVETICAN",
+            "title": "LIMITED RUN (A CAPSULE COLLECTION)",
+            "releaseDate": "20190809",
+            "timestamp": "2019-11-10T03:31:20.833891",
+            "url": "https://aurawire.bandcamp.com/album/limited-run-a-capsule-collection"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0017565007_37.jpg",
+            "label": "\u00c6scape Sounds",
+            "artist": "Whettman Chelmets",
+            "title": "Long Read Memories",
+            "releaseDate": "20191011",
+            "timestamp": "2019-11-10T03:31:21.536789",
+            "url": "https://aescapesounds.bandcamp.com/album/long-read-memories"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0017506017_37.jpg",
+            "label": "aurawire",
+            "artist": "VHS MIDNIGHT STYLE",
+            "title": "heaven Is Other Places.",
+            "releaseDate": "20191108",
+            "timestamp": "2019-11-10T03:31:21.743132",
+            "url": "https://aurawire.bandcamp.com/album/heaven-is-other-places",
+            "remainingCassettes": 2
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0016413159_37.jpg",
+            "label": "Asura Revolver",
+            "artist": "\u00a7E\u25b2 \u2593F D\u2593G\u00a7",
+            "title": "Just Doom",
+            "releaseDate": "20190521",
+            "timestamp": "2019-11-10T03:31:24.414760",
+            "url": "https://asurarevolver.bandcamp.com/album/just-doom"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0015204307_36.jpg",
+            "label": "ETERNAL FORTUNE LONDON",
+            "artist": "Halo Acid",
+            "title": "Almost Heaven",
+            "releaseDate": "20190104",
+            "timestamp": "2019-11-10T03:31:25.225400",
+            "url": "https://eternalfortune.bandcamp.com/album/almost-heaven"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0015195537_36.jpg",
+            "label": "ETERNAL FORTUNE LONDON",
+            "artist": "Shima33",
+            "title": "Comfy?",
+            "releaseDate": "20190103",
+            "timestamp": "2019-11-10T03:31:27.609607",
+            "url": "https://eternalfortune.bandcamp.com/album/comfy"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0014382262_37.jpg",
+            "label": "New Motion",
+            "artist": "metroGradient",
+            "title": "Phantom Colony",
+            "releaseDate": "20171105",
+            "timestamp": "2019-11-10T03:31:29.171632",
+            "url": "https://newmotion.bandcamp.com/album/phantom-colony",
+            "remainingCassettes": 5
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0017745691_37.jpg",
+            "label": "Geometric Lullaby",
+            "artist": "Temporal\u5b64\u72ec",
+            "title": "Wander",
+            "releaseDate": "20191104",
+            "timestamp": "2019-11-10T03:31:31.003209",
+            "url": "https://geometriclullaby.bandcamp.com/album/wander",
+            "remainingCassettes": 7
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0011912000_37.jpg",
+            "label": "New Motion",
+            "artist": "Eric Stratos",
+            "title": "Angel Of The Grid",
+            "releaseDate": "20171203",
+            "timestamp": "2019-11-10T03:31:31.219640",
+            "url": "https://newmotion.bandcamp.com/album/angel-of-the-grid",
+            "remainingCassettes": 3
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0012251652_37.jpg",
+            "label": "New Motion",
+            "artist": "metroGradient",
+            "title": "VAST",
+            "releaseDate": "20180107",
+            "timestamp": "2019-11-10T03:31:31.791474",
+            "url": "https://newmotion.bandcamp.com/album/vast",
+            "remainingCassettes": 2
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0015195533_36.jpg",
+            "label": "ETERNAL FORTUNE LONDON",
+            "artist": "HONG KONG EXPRESS",
+            "title": "\u6d6a\u6f2b\u7684\u5922\u60f3 ['ROMANTIC DREAM']",
+            "releaseDate": "20190103",
+            "timestamp": "2019-11-10T03:31:31.879399",
+            "url": "https://eternalfortune.bandcamp.com/album/romantic-dream"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0017341089_37.jpg",
+            "label": "Hiraeth Records",
+            "artist": "\u5730\u7403",
+            "title": "\u30b8\u30e3\u30f3\u30b0\u30eb",
+            "releaseDate": "20190921",
+            "timestamp": "2019-11-10T03:31:32.311782",
+            "url": "https://hiraeth-records.bandcamp.com/album/-"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0016641281_37.jpg",
+            "label": "George Clanton",
+            "artist": "George Clanton",
+            "title": "100% Electronica",
+            "releaseDate": "20150925",
+            "timestamp": "2019-11-10T03:31:32.526160",
+            "url": "https://georgeclanton.bandcamp.com/album/100-electronica",
+            "remainingCassettes": 135
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0012518632_37.jpg",
+            "label": "New Motion",
+            "artist": "AI Dual C",
+            "title": "DUAL",
+            "releaseDate": "20180204",
+            "timestamp": "2019-11-10T03:31:33.200337",
+            "url": "https://newmotion.bandcamp.com/album/dual",
+            "remainingCassettes": 1
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0009180433_37.jpg",
+            "label": "Kudatah",
+            "artist": "PULSUM",
+            "title": "Patient SM",
+            "releaseDate": "20170206",
+            "timestamp": "2019-11-10T03:31:34.783609",
+            "url": "https://kudatah.bandcamp.com/album/patient-sm"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0009647298_37.jpg",
+            "label": "Naughty Night",
+            "artist": "waterfront dining",
+            "title": "pollen",
+            "releaseDate": "20170227",
+            "timestamp": "2019-11-10T03:31:35.309124",
+            "url": "https://naughtynightrecords.bandcamp.com/album/pollen"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0017567518_37.jpg",
+            "label": "My Pet Flamingo",
+            "artist": "Donor Lens",
+            "title": "Miracle Lounge \u0e21\u0e34\u0e23\u0e32\u0e40\u0e04\u0e34\u0e25 \u0e40\u0e25\u0e32\u0e19\u0e08\u0e4c",
+            "releaseDate": "20191012",
+            "timestamp": "2019-11-10T03:31:35.726313",
+            "url": "https://mypetflamingo.bandcamp.com/album/miracle-lounge"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0015008031_37.jpg",
+            "label": "global pattern",
+            "artist": "Bob Buttons",
+            "title": "I Tell You Tell Me",
+            "releaseDate": "20181210",
+            "timestamp": "2019-11-10T03:31:37.740521",
+            "url": "https://globalpattern.bandcamp.com/album/i-tell-you-tell-me",
+            "remainingCassettes": 3
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0017108751_37.jpg",
+            "label": "global pattern",
+            "artist": "s h e e p",
+            "title": "\ua317\ua4c4\ua34f\ua2ea\ua317\ua35f\ua35f\ua038",
+            "releaseDate": "20190805",
+            "timestamp": "2019-11-10T03:31:39.019079",
+            "url": "https://globalpattern.bandcamp.com/album/--15",
+            "remainingCassettes": 5
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0011910281_37.jpg",
+            "label": "NO PROBLEMA TAPES",
+            "artist": "Eggglub",
+            "title": "Mabel",
+            "releaseDate": "20131024",
+            "timestamp": "2019-11-10T03:31:41.937546",
+            "url": "https://noproblematapes.bandcamp.com/album/mabel",
+            "remainingCassettes": 7
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0016145059_37.jpg",
+            "label": "global pattern",
+            "artist": "MindSpring Memories / Face Dancer \u9854\u30c0\u30f3\u30b5\u30fc",
+            "title": "Split Tape",
+            "releaseDate": "20190420",
+            "timestamp": "2019-11-10T03:31:42.053020",
+            "url": "https://globalpattern.bandcamp.com/album/split-tape",
+            "remainingCassettes": 4
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0015702160_37.jpg",
+            "label": "Palm '84",
+            "artist": "DESCO RADIO-CLUB EP",
+            "title": "Golden Moon II",
+            "releaseDate": "20190306",
+            "timestamp": "2019-11-10T03:31:43.266492",
+            "url": "https://palm84.bandcamp.com/album/golden-moon-ii",
+            "remainingCassettes": 2
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0013968733_37.jpg",
+            "label": "Night Light Tapes",
+            "artist": "MIT99",
+            "title": "Untitled",
+            "releaseDate": "20180216",
+            "timestamp": "2019-11-10T03:31:45.675146",
+            "url": "https://nightlighttapes.bandcamp.com/album/untitled",
+            "remainingCassettes": 2
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0011910026_37.jpg",
+            "label": "NO PROBLEMA TAPES",
+            "artist": "\u0394KTR / Eggglub",
+            "title": "\u0394KTR / Eggglub Split",
+            "releaseDate": "20140421",
+            "timestamp": "2019-11-10T03:31:46.680184",
+            "url": "https://noproblematapes.bandcamp.com/album/ktr-eggglub-split"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0017732987_37.jpg",
+            "label": "global pattern",
+            "artist": "\u0414\u0418\u0410\u041f\u0410\u0417\u041e\u041d \u0412\u0415\u0429\u0410\u041d\u0418\u042f 6~06",
+            "title": ">30102019>",
+            "releaseDate": "20191030",
+            "timestamp": "2019-11-10T03:31:47.853203",
+            "url": "https://globalpattern.bandcamp.com/album/30102019",
+            "remainingCassettes": 58
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0015907413_37.jpg",
+            "label": "Palm '84",
+            "artist": "anyways",
+            "title": "midday dream transit",
+            "releaseDate": "20190320",
+            "timestamp": "2019-11-10T03:31:50.651290",
+            "url": "https://palm84.bandcamp.com/album/midday-dream-transit",
+            "remainingCassettes": 3
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0009274749_37.jpg",
+            "label": "NO PROBLEMA TAPES",
+            "artist": "iacon & nano\u795e\u793e (\u272a\u3268\u272a)",
+            "title": "Spectre",
+            "releaseDate": "20160614",
+            "timestamp": "2019-11-10T03:31:51.736450",
+            "url": "https://noproblematapes.bandcamp.com/album/spectre",
+            "remainingCassettes": 8
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0015099370_37.jpg",
+            "label": "Night Light Tapes",
+            "artist": "\u5546\u696d TV",
+            "title": "Don't Change The Channel!",
+            "releaseDate": "20180323",
+            "timestamp": "2019-11-10T03:31:51.979460",
+            "url": "https://nightlighttapes.bandcamp.com/album/dont-change-the-channel"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0015909377_37.jpg",
+            "label": "Palm '84",
+            "artist": "CHANCE \u30c7\u30e9\u30bd\u30a6\u30eb",
+            "title": "Loose Ends Vol. 1",
+            "releaseDate": "20190403",
+            "timestamp": "2019-11-10T03:31:54.159958",
+            "url": "https://palm84.bandcamp.com/album/loose-ends-vol-1",
+            "remainingCassettes": 3
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0010499528_37.jpg",
+            "label": "NO PROBLEMA TAPES",
+            "artist": "Niet Christ + Morten_HD",
+            "title": "Confidential",
+            "releaseDate": "20170530",
+            "timestamp": "2019-11-10T03:31:55.080804",
+            "url": "https://noproblematapes.bandcamp.com/album/confidential",
+            "remainingCassettes": 3
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0017407097_37.jpg",
+            "label": "global pattern",
+            "artist": "From Tokyo to Honolulu",
+            "title": "Fantasy Labyrinth: Chapter II",
+            "releaseDate": "20190922",
+            "timestamp": "2019-11-10T03:31:55.658148",
+            "url": "https://globalpattern.bandcamp.com/album/fantasy-labyrinth-chapter-ii",
+            "remainingCassettes": 3
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0015909381_37.jpg",
+            "label": "Palm '84",
+            "artist": "~AcquiredTaste",
+            "title": "Airwaves Burgundy",
+            "releaseDate": "20190406",
+            "timestamp": "2019-11-10T03:31:58.077287",
+            "url": "https://palm84.bandcamp.com/album/airwaves-burgundy",
+            "remainingCassettes": 3
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0015406786_37.jpg",
+            "label": "global pattern",
+            "artist": "lucid beach85'",
+            "title": "the catwalk",
+            "releaseDate": "20190127",
+            "timestamp": "2019-11-10T03:31:59.769098",
+            "url": "https://globalpattern.bandcamp.com/album/the-catwalk",
+            "remainingCassettes": 1
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0015567337_37.jpg",
+            "label": "Palm '84",
+            "artist": "ASHITAKA\u30a2\u30b7\u30bf\u30ab",
+            "title": "t r o p i c a l  u p d a t e",
+            "releaseDate": "20190413",
+            "timestamp": "2019-11-10T03:32:00.594803",
+            "url": "https://palm84.bandcamp.com/album/t-r-o-p-i-c-a-l-u-p-d-a-t-e",
+            "remainingCassettes": 3
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0017764524_37.jpg",
+            "label": "global pattern",
+            "artist": "lucid beach85'",
+            "title": "eternal hanami",
+            "releaseDate": "20191103",
+            "timestamp": "2019-11-10T03:32:03.921749",
+            "url": "https://globalpattern.bandcamp.com/album/eternal-hanami",
+            "remainingCassettes": 3
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0015524739_37.jpg",
+            "label": "global pattern",
+            "artist": "\u0440\u043c\u043d\u0447\u0438\u0442\u0442\u043e",
+            "title": "Digital Vacation",
+            "releaseDate": "20190209",
+            "timestamp": "2019-11-10T03:32:04.021573",
+            "url": "https://globalpattern.bandcamp.com/album/digital-vacation",
+            "remainingCassettes": 1
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0016125350_37.jpg",
+            "label": "Palm '84",
+            "artist": "Chiba City Blues",
+            "title": "News Center 8",
+            "releaseDate": "20180810",
+            "timestamp": "2019-11-10T03:32:04.821066",
+            "url": "https://palm84.bandcamp.com/album/news-center-8",
+            "remainingCassettes": 2
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0010670037_37.jpg",
+            "label": "NO PROBLEMA TAPES",
+            "artist": "Torann",
+            "title": "Continuum",
+            "releaseDate": "20170629",
+            "timestamp": "2019-11-10T03:32:07.042000",
+            "url": "https://noproblematapes.bandcamp.com/album/continuum"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0016125372_37.jpg",
+            "label": "Palm '84",
+            "artist": "Chiba City Blues",
+            "title": "Catalina Nights",
+            "releaseDate": "20190417",
+            "timestamp": "2019-11-10T03:32:07.583975",
+            "url": "https://palm84.bandcamp.com/album/catalina-nights",
+            "remainingCassettes": 4
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0017764372_37.jpg",
+            "label": "global pattern",
+            "artist": "\u0440\u043c\u043d\u0447\u0438\u0442\u0442\u043e",
+            "title": "summer vibes vol. 3",
+            "releaseDate": "20191103",
+            "timestamp": "2019-11-10T03:32:07.881283",
+            "url": "https://globalpattern.bandcamp.com/album/summer-vibes-vol-3",
+            "remainingCassettes": 3
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0010669991_37.jpg",
+            "label": "NO PROBLEMA TAPES",
+            "artist": "No Death",
+            "title": "Smile of Unconditional Love",
+            "releaseDate": "20170629",
+            "timestamp": "2019-11-10T03:32:10.350404",
+            "url": "https://noproblematapes.bandcamp.com/album/smile-of-unconditional-love",
+            "remainingCassettes": 3
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0017764612_37.jpg",
+            "label": "global pattern",
+            "artist": "Dooby Douglas",
+            "title": "DATE SIM",
+            "releaseDate": "20191103",
+            "timestamp": "2019-11-10T03:32:11.238949",
+            "url": "https://globalpattern.bandcamp.com/album/date-sim",
+            "remainingCassettes": 3
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0015567390_37.jpg",
+            "label": "Palm '84",
+            "artist": "\uff21\uff2c\uff29\uff21\uff33 \uff14\uff10\uff14",
+            "title": "\uff33\uff45\uff41\uff53\uff49\uff44\uff45 \uff32\uff45\uff53\uff4f\uff52\uff54",
+            "releaseDate": "20190424",
+            "timestamp": "2019-11-10T03:32:11.329177",
+            "url": "https://palm84.bandcamp.com/album/--4",
+            "remainingCassettes": 3
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0017508053_37.jpg",
+            "label": "Palm '84",
+            "artist": "Mother's Hold",
+            "title": "Crop Circles",
+            "releaseDate": "20190817",
+            "timestamp": "2019-11-10T03:32:13.323954",
+            "url": "https://palm84.bandcamp.com/album/crop-circles"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0011406032_37.jpg",
+            "label": "NO PROBLEMA TAPES",
+            "artist": "\u30c7\u30b8\u30bf\u30eb\u30d5\u30a9\u30fc\u30c1\u30e5\u30f3",
+            "title": "\uff36\uff49\uff53\uff49\uff4f\uff4e \u30b0\u30ed\u30fc\u30d0\u30eb",
+            "releaseDate": "20170928",
+            "timestamp": "2019-11-10T03:32:14.099155",
+            "url": "https://noproblematapes.bandcamp.com/album/--17",
+            "remainingCassettes": 7
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0017575559_37.jpg",
+            "label": "Palm '84",
+            "artist": "Paradise Of Yesterday",
+            "title": "Youth",
+            "releaseDate": "20191012",
+            "timestamp": "2019-11-10T03:32:16.261279",
+            "url": "https://palm84.bandcamp.com/album/youth"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0013263675_37.jpg",
+            "label": "NO PROBLEMA TAPES",
+            "artist": "reef frequent",
+            "title": "Still Lives",
+            "releaseDate": "20180428",
+            "timestamp": "2019-11-10T03:32:18.236781",
+            "url": "https://noproblematapes.bandcamp.com/album/still-lives",
+            "remainingCassettes": 6
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0017575882_37.jpg",
+            "label": "Palm '84",
+            "artist": "MONOSCOPIC",
+            "title": "MICROSOFT LOOPS 1",
+            "releaseDate": "20190327",
+            "timestamp": "2019-11-10T03:32:19.382682",
+            "url": "https://palm84.bandcamp.com/album/microsoft-loops-1",
+            "remainingCassettes": 7
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0013454482_37.jpg",
+            "label": "NO PROBLEMA TAPES",
+            "artist": "Pokotan91",
+            "title": "Darkfiber",
+            "releaseDate": "20180523",
+            "timestamp": "2019-11-10T03:32:20.171698",
+            "url": "https://noproblematapes.bandcamp.com/album/darkfiber"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0017575936_37.jpg",
+            "label": "Palm '84",
+            "artist": "Konwave",
+            "title": "Bad Ideas",
+            "releaseDate": "20190928",
+            "timestamp": "2019-11-10T03:32:22.042181",
+            "url": "https://palm84.bandcamp.com/album/bad-ideas",
+            "remainingCassettes": 7
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0017575830_37.jpg",
+            "label": "Palm '84",
+            "artist": "Various Artists",
+            "title": "Songs The Walkman Taught Us",
+            "releaseDate": "20190701",
+            "timestamp": "2019-11-10T03:32:23.774757",
+            "url": "https://palm84.bandcamp.com/album/songs-the-walkman-taught-us",
+            "remainingCassettes": 7
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0014190266_37.jpg",
+            "label": "NO PROBLEMA TAPES",
+            "artist": "The Rubies",
+            "title": "Sketch of Love",
+            "releaseDate": "20180830",
+            "timestamp": "2019-11-10T03:32:25.441265",
+            "url": "https://noproblematapes.bandcamp.com/album/sketch-of-love"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0014190267_37.jpg",
+            "label": "NO PROBLEMA TAPES",
+            "artist": "Vigliensoni",
+            "title": "Michaelsavedusall",
+            "releaseDate": "20180830",
+            "timestamp": "2019-11-10T03:32:26.620005",
+            "url": "https://noproblematapes.bandcamp.com/album/michaelsavedusall",
+            "remainingCassettes": 3
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0015909369_37.jpg",
+            "label": "Palm '84",
+            "artist": "MightyGlen",
+            "title": "Humavision",
+            "releaseDate": "20190427",
+            "timestamp": "2019-11-10T03:32:26.704215",
+            "url": "https://palm84.bandcamp.com/album/humavision",
+            "remainingCassettes": 6
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0017372441_37.jpg",
+            "label": "Palm '84",
+            "artist": "Bathroom Plants",
+            "title": "Installing Symbiotopia 2\u200b.\u200b0\u200b.\u200b1",
+            "releaseDate": "20191012",
+            "timestamp": "2019-11-10T03:32:28.198797",
+            "url": "https://palm84.bandcamp.com/album/installing-symbiotopia-201",
+            "remainingCassettes": 5
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0014415061_37.jpg",
+            "label": "NO PROBLEMA TAPES",
+            "artist": "Sangam",
+            "title": "On the Rise",
+            "releaseDate": "20161202",
+            "timestamp": "2019-11-10T03:32:30.448934",
+            "url": "https://noproblematapes.bandcamp.com/album/on-the-rise",
+            "remainingCassettes": 9
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0017096704_37.jpg",
+            "label": "Palm '84",
+            "artist": "Fictional Girlfriend",
+            "title": "Ten Thousand Years in the Wasteland",
+            "releaseDate": "20190323",
+            "timestamp": "2019-11-10T03:32:31.770844",
+            "url": "https://palm84.bandcamp.com/album/ten-thousand-years-in-the-wasteland",
+            "remainingCassettes": 5
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0014415086_37.jpg",
+            "label": "NO PROBLEMA TAPES",
+            "artist": "Matt Frank & The Manic Moon",
+            "title": "Beyond the Broken Ice",
+            "releaseDate": "20180928",
+            "timestamp": "2019-11-10T03:32:32.566830",
+            "url": "https://noproblematapes.bandcamp.com/album/beyond-the-broken-ice",
+            "remainingCassettes": 9
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0014415102_37.jpg",
+            "label": "NO PROBLEMA TAPES",
+            "artist": "Sour Gout",
+            "title": "Cycle (Extended)",
+            "releaseDate": "20180928",
+            "timestamp": "2019-11-10T03:32:34.974345",
+            "url": "https://noproblematapes.bandcamp.com/album/cycle-extended"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0016840429_37.jpg",
+            "label": "Palm '84",
+            "artist": "HATENA",
+            "title": "Outerside",
+            "releaseDate": "20190713",
+            "timestamp": "2019-11-10T03:32:35.072771",
+            "url": "https://palm84.bandcamp.com/album/outerside",
+            "remainingCassettes": 4
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0017096654_37.jpg",
+            "label": "Palm '84",
+            "artist": "ASTRO",
+            "title": "Euphorique",
+            "releaseDate": "20190515",
+            "timestamp": "2019-11-10T03:32:36.007933",
+            "url": "https://palm84.bandcamp.com/album/euphorique",
+            "remainingCassettes": 1
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0014752301_37.jpg",
+            "label": "NO PROBLEMA TAPES",
+            "artist": "Ogeon",
+            "title": "Po\u00e1s",
+            "releaseDate": "20181109",
+            "timestamp": "2019-11-10T03:32:38.219233",
+            "url": "https://noproblematapes.bandcamp.com/album/po-s",
+            "remainingCassettes": 9
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0015310520_37.jpg",
+            "label": "NO PROBLEMA TAPES",
+            "artist": "\uff24\uff32\uff2f\uff29\uff24\uff32\uff2f\uff39",
+            "title": "\u6c34\u4e2d\u90fd\u5e02",
+            "releaseDate": "20190117",
+            "timestamp": "2019-11-10T03:32:39.800339",
+            "url": "https://noproblematapes.bandcamp.com/album/--7"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0015426003_37.jpg",
+            "label": "NO PROBLEMA TAPES",
+            "artist": "Facechain",
+            "title": "Rapture (Bonus Track Version)",
+            "releaseDate": "20190130",
+            "timestamp": "2019-11-10T03:32:44.062914",
+            "url": "https://noproblematapes.bandcamp.com/album/rapture-bonus-track-version"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0015433524_37.jpg",
+            "label": "NO PROBLEMA TAPES",
+            "artist": "Zhurnal Mod",
+            "title": "Paphos / Hades",
+            "releaseDate": "20190130",
+            "timestamp": "2019-11-10T03:32:45.388473",
+            "url": "https://noproblematapes.bandcamp.com/album/paphos-hades"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0015589287_37.jpg",
+            "label": "NO PROBLEMA TAPES",
+            "artist": "Snakepiss",
+            "title": "Conduit",
+            "releaseDate": "20190216",
+            "timestamp": "2019-11-10T03:32:48.660674",
+            "url": "https://noproblematapes.bandcamp.com/album/conduit"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0015692614_37.jpg",
+            "label": "NO PROBLEMA TAPES",
+            "artist": "Renj\u0101",
+            "title": "Parasite Falls",
+            "releaseDate": "20190228",
+            "timestamp": "2019-11-10T03:32:49.654511",
+            "url": "https://noproblematapes.bandcamp.com/album/parasite-falls"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0016202053_37.jpg",
+            "label": "NO PROBLEMA TAPES",
+            "artist": "altostrati",
+            "title": "chromute",
+            "releaseDate": "20190101",
+            "timestamp": "2019-11-10T03:32:50.817582",
+            "url": "https://noproblematapes.bandcamp.com/album/chromute"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0016310507_37.jpg",
+            "label": "NO PROBLEMA TAPES",
+            "artist": "Daniel Klauser",
+            "title": "Cortes",
+            "releaseDate": "20190423",
+            "timestamp": "2019-11-10T03:32:54.561088",
+            "url": "https://noproblematapes.bandcamp.com/album/cortes"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0016473927_37.jpg",
+            "label": "NO PROBLEMA TAPES",
+            "artist": "Phorme",
+            "title": "Is",
+            "releaseDate": "20190530",
+            "timestamp": "2019-11-10T03:32:54.660285",
+            "url": "https://noproblematapes.bandcamp.com/album/is"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0015768135_37.jpg",
+            "label": "Night Light Tapes",
+            "artist": "\u00a5",
+            "title": "SUCCULENT VARIATIONS",
+            "releaseDate": "20180404",
+            "timestamp": "2019-11-10T03:32:55.566760",
+            "url": "https://nightlighttapes.bandcamp.com/album/succulent-variations"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0016474167_37.jpg",
+            "label": "NO PROBLEMA TAPES",
+            "artist": "\u30c4\u30eb\u30cdCrane",
+            "title": "\u6df1\u3044\u9752\u7a7a Deep Blue Sky",
+            "releaseDate": "20190530",
+            "timestamp": "2019-11-10T03:32:57.341008",
+            "url": "https://noproblematapes.bandcamp.com/album/deep-blue-sky",
+            "remainingCassettes": 5
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0016473938_37.jpg",
+            "label": "NO PROBLEMA TAPES",
+            "artist": "Voyage Futur",
+            "title": "Secret Earth",
+            "releaseDate": "20190530",
+            "timestamp": "2019-11-10T03:32:58.349376",
+            "url": "https://noproblematapes.bandcamp.com/album/secret-earth"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0015384966_37.jpg",
+            "label": "Night Light Tapes",
+            "artist": "Sunset Inc.",
+            "title": "MidWinter",
+            "releaseDate": "20190118",
+            "timestamp": "2019-11-10T03:32:59.011012",
+            "url": "https://nightlighttapes.bandcamp.com/album/midwinter"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0016137028_37.jpg",
+            "label": "Night Light Tapes",
+            "artist": "Arasmas",
+            "title": "Spirits of the Stereo",
+            "releaseDate": "20180524",
+            "timestamp": "2019-11-10T03:33:01.862081",
+            "url": "https://nightlighttapes.bandcamp.com/album/spirits-of-the-stereo",
+            "remainingCassettes": 7
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0016900565_37.jpg",
+            "label": "NO PROBLEMA TAPES",
+            "artist": "Chungking Mansions",
+            "title": "Petrichor Days",
+            "releaseDate": "20190625",
+            "timestamp": "2019-11-10T03:33:02.779198",
+            "url": "https://noproblematapes.bandcamp.com/album/petrichor-days"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0014415029_37.jpg",
+            "label": "NO PROBLEMA TAPES",
+            "artist": "Sangam",
+            "title": "Soulless Other",
+            "releaseDate": "20180329",
+            "timestamp": "2019-11-10T03:33:03.228506",
+            "url": "https://noproblematapes.bandcamp.com/album/soulless-other"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0016875795_37.jpg",
+            "label": "Night Light Tapes",
+            "artist": "Sunset Inc. and Hallmark '87",
+            "title": "Restaurant by the Basin",
+            "releaseDate": "20180706",
+            "timestamp": "2019-11-10T03:33:03.711902",
+            "url": "https://nightlighttapes.bandcamp.com/album/restaurant-by-the-basin"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0016900586_37.jpg",
+            "label": "NO PROBLEMA TAPES",
+            "artist": "\u30c0\u30f3\u30b1 Vibes",
+            "title": "Waves",
+            "releaseDate": "20190630",
+            "timestamp": "2019-11-10T03:33:05.825959",
+            "url": "https://noproblematapes.bandcamp.com/album/waves",
+            "remainingCassettes": 2
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0008678395_37.jpg",
+            "label": "Naughty Night",
+            "artist": "\ud68c\uc0acAUTO",
+            "title": "\u2570\u2606\u256e",
+            "releaseDate": "20161107",
+            "timestamp": "2019-11-10T03:33:06.316856",
+            "url": "https://naughtynightrecords.bandcamp.com/album/-"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0017159512_37.jpg",
+            "label": "Night Light Tapes",
+            "artist": "anemoia",
+            "title": "memories you never had",
+            "releaseDate": "20180912",
+            "timestamp": "2019-11-10T03:33:07.003721",
+            "url": "https://nightlighttapes.bandcamp.com/album/memories-you-never-had"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0017446134_37.jpg",
+            "label": "Night Light Tapes",
+            "artist": "Calavera Love",
+            "title": ".\u200b.\u200b.\u200bfrom what I know",
+            "releaseDate": "20180629",
+            "timestamp": "2019-11-10T03:33:09.917185",
+            "url": "https://nightlighttapes.bandcamp.com/album/from-what-i-know"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0008591178_37.jpg",
+            "label": "Naughty Night",
+            "artist": "\ud68c\uc0acAUTO",
+            "title": "\u2122\u00c7",
+            "releaseDate": "20161027",
+            "timestamp": "2019-11-10T03:33:10.410904",
+            "url": "https://naughtynightrecords.bandcamp.com/album/--2"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0016900548_37.jpg",
+            "label": "NO PROBLEMA TAPES",
+            "artist": "Sangam",
+            "title": "Entrance Way",
+            "releaseDate": "20190630",
+            "timestamp": "2019-11-10T03:33:11.195891",
+            "url": "https://noproblematapes.bandcamp.com/album/entrance-way"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0017681937_37.jpg",
+            "label": "Night Light Tapes",
+            "artist": "\u5546\u696d TV",
+            "title": "TENSE SERENITY I",
+            "releaseDate": "20190222",
+            "timestamp": "2019-11-10T03:33:13.276341",
+            "url": "https://nightlighttapes.bandcamp.com/album/tense-serenity-i"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0016900843_37.jpg",
+            "label": "NO PROBLEMA TAPES",
+            "artist": "Dreyt Nien",
+            "title": "D\u00e9esse de Granite",
+            "releaseDate": "20190730",
+            "timestamp": "2019-11-10T03:33:13.992082",
+            "url": "https://noproblematapes.bandcamp.com/album/d-esse-de-granite"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0017806495_37.jpg",
+            "label": "Night Light Tapes",
+            "artist": "Sunset Inc.",
+            "title": "Pure Black Midnight",
+            "releaseDate": "20190518",
+            "timestamp": "2019-11-10T03:33:14.599152",
+            "url": "https://nightlighttapes.bandcamp.com/album/pure-black-midnight"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0016900713_37.jpg",
+            "label": "NO PROBLEMA TAPES",
+            "artist": "Chotto Suki",
+            "title": "Ningen Restaurant OST",
+            "releaseDate": "20190730",
+            "timestamp": "2019-11-10T03:33:17.119159",
+            "url": "https://noproblematapes.bandcamp.com/album/ningen-restaurant-ost"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0008297718_37.jpg",
+            "label": "Naughty Night",
+            "artist": "M4",
+            "title": "one cherry night",
+            "releaseDate": "20160914",
+            "timestamp": "2019-11-10T03:33:17.800886",
+            "url": "https://naughtynightrecords.bandcamp.com/album/one-cherry-night"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0008155725_37.jpg",
+            "label": "Naughty Night",
+            "artist": "M4",
+            "title": "IN DA BEACH",
+            "releaseDate": "20160823",
+            "timestamp": "2019-11-10T03:33:18.383070",
+            "url": "https://naughtynightrecords.bandcamp.com/album/in-da-beach"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0016900636_37.jpg",
+            "label": "NO PROBLEMA TAPES",
+            "artist": "Mutilomaquia",
+            "title": "Amaurotic",
+            "releaseDate": "20190730",
+            "timestamp": "2019-11-10T03:33:20.410246",
+            "url": "https://noproblematapes.bandcamp.com/album/amaurotic"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0010910841_37.jpg",
+            "label": "Naughty Night",
+            "artist": "\u2612",
+            "title": "Travel Agency Online 1995",
+            "releaseDate": "20170729",
+            "timestamp": "2019-11-10T03:33:23.843178",
+            "url": "https://naughtynightrecords.bandcamp.com/album/travel-agency-online-1995"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0016900494_37.jpg",
+            "label": "NO PROBLEMA TAPES",
+            "artist": "Shima33",
+            "title": "FADING",
+            "releaseDate": "20190730",
+            "timestamp": "2019-11-10T03:33:24.500827",
+            "url": "https://noproblematapes.bandcamp.com/album/fading",
+            "remainingCassettes": 5
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0010840983_37.jpg",
+            "label": "Naughty Night",
+            "artist": "M4",
+            "title": "\u1d04\u026a\u1d1b\u028f \u1d0f\u0493 \u1d0d\u1d07",
+            "releaseDate": "20170620",
+            "timestamp": "2019-11-10T03:33:25.122715",
+            "url": "https://naughtynightrecords.bandcamp.com/album/--5"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0017228821_37.jpg",
+            "label": "NO PROBLEMA TAPES",
+            "artist": "Various Artists",
+            "title": "NOP\u200b-\u200b100: scape | y\u200b.\u200b7",
+            "releaseDate": "20190901",
+            "timestamp": "2019-11-10T03:33:27.705111",
+            "url": "https://noproblematapes.bandcamp.com/album/nop-100-scape-y-7"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0010598591_37.jpg",
+            "label": "Naughty Night",
+            "artist": "Cosmic Cycler",
+            "title": "Helena",
+            "releaseDate": "20170619",
+            "timestamp": "2019-11-10T03:33:27.997286",
+            "url": "https://naughtynightrecords.bandcamp.com/album/helena"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0017420615_37.jpg",
+            "label": "NO PROBLEMA TAPES",
+            "artist": "White Sample",
+            "title": "Poli Tracks",
+            "releaseDate": "20191004",
+            "timestamp": "2019-11-10T03:33:28.389688",
+            "url": "https://noproblematapes.bandcamp.com/album/poli-tracks",
+            "remainingCassettes": 9
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0010402772_37.jpg",
+            "label": "Naughty Night",
+            "artist": "particle dreams",
+            "title": "Serenity",
+            "releaseDate": "20170524",
+            "timestamp": "2019-11-10T03:33:28.890368",
+            "url": "https://naughtynightrecords.bandcamp.com/album/serenity"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0017420620_37.jpg",
+            "label": "NO PROBLEMA TAPES",
+            "artist": "White Sample",
+            "title": "Moon Tracks",
+            "releaseDate": "20191004",
+            "timestamp": "2019-11-10T03:33:31.015613",
+            "url": "https://noproblematapes.bandcamp.com/album/moon-tracks",
+            "remainingCassettes": 9
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0011427925_37.jpg",
+            "label": "Naughty Night",
+            "artist": "KLIM beats",
+            "title": "SUMMERTIME",
+            "releaseDate": "20170930",
+            "timestamp": "2019-11-10T03:33:31.811979",
+            "url": "https://naughtynightrecords.bandcamp.com/album/summertime"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0017497039_37.jpg",
+            "label": "NO PROBLEMA TAPES",
+            "artist": "Ni\u00f1os Indigo",
+            "title": "Bimba",
+            "releaseDate": "20191003",
+            "timestamp": "2019-11-10T03:33:33.103976",
+            "url": "https://noproblematapes.bandcamp.com/album/bimba"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0011444874_37.jpg",
+            "label": "Naughty Night",
+            "artist": "\u7ef4\u65b0\u5669\u68a6\u5de5\u5382",
+            "title": "\u9999\u70df",
+            "releaseDate": "20171003",
+            "timestamp": "2019-11-10T03:33:33.459074",
+            "url": "https://naughtynightrecords.bandcamp.com/album/--6"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0011764174_37.jpg",
+            "label": "Naughty Night",
+            "artist": "BABEFAKE & M4",
+            "title": "Private Love",
+            "releaseDate": "20171110",
+            "timestamp": "2019-11-10T03:33:35.810483",
+            "url": "https://naughtynightrecords.bandcamp.com/album/private-love"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0017567976_37.jpg",
+            "label": "My Pet Flamingo",
+            "artist": "My Pet Flamingo",
+            "title": "Flamingo Funk vol\u200b.\u200b2",
+            "releaseDate": "20190929",
+            "timestamp": "2019-11-10T03:33:37.447564",
+            "url": "https://mypetflamingo.bandcamp.com/album/flamingo-funk-vol-2",
+            "remainingCassettes": 25
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0012518593_37.jpg",
+            "label": "New Motion",
+            "artist": "Various Artists",
+            "title": "One Second: A Compilation Album",
+            "releaseDate": "20180204",
+            "timestamp": "2019-11-10T03:33:38.745665",
+            "url": "https://newmotion.bandcamp.com/album/one-second-a-compilation-album"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0013459232_37.jpg",
+            "label": "Naughty Night",
+            "artist": "\ud68c\uc0acAUTO",
+            "title": "Longing & Passion \u231842",
+            "releaseDate": "20180523",
+            "timestamp": "2019-11-10T03:33:39.067001",
+            "url": "https://naughtynightrecords.bandcamp.com/album/longing-passion-42"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0013836617_37.jpg",
+            "label": "Naughty Night",
+            "artist": "\ud68c\uc0acAUTO",
+            "title": "\u30ab\u30b9\u30bf\u30de\u30fc\u30b5\u30fc\u30d3\u30b9Line\u2706NE",
+            "releaseDate": "20180714",
+            "timestamp": "2019-11-10T03:33:41.964171",
+            "url": "https://naughtynightrecords.bandcamp.com/album/line-ne"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0012908403_37.jpg",
+            "label": "New Motion",
+            "artist": "metroGradient",
+            "title": "Transmissions From Charred Pages",
+            "releaseDate": "20180318",
+            "timestamp": "2019-11-10T03:33:42.652876",
+            "url": "https://newmotion.bandcamp.com/album/transmissions-from-charred-pages",
+            "remainingCassettes": 5
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0014320738_37.jpg",
+            "label": "Naughty Night",
+            "artist": "b o d y l i n e",
+            "title": "MOTION PICTURE",
+            "releaseDate": "20180911",
+            "timestamp": "2019-11-10T03:33:42.875898",
+            "url": "https://naughtynightrecords.bandcamp.com/album/motion-picture-2"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0012908464_37.jpg",
+            "label": "New Motion",
+            "artist": "Blurred Spires",
+            "title": "Bewildered",
+            "releaseDate": "20180318",
+            "timestamp": "2019-11-10T03:33:45.365684",
+            "url": "https://newmotion.bandcamp.com/album/bewildered",
+            "remainingCassettes": 4
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0014633229_37.jpg",
+            "label": "Naughty Night",
+            "artist": "\u6b7b\u5922VANITY",
+            "title": "lovely reveries",
+            "releaseDate": "20181025",
+            "timestamp": "2019-11-10T03:33:46.207036",
+            "url": "https://naughtynightrecords.bandcamp.com/album/lovely-reveries"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0013695269_37.jpg",
+            "label": "New Motion",
+            "artist": "1000 Petal Lotus",
+            "title": "Doubtless",
+            "releaseDate": "20180624",
+            "timestamp": "2019-11-10T03:33:47.054183",
+            "url": "https://newmotion.bandcamp.com/album/doubtless"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0014960945_37.jpg",
+            "label": "Naughty Night",
+            "artist": "BABEFAKE",
+            "title": "\u30b3\u30f3\u30b7\u30e5\u30fc\u30de\u30fc\u30c7\u30c3\u30c9",
+            "releaseDate": "20181205",
+            "timestamp": "2019-11-10T03:33:47.235656",
+            "url": "https://naughtynightrecords.bandcamp.com/album/--7"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0013695298_37.jpg",
+            "label": "New Motion",
+            "artist": "Sour Gout",
+            "title": "Eclipse",
+            "releaseDate": "20180624",
+            "timestamp": "2019-11-10T03:33:48.178097",
+            "url": "https://newmotion.bandcamp.com/album/eclipse",
+            "remainingCassettes": 6
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0014155000_37.jpg",
+            "label": "New Motion",
+            "artist": "Torann",
+            "title": "Solarium",
+            "releaseDate": "20180826",
+            "timestamp": "2019-11-10T03:33:49.296393",
+            "url": "https://newmotion.bandcamp.com/album/solarium-2",
+            "remainingCassettes": 4
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0014968258_37.jpg",
+            "label": "Naughty Night",
+            "artist": "nano\u795e\u793e (\u272a\u3268\u272a)",
+            "title": "NeuralPlex",
+            "releaseDate": "20181206",
+            "timestamp": "2019-11-10T03:33:50.904699",
+            "url": "https://naughtynightrecords.bandcamp.com/album/neuralplex"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0014861940_37.jpg",
+            "label": "New Motion",
+            "artist": "First Kings",
+            "title": "A New Onanism",
+            "releaseDate": "20181125",
+            "timestamp": "2019-11-10T03:33:50.995004",
+            "url": "https://newmotion.bandcamp.com/album/a-new-onanism"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0014861987_37.jpg",
+            "label": "New Motion",
+            "artist": "Ross Birdwise",
+            "title": "Stumble",
+            "releaseDate": "20181125",
+            "timestamp": "2019-11-10T03:33:51.249080",
+            "url": "https://newmotion.bandcamp.com/album/stumble",
+            "remainingCassettes": 8
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0009986097_37.jpg",
+            "label": "Naughty Night",
+            "artist": "Cosmic Cycler",
+            "title": "luna tv",
+            "releaseDate": "20170404",
+            "timestamp": "2019-11-10T03:33:51.910544",
+            "url": "https://naughtynightrecords.bandcamp.com/album/luna-tv"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0014862040_37.jpg",
+            "label": "New Motion",
+            "artist": "Light Blending In",
+            "title": "Long Exposure",
+            "releaseDate": "20181125",
+            "timestamp": "2019-11-10T03:33:52.006115",
+            "url": "https://newmotion.bandcamp.com/album/long-exposure"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0017560752_37.jpg",
+            "label": "Hiraeth Records",
+            "artist": "Zer0 \u308c\u3044",
+            "title": "Hellveterra",
+            "releaseDate": "20191011",
+            "timestamp": "2019-11-10T03:33:52.843021",
+            "url": "https://hiraeth-records.bandcamp.com/album/hellveterra"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0013180823_37.jpg",
+            "label": "New Motion",
+            "artist": "Sangam",
+            "title": "Escapism Path",
+            "releaseDate": "20180422",
+            "timestamp": "2019-11-10T03:33:53.936002",
+            "url": "https://newmotion.bandcamp.com/album/escapism-path",
+            "remainingCassettes": 7
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0014814010_37.jpg",
+            "label": "New Motion",
+            "artist": "Hantasi",
+            "title": "i\uff23\uff2f\uff35\uff2c\uff24'\uff34 find \uff4d\uff59 \"child\"",
+            "releaseDate": "20171105",
+            "timestamp": "2019-11-10T03:33:54.550518",
+            "url": "https://newmotion.bandcamp.com/album/i-find-child"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0010541973_37.jpg",
+            "label": "Kudatah",
+            "artist": "Trends (aka Text Chunk)",
+            "title": "Supersymmetry",
+            "releaseDate": "20170531",
+            "timestamp": "2019-11-10T03:33:55.145305",
+            "url": "https://kudatah.bandcamp.com/album/supersymmetry"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0011180820_37.jpg",
+            "label": "Naughty Night",
+            "artist": "\u2612",
+            "title": "Eternal August",
+            "releaseDate": "20170831",
+            "timestamp": "2019-11-10T03:33:56.063767",
+            "url": "https://naughtynightrecords.bandcamp.com/album/eternal-august"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0014719286_37.jpg",
+            "label": "New Motion",
+            "artist": "valyri",
+            "title": "Surreality",
+            "releaseDate": "20180729",
+            "timestamp": "2019-11-10T03:33:56.257688",
+            "url": "https://newmotion.bandcamp.com/album/surreality"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0015481853_37.jpg",
+            "label": "Naughty Night",
+            "artist": "Zhavoronskaya",
+            "title": "t w i l i g h t  c r y s t a l",
+            "releaseDate": "20190205",
+            "timestamp": "2019-11-10T03:33:56.364962",
+            "url": "https://naughtynightrecords.bandcamp.com/album/t-w-i-l-i-g-h-t-c-r-y-s-t-a-l",
+            "remainingCassettes": 2
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0015590792_37.jpg",
+            "label": "New Motion",
+            "artist": "natriums",
+            "title": "Raison d'\u00eatre",
+            "releaseDate": "20190217",
+            "timestamp": "2019-11-10T03:33:56.919390",
+            "url": "https://newmotion.bandcamp.com/album/raison-d-tre",
+            "remainingCassettes": 6
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0015631133_37.jpg",
+            "label": "New Motion",
+            "artist": "Lila Tirando a Violeta",
+            "title": "Sentient",
+            "releaseDate": "20190217",
+            "timestamp": "2019-11-10T03:33:58.362703",
+            "url": "https://newmotion.bandcamp.com/album/sentient",
+            "remainingCassettes": 2
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0010542119_37.jpg",
+            "label": "Kudatah",
+            "artist": "Jock Club",
+            "title": "Ridge Rockers",
+            "releaseDate": "20170706",
+            "timestamp": "2019-11-10T03:34:00.043334",
+            "url": "https://kudatah.bandcamp.com/album/ridge-rockers"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0014420702_37.jpg",
+            "label": "Naughty Night",
+            "artist": "waterfront dining",
+            "title": "Beverly Hills",
+            "releaseDate": "20180929",
+            "timestamp": "2019-11-10T03:34:00.573035",
+            "url": "https://naughtynightrecords.bandcamp.com/album/beverly-hills",
+            "remainingCassettes": 1
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0016136383_37.jpg",
+            "label": "Naughty Night",
+            "artist": "\u30ed\u30fc\u30de\u30f3Roman",
+            "title": "PARADISE",
+            "releaseDate": "20190420",
+            "timestamp": "2019-11-10T03:34:01.728741",
+            "url": "https://naughtynightrecords.bandcamp.com/album/paradise"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0016974520_37.jpg",
+            "label": "Naughty Night",
+            "artist": "\u30de\u30c9\u30ed\u30b9MERCURY",
+            "title": "Infinite Skies",
+            "releaseDate": "20190731",
+            "timestamp": "2019-11-10T03:34:05.019900",
+            "url": "https://naughtynightrecords.bandcamp.com/album/infinite-skies"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0011078368_37.jpg",
+            "label": "Kudatah",
+            "artist": "HKE",
+            "title": "SQ777\u200b\u200b-\u200b\u200b3: Emotionless Passion",
+            "releaseDate": "20170818",
+            "timestamp": "2019-11-10T03:34:05.813070",
+            "url": "https://kudatah.bandcamp.com/album/sq777-3-emotionless-passion",
+            "remainingCassettes": 7
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0017342784_37.jpg",
+            "label": "Naughty Night",
+            "artist": "BABEFAKE & 27 U H F",
+            "title": "\uff49\uff4e \uff41 \uff4e\uff49\uff43\uff45 \uff50\uff4c\uff41\uff43\uff45",
+            "releaseDate": "20190914",
+            "timestamp": "2019-11-10T03:34:06.608468",
+            "url": "https://naughtynightrecords.bandcamp.com/album/--8"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0017732326_37.jpg",
+            "label": "PURE LIFE",
+            "artist": "Kuroi Ame",
+            "title": "Love",
+            "releaseDate": "20191030",
+            "timestamp": "2019-11-10T03:34:08.511257",
+            "url": "https://purelifetapes.bandcamp.com/album/love"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0017536084_37.jpg",
+            "label": "Naughty Night",
+            "artist": "waterfront dining",
+            "title": "Haunted House",
+            "releaseDate": "20190925",
+            "timestamp": "2019-11-10T03:34:13.089573",
+            "url": "https://naughtynightrecords.bandcamp.com/album/haunted-house"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0013948210_37.jpg",
+            "label": "Virtual Dream Plaza",
+            "artist": "\u4eee\u60f3\u5922\u30d7\u30e9\u30b6 & Useless",
+            "title": "Clarity",
+            "releaseDate": "20180731",
+            "timestamp": "2019-11-10T03:34:13.402586",
+            "url": "https://virtualdreamplazashop.bandcamp.com/album/clarity"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0013414957_37.jpg",
+            "label": "Kudatah",
+            "artist": "Text Chunk",
+            "title": "No Fun",
+            "releaseDate": "20180803",
+            "timestamp": "2019-11-10T03:34:13.506032",
+            "url": "https://kudatah.bandcamp.com/album/no-fun"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0017567137_37.jpg",
+            "label": "Naughty Night",
+            "artist": "Karaoke VHS",
+            "title": "PURPLE VISIONS",
+            "releaseDate": "20191011",
+            "timestamp": "2019-11-10T03:34:15.570914",
+            "url": "https://naughtynightrecords.bandcamp.com/album/purple-visions"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0014235812_37.jpg",
+            "label": "Naughty Night",
+            "artist": "\ud68c\uc0acAUTO",
+            "title": "\u30b9\u30c8\u30ea\u30fc\u30c8\u77e5\u6027dream_\u200b.\u200b_boxx",
+            "releaseDate": "20180905",
+            "timestamp": "2019-11-10T03:34:16.110919",
+            "url": "https://naughtynightrecords.bandcamp.com/album/dream-boxx"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0013157918_37.jpg",
+            "label": "Kudatah",
+            "artist": "Information Flash",
+            "title": "Information Flash",
+            "releaseDate": "20180504",
+            "timestamp": "2019-11-10T03:34:16.899758",
+            "url": "https://kudatah.bandcamp.com/album/information-flash"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0016678857_37.jpg",
+            "label": "Seikomart",
+            "artist": "\u25b2STR\u25b2L TRI\u25b2NGLEISM",
+            "title": "Nonexistent",
+            "releaseDate": "20171225",
+            "timestamp": "2019-11-10T03:34:18.846394",
+            "url": "https://seikomart.bandcamp.com/album/nonexistent",
+            "remainingCassettes": 7
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0016308603_37.jpg",
+            "label": "Seaside Tapes",
+            "artist": "Various Artists",
+            "title": "Forever",
+            "releaseDate": "20180930",
+            "timestamp": "2019-11-10T03:34:19.772079",
+            "url": "https://seasidetapes.bandcamp.com/album/forever"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0008706088_37.jpg",
+            "label": "Sunset Recordings",
+            "artist": "OMI5",
+            "title": "a world alone",
+            "releaseDate": "20161021",
+            "timestamp": "2019-11-10T03:34:20.580571",
+            "url": "https://sunsetrecordings.bandcamp.com/album/a-world-alone",
+            "remainingCassettes": 6
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0015821029_37.jpg",
+            "label": "Kudatah",
+            "artist": "Yoshimi",
+            "title": "Failed Stories",
+            "releaseDate": "20190412",
+            "timestamp": "2019-11-10T03:34:20.920850",
+            "url": "https://kudatah.bandcamp.com/album/failed-stories"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0013779928_37.jpg",
+            "label": "theINFINITIpool",
+            "artist": "CYBEREALITY\u30e9\u30a4\u30d5",
+            "title": "INTERNET DATING",
+            "releaseDate": "20180701",
+            "timestamp": "2019-11-10T03:34:21.257195",
+            "url": "https://theinfinitipool.bandcamp.com/album/internet-dating",
+            "remainingCassettes": 2
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0014276599_37.jpg",
+            "label": "theINFINITIpool",
+            "artist": "Amun Dragoon",
+            "title": "Socotra Island",
+            "releaseDate": "20180710",
+            "timestamp": "2019-11-10T03:34:22.200189",
+            "url": "https://theinfinitipool.bandcamp.com/album/socotra-island",
+            "remainingCassettes": 3
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0016755202_37.jpg",
+            "label": "Seikomart",
+            "artist": "Daibakaze",
+            "title": "SYSTEM ENGAGE",
+            "releaseDate": "20190520",
+            "timestamp": "2019-11-10T03:34:22.810593",
+            "url": "https://seikomart.bandcamp.com/album/system-engage"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0015802587_36.jpg",
+            "label": "tekres",
+            "artist": "Halo Acid / HKE",
+            "title": "No Dreams",
+            "releaseDate": "20160707",
+            "timestamp": "2019-11-10T03:34:23.488635",
+            "url": "https://tek-res.bandcamp.com/album/no-dreams"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0009039135_37.jpg",
+            "label": "Sunset Recordings",
+            "artist": "pure light",
+            "title": "\u00df\u00a3\u2260\u00a9\u00ab\u00a1\u00f8\u2248\u00a5\u03b1\u00e5\u00f8",
+            "releaseDate": "20161223",
+            "timestamp": "2019-11-10T03:34:23.574166",
+            "url": "https://sunsetrecordings.bandcamp.com/album/--9"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0014276551_37.jpg",
+            "label": "theINFINITIpool",
+            "artist": "H.O.W.L",
+            "title": "H\u200b.\u200bO\u200b.\u200bW\u200b.\u200bL",
+            "releaseDate": "20180910",
+            "timestamp": "2019-11-10T03:34:23.833470",
+            "url": "https://theinfinitipool.bandcamp.com/album/h-o-w-l",
+            "remainingCassettes": 9
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0016308549_37.jpg",
+            "label": "Seaside Tapes",
+            "artist": "V A P O R S O F T W O R K S \u84b8\u6c17\u30bd\u30d5\u30c8",
+            "title": "Ashville Mall",
+            "releaseDate": "20180713",
+            "timestamp": "2019-11-10T03:34:24.005027",
+            "url": "https://seasidetapes.bandcamp.com/album/ashville-mall",
+            "remainingCassettes": 6
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0014526206_37.jpg",
+            "label": "theINFINITIpool",
+            "artist": "Midnight Television",
+            "title": "Midnight Television",
+            "releaseDate": "20181012",
+            "timestamp": "2019-11-10T03:34:24.494464",
+            "url": "https://theinfinitipool.bandcamp.com/album/midnight-television"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0013840826_37.jpg",
+            "label": "Sunset Recordings",
+            "artist": "VHS MIDNIGHT STYLE",
+            "title": "Invisible Classics",
+            "releaseDate": "20161202",
+            "timestamp": "2019-11-10T03:34:24.757057",
+            "url": "https://sunsetrecordings.bandcamp.com/album/invisible-classics"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0017013662_37.jpg",
+            "label": "theINFINITIpool",
+            "artist": "SPORT3000",
+            "title": "BUSINESS BREAKFAST",
+            "releaseDate": "20190804",
+            "timestamp": "2019-11-10T03:34:25.400796",
+            "url": "https://theinfinitipool.bandcamp.com/album/business-breakfast"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0016308528_37.jpg",
+            "label": "Seaside Tapes",
+            "artist": "[[\uff53\uff54\uff45\uff4c\uff4c\uff41\uff52 \uc131 \uc801 \uc778 \ub0a0]]",
+            "title": "d r e a m c a s t \uae30\uc5b5",
+            "releaseDate": "20180629",
+            "timestamp": "2019-11-10T03:34:26.403152",
+            "url": "https://seasidetapes.bandcamp.com/album/d-r-e-a-m-c-a-s-t",
+            "remainingCassettes": 2
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0015165732_36.jpg",
+            "label": "tekres",
+            "artist": "Passion / North Chester Shelter",
+            "title": "Eternal Hymns",
+            "releaseDate": "20190101",
+            "timestamp": "2019-11-10T03:34:27.134664",
+            "url": "https://tek-res.bandcamp.com/album/eternal-hymns"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0014658980_37.jpg",
+            "label": "Kudatah",
+            "artist": "Sven K",
+            "title": "Sven (One Thousand)",
+            "releaseDate": "20181116",
+            "timestamp": "2019-11-10T03:34:27.432858",
+            "url": "https://kudatah.bandcamp.com/album/sven-one-thousand"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0016634209_37.jpg",
+            "label": "Seikomart",
+            "artist": "\u2042V\u2021\u25b2D\u2021M\u2207R\u2042",
+            "title": "\uff21\uff45\uff53\uff54\uff48\uff45\uff54\uff49\uff43 \uff34\uff41\uff50\uff45\uff53 \uff36\uff4f\uff4c\uff55\uff4d\uff45 2",
+            "releaseDate": "20190506",
+            "timestamp": "2019-11-10T03:34:27.838125",
+            "url": "https://seikomart.bandcamp.com/album/2-3"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0013840701_37.jpg",
+            "label": "Sunset Recordings",
+            "artist": "David Busch",
+            "title": "Gesture Life",
+            "releaseDate": "20180629",
+            "timestamp": "2019-11-10T03:34:29.935950",
+            "url": "https://sunsetrecordings.bandcamp.com/album/gesture-life"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0016331179_37.jpg",
+            "label": "Seaside Tapes",
+            "artist": "BASEMENTS",
+            "title": "TARTARIA",
+            "releaseDate": "20190206",
+            "timestamp": "2019-11-10T03:34:30.601506",
+            "url": "https://seasidetapes.bandcamp.com/album/tartaria"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0016020163_36.jpg",
+            "label": "tekres",
+            "artist": "w. baer",
+            "title": "rage, below",
+            "releaseDate": "20190412",
+            "timestamp": "2019-11-10T03:34:31.084517",
+            "url": "https://tek-res.bandcamp.com/album/rage-below"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0015104452_32.jpg",
+            "label": "Kudatah",
+            "artist": "Sangam",
+            "title": "You Make Me",
+            "releaseDate": "20190128",
+            "timestamp": "2019-11-10T03:34:31.510628",
+            "url": "https://kudatah.bandcamp.com/album/you-make-me",
+            "remainingCassettes": 5
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0016226701_37.jpg",
+            "label": "Sunset Recordings",
+            "artist": "Kappa",
+            "title": "Forsaken",
+            "releaseDate": "20190302",
+            "timestamp": "2019-11-10T03:34:31.853330",
+            "url": "https://sunsetrecordings.bandcamp.com/album/forsaken"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0017095994_37.jpg",
+            "label": "Seikomart",
+            "artist": "New Coke",
+            "title": "Revolution\u2122",
+            "releaseDate": "20180611",
+            "timestamp": "2019-11-10T03:34:34.761974",
+            "url": "https://seikomart.bandcamp.com/album/revolution",
+            "remainingCassettes": 1
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0016780888_36.jpg",
+            "label": "tekres",
+            "artist": "VVV",
+            "title": "When The Night Air Leaves",
+            "releaseDate": "20190705",
+            "timestamp": "2019-11-10T03:34:34.858808",
+            "url": "https://tek-res.bandcamp.com/album/when-the-night-air-leaves"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0016951849_37.jpg",
+            "label": "Seaside Tapes",
+            "artist": "Mr. Ocean",
+            "title": "Termini",
+            "releaseDate": "20180712",
+            "timestamp": "2019-11-10T03:34:35.531223",
+            "url": "https://seasidetapes.bandcamp.com/album/termini"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0016228034_37.jpg",
+            "label": "Sunset Recordings",
+            "artist": "b o d y l i n e",
+            "title": "CRUISING TELEVISIONS",
+            "releaseDate": "20170929",
+            "timestamp": "2019-11-10T03:34:35.745330",
+            "url": "https://sunsetrecordings.bandcamp.com/album/cruising-televisions"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0016952000_37.jpg",
+            "label": "Seaside Tapes",
+            "artist": "[[\uff53\uff54\uff45\uff4c\uff4c\uff41\uff52 \uc131 \uc801 \uc778 \ub0a0]]",
+            "title": "An Affair in Nagasaki",
+            "releaseDate": "20180725",
+            "timestamp": "2019-11-10T03:34:36.074681",
+            "url": "https://seasidetapes.bandcamp.com/album/an-affair-in-nagasaki"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0014405811_37.jpg",
+            "label": "Virtual Dream Plaza",
+            "artist": "Golden Living Room",
+            "title": "This Is Where I Am Right Now",
+            "releaseDate": "20180927",
+            "timestamp": "2019-11-10T03:34:36.491292",
+            "url": "https://virtualdreamplazashop.bandcamp.com/album/this-is-where-i-am-right-now"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0014405844_37.jpg",
+            "label": "Virtual Dream Plaza",
+            "artist": "Light Blending In",
+            "title": "Cubed Blocks",
+            "releaseDate": "20180927",
+            "timestamp": "2019-11-10T03:34:38.409119",
+            "url": "https://virtualdreamplazashop.bandcamp.com/album/cubed-blocks"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0016594822_37.jpg",
+            "label": "Seikomart",
+            "artist": "\u3051\u3055\u30a4\u30fc\u30ba",
+            "title": "The Hybrid Splendor",
+            "releaseDate": "20190429",
+            "timestamp": "2019-11-10T03:34:38.605182",
+            "url": "https://seikomart.bandcamp.com/album/the-hybrid-splendor",
+            "remainingCassettes": 5
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0014802156_37.jpg",
+            "label": "Virtual Dream Plaza",
+            "artist": "Saturn's Daughter",
+            "title": "Eternal Resonance",
+            "releaseDate": "20181115",
+            "timestamp": "2019-11-10T03:34:39.676051",
+            "url": "https://virtualdreamplazashop.bandcamp.com/album/eternal-resonance"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0014804260_37.jpg",
+            "label": "Virtual Dream Plaza",
+            "artist": "Origami Girl",
+            "title": "How I Wish You Were Here",
+            "releaseDate": "20181115",
+            "timestamp": "2019-11-10T03:34:40.880094",
+            "url": "https://virtualdreamplazashop.bandcamp.com/album/how-i-wish-you-were-here"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0017198293_37.jpg",
+            "label": "Seikomart",
+            "artist": "PLASMA",
+            "title": "Interracial",
+            "releaseDate": "20190805",
+            "timestamp": "2019-11-10T03:34:41.426420",
+            "url": "https://seikomart.bandcamp.com/album/interracial",
+            "remainingCassettes": 7
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0016721375_32.jpg",
+            "label": "Virtual Dream Plaza",
+            "artist": "Origami Girl",
+            "title": "Enchanted",
+            "releaseDate": "20190627",
+            "timestamp": "2019-11-10T03:34:41.506793",
+            "url": "https://virtualdreamplazashop.bandcamp.com/album/enchanted"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0017196568_37.jpg",
+            "label": "Seikomart",
+            "artist": "Lust Luxure",
+            "title": "Voyeur",
+            "releaseDate": "20190729",
+            "timestamp": "2019-11-10T03:34:44.029834",
+            "url": "https://seikomart.bandcamp.com/album/voyeur",
+            "remainingCassettes": 9
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0017224376_37.jpg",
+            "label": "Seikomart",
+            "artist": "Arena",
+            "title": "Mid Evil",
+            "releaseDate": "20190624",
+            "timestamp": "2019-11-10T03:34:45.182055",
+            "url": "https://seikomart.bandcamp.com/album/mid-evil",
+            "remainingCassettes": 6
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0016878126_37.jpg",
+            "label": "Seikomart",
+            "artist": "Soul\u25b2Craft",
+            "title": "Last night in the pool",
+            "releaseDate": "20190603",
+            "timestamp": "2019-11-10T03:34:48.798686",
+            "url": "https://seikomart.bandcamp.com/album/last-night-in-the-pool",
+            "remainingCassettes": 1
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0014915052_37.jpg",
+            "label": "Seikomart",
+            "artist": "CREME RINSE \u3059\u3059\u304e\u3068\u30ea\u30d4\u30fc\u30c8",
+            "title": "URANIUM WILLY",
+            "releaseDate": "20181001",
+            "timestamp": "2019-11-10T03:34:49.758348",
+            "url": "https://seikomart.bandcamp.com/album/uranium-willy",
+            "remainingCassettes": 4
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0017577107_37.jpg",
+            "label": "Tracking Waves",
+            "artist": "FOTOshoppe\u30c4",
+            "title": "MACINTOSH PERFORMA",
+            "releaseDate": "20191012",
+            "timestamp": "2019-11-10T03:34:49.960851",
+            "url": "https://tracking-waves.bandcamp.com/album/macintosh-performa"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0015989254_37.jpg",
+            "label": "Seikomart",
+            "artist": "CREME RINSE \u3059\u3059\u304d\u3099\u3068\u30ea\u30d2\u309a\u30fc\u30c8",
+            "title": "APHELION DRIFT: QUARANTINE",
+            "releaseDate": "20190218",
+            "timestamp": "2019-11-10T03:34:52.693802",
+            "url": "https://seikomart.bandcamp.com/album/aphelion-drift-quarantine",
+            "remainingCassettes": 4
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0012655647_37.jpg",
+            "label": "Tracking Waves",
+            "artist": "Fendi Beta",
+            "title": "Megaport \u6ce2\u30af\u30a2\u30c9\u30e9",
+            "releaseDate": "20180221",
+            "timestamp": "2019-11-10T03:34:53.500177",
+            "url": "https://tracking-waves.bandcamp.com/album/megaport"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0017218078_37.jpg",
+            "label": "Underwater Computing _",
+            "artist": "MindSpring Memories",
+            "title": "The Safe Inside Chronicles",
+            "releaseDate": "20190708",
+            "timestamp": "2019-11-10T03:34:53.605262",
+            "url": "https://underwater-computing.bandcamp.com/album/the-safe-inside-chronicles",
+            "remainingCassettes": 8
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0017322413_37.jpg",
+            "label": "Seikomart",
+            "artist": "AZENXIO",
+            "title": "In The Mind Of The Night",
+            "releaseDate": "20190812",
+            "timestamp": "2019-11-10T03:34:55.576078",
+            "url": "https://seikomart.bandcamp.com/album/in-the-mind-of-the-night",
+            "remainingCassettes": 2
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0015079891_37.jpg",
+            "label": "TRIPLE BLVK DVRKNESS",
+            "artist": "Gallery Of LOW ART",
+            "title": "The Butterfly House",
+            "releaseDate": "20180925",
+            "timestamp": "2019-11-10T03:34:55.752818",
+            "url": "https://tripleblvkdvrkness.bandcamp.com/album/the-butterfly-house",
+            "remainingCassettes": 9
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0013199269_37.jpg",
+            "label": "Tracking Waves",
+            "artist": "Virtual",
+            "title": "[V00]",
+            "releaseDate": "20180420",
+            "timestamp": "2019-11-10T03:34:56.822819",
+            "url": "https://tracking-waves.bandcamp.com/album/v00"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0017550849_37.jpg",
+            "label": "VILL4IN",
+            "artist": "\u6697\u53f7\u96f6",
+            "title": "Mother",
+            "releaseDate": "20191009",
+            "timestamp": "2019-11-10T03:34:56.927288",
+            "url": "https://vill4in.bandcamp.com/album/mother"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0017512049_37.jpg",
+            "label": "Underwater Computing _",
+            "artist": "Diskette Park",
+            "title": "Dark Bandwidth",
+            "releaseDate": "20191007",
+            "timestamp": "2019-11-10T03:34:59.008202",
+            "url": "https://underwater-computing.bandcamp.com/album/dark-bandwidth"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0013515817_37.jpg",
+            "label": "Tracking Waves",
+            "artist": "paper gymnasium",
+            "title": "(thank you) for all of the magic",
+            "releaseDate": "20180531",
+            "timestamp": "2019-11-10T03:34:59.119066",
+            "url": "https://tracking-waves.bandcamp.com/album/thank-you-for-all-of-the-magic"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0017735380_37.jpg",
+            "label": "VILL4IN",
+            "artist": "Sangam",
+            "title": "VOID\u200b-\u200b003 - SANGAM",
+            "releaseDate": "20191031",
+            "timestamp": "2019-11-10T03:34:59.880398",
+            "url": "https://vill4in.bandcamp.com/album/void-003-sangam"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0016979057_37.jpg",
+            "label": "Seikomart",
+            "artist": "Fan Fiordo",
+            "title": "Interactive Affairs",
+            "releaseDate": "20190701",
+            "timestamp": "2019-11-10T03:35:00.195786",
+            "url": "https://seikomart.bandcamp.com/album/interactive-affairs",
+            "remainingCassettes": 1
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0017810250_37.jpg",
+            "label": "Underwater Computing _",
+            "artist": "Lotus \ud83e\uddd8 Forever",
+            "title": "\ud835\udcdc\ud835\udcf8\ud835\udced\ud835\udcee\ud835\udcfb\ud835\udcf7\ud835\udce6\ud835\udcea\ud835\udcff\ud835\udcee",
+            "releaseDate": "20190812",
+            "timestamp": "2019-11-10T03:35:00.799053",
+            "url": "https://underwater-computing.bandcamp.com/album/--2",
+            "remainingCassettes": 4
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0017596773_37.jpg",
+            "label": "Seikomart",
+            "artist": "CREME RINSE \u3059\u3059\u304e\u3068\u30ea\u30d4\u30fc\u30c8",
+            "title": "ROKO\u2019S BASILISK",
+            "releaseDate": "20190909",
+            "timestamp": "2019-11-10T03:35:03.422685",
+            "url": "https://seikomart.bandcamp.com/album/roko-s-basilisk"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0013642583_37.jpg",
+            "label": "Tracking Waves",
+            "artist": "Valet Girls",
+            "title": "Savage Beauty",
+            "releaseDate": "20180616",
+            "timestamp": "2019-11-10T03:35:03.509522",
+            "url": "https://tracking-waves.bandcamp.com/album/savage-beauty"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0017615280_37.jpg",
+            "label": "Seikomart",
+            "artist": "Kalin Castler",
+            "title": "Terminal World",
+            "releaseDate": "20190916",
+            "timestamp": "2019-11-10T03:35:05.174981",
+            "url": "https://seikomart.bandcamp.com/album/terminal-world",
+            "remainingCassettes": 6
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0017746037_37.jpg",
+            "label": "Seikomart",
+            "artist": "NINENINENINE",
+            "title": "West Park Pioneer",
+            "releaseDate": "20180416",
+            "timestamp": "2019-11-10T03:35:08.998527",
+            "url": "https://seikomart.bandcamp.com/album/west-park-pioneer",
+            "remainingCassettes": 9
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0013809190_37.jpg",
+            "label": "Tracking Waves",
+            "artist": "Flakodiablo",
+            "title": "Ambientes",
+            "releaseDate": "20180715",
+            "timestamp": "2019-11-10T03:35:09.081145",
+            "url": "https://tracking-waves.bandcamp.com/album/ambientes"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0017745786_37.jpg",
+            "label": "Seikomart",
+            "artist": "NINENINENINE",
+            "title": "Echoes From the Concourse",
+            "releaseDate": "20191008",
+            "timestamp": "2019-11-10T03:35:10.159437",
+            "url": "https://seikomart.bandcamp.com/album/echoes-from-the-concourse"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0017737802_37.jpg",
+            "label": "Seikomart",
+            "artist": "\u6c7d\u2248",
+            "title": "\u547d\u306e\u606f (Breath of Life)",
+            "releaseDate": "20190923",
+            "timestamp": "2019-11-10T03:35:13.737848",
+            "url": "https://seikomart.bandcamp.com/album/breath-of-life"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0014541974_37.jpg",
+            "label": "Tracking Waves",
+            "artist": "\u110f\u1161\u1111\u1166 \u1102\u1161\u110b\u1175\u1110\u1173 Cafe\u0301 Nights",
+            "title": "Ambient Drama",
+            "releaseDate": "20181014",
+            "timestamp": "2019-11-10T03:35:13.814889",
+            "url": "https://tracking-waves.bandcamp.com/album/ambient-drama"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0014527645_37.jpg",
+            "label": "Tracking Waves",
+            "artist": "vcr-classique",
+            "title": "visualdesign '97",
+            "releaseDate": "20181012",
+            "timestamp": "2019-11-10T03:35:16.235917",
+            "url": "https://tracking-waves.bandcamp.com/album/visualdesign-97"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0014493637_37.jpg",
+            "label": "Tracking Waves",
+            "artist": "Mackenzey Bergile",
+            "title": "Modern Romance 0\u200b.\u200b3",
+            "releaseDate": "20181008",
+            "timestamp": "2019-11-10T03:35:20.137665",
+            "url": "https://tracking-waves.bandcamp.com/album/modern-romance-03",
+            "remainingCassettes": 7
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0014997737_37.jpg",
+            "label": "Tracking Waves",
+            "artist": "Valet Girls",
+            "title": "Jurassic Parlor",
+            "releaseDate": "20181209",
+            "timestamp": "2019-11-10T03:35:23.489553",
+            "url": "https://tracking-waves.bandcamp.com/album/jurassic-parlor"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0014929228_37.jpg",
+            "label": "Tracking Waves",
+            "artist": "echoflange",
+            "title": "games",
+            "releaseDate": "20181201",
+            "timestamp": "2019-11-10T03:35:24.078676",
+            "url": "https://tracking-waves.bandcamp.com/album/games"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0014863491_37.jpg",
+            "label": "Tracking Waves",
+            "artist": "\u6c37\u6cb3",
+            "title": "Ghost",
+            "releaseDate": "20181122",
+            "timestamp": "2019-11-10T03:35:28.084733",
+            "url": "https://tracking-waves.bandcamp.com/album/ghost"
+        },
+        {
+            "artworkUrl": "https://f4.bcbits.com/img/0014935030_37.jpg",
+            "label": "Tracking Waves",
+            "artist": "WTF.FM",
+            "title": "E N V I S I O N",
+            "releaseDate": "20181202",
+            "timestamp": "2019-11-10T03:35:29.892737",
+            "url": "https://tracking-waves.bandcamp.com/album/e-n-v-i-s-i-o-n"
         }
     ]
 }

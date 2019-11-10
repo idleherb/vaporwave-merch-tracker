@@ -1,6 +1,7 @@
 import scrapy
 
 from datetime import datetime
+from functools import partial
 from scrapy.selector import Selector
 
 
@@ -21,10 +22,11 @@ class BandcampMerchSpider(scrapy.Spider):
         base_url = response.url[:response.url.rfind('/')]
         for artwork_url, album_path in self.parse_merch_page_html(response.body):
             album_url = base_url + album_path
-            print('### 1:', artwork_url, album_path)
+            # Use partial function here since lambda wouldn't work (always used last artwork_url)
+            partial_parse = partial(self.parse_album_page, artwork_url)
             yield scrapy.Request(
                 url=album_url,
-                callback=(lambda res: self.parse_album_page(artwork_url, res))
+                callback=partial_parse
             )
 
 
@@ -64,7 +66,6 @@ class BandcampMerchSpider(scrapy.Spider):
         return (artwork_url, release_path)
 
     def parse_album_page(self, artwork_url, response):
-        print('### 2:', artwork_url, response.url)
         yield self.parse_album_page_html(response.body, artwork_url)
 
 
