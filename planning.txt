@@ -26,8 +26,8 @@ X available cassettes asc (smallest number first)
 detail info:
     X timestamp of scraping (last updated)
 
-cards (fixed width per card, one card = mobile view)
-max-width (120rem)
+X cards (fixed width per card, one card = mobile view)
+X max-width (120rem)
 filter with label tags
     parent component
         filter bar

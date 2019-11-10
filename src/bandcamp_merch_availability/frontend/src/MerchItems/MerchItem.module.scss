@@ -1,5 +1,7 @@
 @import "../variables.scss";
 
+$break-small: 46rem;
+
 .merchItem {
     background-color: $bg-color;
     border-radius: 2px;
@@ -8,15 +10,27 @@
     color: $fg-color;
     margin: 1rem;
     width: 45rem;
+    @media screen and (max-width: $break-small) {
+        font-size: $font-size-small;
+        line-height: 1.2;
+        margin: 0.75rem;
+        width: 35rem;
+    }
     display: flex;
 
     .attributes {
         padding: 1rem 2rem;
-        width: 26rem;
+        @media screen and (max-width: $break-small) {
+            padding: 0.75rem 1.25rem;
+        }
 
         .attribute {
             width: 26rem;
             margin: 0.4rem 0;
+            @media screen and (max-width: $break-small) {
+                width: 19rem;
+                margin: 0.1rem 0;
+            }
             text-overflow: ellipsis;
             white-space: nowrap;
             overflow: hidden;
@@ -26,6 +40,10 @@
     .artwork {
         width: 16.8rem;
         height: 14.4rem;
+        @media screen and (max-width: $break-small) {
+            width: 13rem;
+            height: 11rem;
+        }
     }
 
     .bold {
