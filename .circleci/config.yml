@@ -32,7 +32,7 @@ jobs:
           command: |
             cd scraper
             . venv/bin/activate
-            pytest --ignore ./frontend
+            pytest --vv
 
   deploy_frontend:
     docker:
@@ -86,7 +86,7 @@ jobs:
             cd scraper
             python3 -m venv venv
             . venv/bin/activate
-            pip install -r ./scraper/requirements.txt
+            pip install -r requirements.txt
       - save_cache:
           paths:
             - ./scraper/venv
