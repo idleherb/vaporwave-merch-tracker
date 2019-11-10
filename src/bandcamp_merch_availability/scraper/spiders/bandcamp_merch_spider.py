@@ -19,14 +19,17 @@ class BandcampMerchSpider(scrapy.Spider):
 
     def parse(self, response):
         base_url = response.url[:response.url.rfind('/')]
-        for album_path in self.parse_merch_page_html(response.body):
+        for artwork_url, album_path in self.parse_merch_page_html(response.body):
             album_url = base_url + album_path
-            yield scrapy.Request(url=album_url, callback=self.parse_album_page)
+            yield scrapy.Request(
+                url=album_url,
+                callback=(lambda res: self.parse_album_page(artwork_url, res))
+            )
 
 
     @staticmethod
     def parse_merch_page_html(html):
-        return Selector(text=html).xpath(f'''
+        anchors = Selector(text=html).xpath(f'''
             //li[
                 (contains(@class,"merch-grid-item")
                     or contains(@class,"featured-item"))
@@ -39,15 +42,32 @@ class BandcampMerchSpider(scrapy.Spider):
                         contains(@class,"price")
                             and not(contains(@class,"sold-out"))
                     ]
-            ]/a[./div[@class="art"]]/@href''').getall()
+            ]/a[./div[@class="art"]]''').getall()
 
-
-    def parse_album_page(self, response):
-        yield self.parse_album_page_html(response.body)
+        return [BandcampMerchSpider.parse_anchor_html(anchor) for anchor in anchors]
 
 
     @staticmethod
-    def parse_album_page_html(html):
+    def parse_anchor_html(html):
+        artwork_url = Selector(text=html).xpath(f'''
+            //div[@class="art"]/img[starts-with(@src,"http")]/@src
+        ''').get()
+        if not artwork_url:
+            artwork_url = Selector(text=html).xpath(f'''
+                //div[@class="art"]/img/@data-original
+            ''').get()
+        release_path = Selector(text=html).xpath(f'''
+            //a[./div[@class="art"]]/@href
+        ''').get()
+
+        return (artwork_url, release_path)
+
+    def parse_album_page(self, artwork_url, response):
+        yield self.parse_album_page_html(response.body, artwork_url)
+
+
+    @staticmethod
+    def parse_album_page_html(html, artwork_url):
         timestamp = datetime.now().isoformat()
         url = Selector(text=html).xpath('''
             //meta[
@@ -71,6 +91,7 @@ class BandcampMerchSpider(scrapy.Spider):
                 @itemprop="datePublished"
             ]/@content''').get()
         result = {
+            'artwork_url': artwork_url,
             'label': label,
             'artist': BandcampMerchSpider.normalize_text(artist),
             'title': BandcampMerchSpider.normalize_text(title),

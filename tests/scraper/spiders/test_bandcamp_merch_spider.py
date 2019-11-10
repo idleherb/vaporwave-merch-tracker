@@ -24,9 +24,9 @@ def test_parse_merch_page_html():
     actual_generator = BandcampMerchSpider.parse_merch_page_html(merch_page_html)
     actual = [url for url in actual_generator]
     expected = [
-        '/album/va-10-a-vaporwave-anniversary',
-        '/album/flamingo-funk-vol-2',
-        '/album/miracle-lounge',
+        ('https://f4.bcbits.com/img/0017811177_37.jpg', '/album/va-10-a-vaporwave-anniversary'),
+        ('https://f4.bcbits.com/img/0017567976_37.jpg', '/album/flamingo-funk-vol-2'),
+        ('https://f4.bcbits.com/img/0017567518_37.jpg', '/album/miracle-lounge'),
     ]
 
     assert actual == expected
@@ -37,9 +37,11 @@ def test_parse_album_page_html():
     album_page_html = None
     with open('tests/scraper/spiders/album_page.html') as f:
         album_page_html = f.read()
+    artwork_url = 'foo'
 
-    actual = BandcampMerchSpider.parse_album_page_html(album_page_html)
+    actual = BandcampMerchSpider.parse_album_page_html(album_page_html, artwork_url)
     expected = {
+        'artwork_url': artwork_url,
         'label': 'My Pet Flamingo',
         'artist': 'Donor Lens',
         'title': 'Miracle Lounge มิราเคิล เลานจ์',
@@ -56,9 +58,11 @@ def test_parse_album_page_html_with_remaining():
     album_page_html = None
     with open('tests/scraper/spiders/album_page_with_remaining.html') as f:
         album_page_html = f.read()
+    artwork_url = 'foo'
 
-    actual = BandcampMerchSpider.parse_album_page_html(album_page_html)
+    actual = BandcampMerchSpider.parse_album_page_html(album_page_html, artwork_url)
     expected = {
+        'artwork_url': artwork_url,
         'label': 'My Pet Flamingo',
         'artist': 'Various Artists',
         'title': 'VA\u200b:\u200b10 (A Vaporwave Anniversary)',

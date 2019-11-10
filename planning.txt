@@ -26,6 +26,14 @@ X available cassettes asc (smallest number first)
 detail info:
     X timestamp of scraping (last updated)
 
+cards (fixed width per card, one card = mobile view)
+max-width (120rem)
+filter with label tags
+    parent component
+        filter bar
+            update function (set state)
+        grid
+
 
 v1.1:
     sort by remaining number or release date
