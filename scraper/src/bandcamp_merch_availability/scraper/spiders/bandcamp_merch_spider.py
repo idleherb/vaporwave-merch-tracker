@@ -15,7 +15,7 @@ class BandcampMerchSpider(scrapy.Spider):
     try:
         raw_start_urls = open('labels.txt').read().strip().split('\n')
     except FileNotFoundError:
-        raw_start_urls = open('src/bandcamp_merch_availability/labels.txt').read().strip().split('\n')
+        raw_start_urls = open('../../labels.txt').read().strip().split('\n')
     start_urls = [url for url in raw_start_urls if not url.startswith('#')]
 
     def parse(self, response):

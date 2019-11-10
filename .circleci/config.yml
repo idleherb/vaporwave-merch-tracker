@@ -14,23 +14,25 @@ jobs:
       - checkout
       - restore_cache:
           keys:
-            - v1-dependencies-{{ checksum "requirements.txt" }}
+            - v1-dependencies-{{ checksum "./scraper/requirements.txt" }}
             - v1-dependencies-
       - run:
           name: install dependencies
           command: |
+            cd scraper
             python3 -m venv venv
             . venv/bin/activate
             pip install -r requirements.txt
       - save_cache:
           paths:
-            - ./venv
-          key: v1-dependencies-{{ checksum "requirements.txt" }}
+            - ./scraper/venv
+          key: v1-dependencies-{{ checksum "./scraper/requirements.txt" }}
       - run:
           name: run tests
           command: |
+            cd scraper
             . venv/bin/activate
-            pytest --ignore src/bandcamp_merch_availability/frontend
+            pytest --ignore ./frontend
 
   deploy_frontend:
     docker:
@@ -39,23 +41,23 @@ jobs:
       - checkout
       - restore_cache:
           keys:
-            - dependency-cache-{{ checksum "src/bandcamp_merch_availability/frontend/package.json" }}
+            - dependency-cache-{{ checksum "./frontend/package.json" }}
             - v1-dependencies-
       - run:
           name: Install, test, and build frontend
           command: |
-            cd src/bandcamp_merch_availability/frontend
+            cd frontend
             npm install
             npm run test
             npm run build
       - save_cache:
-          key: dependency-cache-{{ checksum "src/bandcamp_merch_availability/frontend/package.json" }}
+          key: dependency-cache-{{ checksum "./frontend/package.json" }}
           paths:
-            - src/bandcamp_merch_availability/frontend/node_modules
+            - ./frontend/node_modules
 
       # deploy frontend
       - aws-s3/sync:
-          from: src/bandcamp_merch_availability/frontend/build
+          from: ./frontend/build
           to: 's3://bandcamp-merch-availability'
           aws-access-key-id: AWS_ACCESS_KEY_ID
           aws-secret-access-key: AWS_SECRET_ACCESS_KEY
@@ -76,21 +78,23 @@ jobs:
       - checkout
       - restore_cache:
           keys:
-            - v1-dependencies-{{ checksum "requirements.txt" }}
+            - v1-dependencies-{{ checksum "./scraper/requirements.txt" }}
             - v1-dependencies-
       - run:
           name: install dependencies
           command: |
+            cd scraper
             python3 -m venv venv
             . venv/bin/activate
-            pip install -r requirements.txt
+            pip install -r ./scraper/requirements.txt
       - save_cache:
           paths:
-            - ./venv
-          key: v1-dependencies-{{ checksum "requirements.txt" }}
+            - ./scraper/venv
+          key: v1-dependencies-{{ checksum "./scraper/requirements.txt" }}
       - run:
           name: run scraper and deploy results
           command: |
+            cd scraper
             . venv/bin/activate
             cd src/bandcamp_merch_availability
             rm -f bandcamp_merch.json
@@ -98,7 +102,7 @@ jobs:
             cat bandcamp_merch.json
       # Deploy scraped data
       - aws-s3/copy:
-          from: src/bandcamp_merch_availability/bandcamp_merch.json
+          from: ./scraper/src/bandcamp_merch_availability/bandcamp_merch.json
           to: 's3://bandcamp-merch-availability'
           aws-access-key-id: AWS_ACCESS_KEY_ID
           aws-secret-access-key: AWS_SECRET_ACCESS_KEY
@@ -124,12 +128,12 @@ workflows:
             - test_scraper
 
   scrape_and_deploy_data:
-    triggers:
-      - schedule:
-          cron: "0 6 * * *"
-          filters:
-            branches:
-              only:
-                - master
+    # triggers:
+    #   - schedule:
+    #       cron: "0 6 * * *"
+    #       filters:
+    #         branches:
+    #           only:
+    #             - master
     jobs:
       - scrape_and_deploy_data
