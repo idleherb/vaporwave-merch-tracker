@@ -30,7 +30,7 @@ remaining
 
   return (
     <a href={url} target="_blank" rel="noopener noreferrer" className={styles.merchItem}>
-      <img src={artworkUrl} alt="Album art" />
+      <img className={styles.artwork} src={artworkUrl} alt="Album art" />
       <div className={styles.attributes}>
         <div className={styles.attribute}>{label !== artist ? label : ' '}</div>
         <div className={`${styles.attribute} ${styles.bold}`}>{artist}</div>
