@@ -16,6 +16,7 @@ describe('App', () => {
   it('should call service method when application loads', async () => {
     const merchItems = [
       {
+        artworkUrl: 'https://example.com/artwork1.jpg',
         label: 'aurawire',
         artist: 'Renjā',
         title: 'Xenon',
@@ -24,6 +25,7 @@ describe('App', () => {
         url: 'https://aurawire.bandcamp.com/album/xenon',
       },
       {
+        artworkUrl: 'https://example.com/artwork2.jpg',
         label: 'aurawire',
         artist: '회사AUTO',
         title: 'Remix Métaphysique',

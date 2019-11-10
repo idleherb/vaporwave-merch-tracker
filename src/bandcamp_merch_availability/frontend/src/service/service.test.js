@@ -15,6 +15,7 @@ describe('service', () => {
   it('should call backend and return list of merch items', async () => {
     const merchItems = [
       {
+        artworkUrl: 'https://example.com/artwork1.jpg',
         label: 'aurawire',
         artist: 'Renjā',
         title: 'Xenon',
@@ -23,6 +24,7 @@ describe('service', () => {
         url: 'https://aurawire.bandcamp.com/album/xenon',
       },
       {
+        artworkUrl: 'https://example.com/artwork2.jpg',
         label: 'aurawire',
         artist: '회사AUTO',
         title: 'Remix Métaphysique',

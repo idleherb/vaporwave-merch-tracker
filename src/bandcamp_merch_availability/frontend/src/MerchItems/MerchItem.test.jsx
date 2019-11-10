@@ -7,6 +7,7 @@ import MerchItem from './MerchItem';
 describe('MerchItem', () => {
   it('should display attributes', async () => {
     const item = {
+      artworkUrl: 'https://example.com/artwork1.jpg',
       label: 'aurawire',
       artist: 'Renjā',
       title: 'Xenon',

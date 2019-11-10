@@ -8,6 +8,7 @@ describe('MerchItems', () => {
   it('should display 2 merch items', async () => {
     const items = [
       {
+        artworkUrl: 'https://example.com/artwork1.jpg',
         label: 'aurawire',
         artist: 'Streymoyer',
         title: 'Where',
@@ -17,6 +18,7 @@ describe('MerchItems', () => {
         remainingCassettes: 8,
       },
       {
+        artworkUrl: 'https://example.com/artwork2.jpg',
         label: 'Dream Catalogue',
         artist: 'Chungking Mansions',
         title: 'ShowView',

@@ -21,6 +21,7 @@ describe('util', () => {
     it('should sort items by remaining cassettes asc', () => {
       const items = [
         {
+          artworkUrl: '',
           label: '',
           artist: '',
           title: '',
@@ -30,6 +31,7 @@ describe('util', () => {
           remainingCassettes: 10,
         },
         {
+          artworkUrl: '',
           label: '',
           artist: '',
           title: '',
@@ -43,6 +45,7 @@ describe('util', () => {
       const actual = sortItems(items);
       const expected = [
         {
+          artworkUrl: '',
           label: '',
           artist: '',
           title: '',
@@ -52,6 +55,7 @@ describe('util', () => {
           remainingCassettes: 1,
         },
         {
+          artworkUrl: '',
           label: '',
           artist: '',
           title: '',
@@ -67,6 +71,7 @@ describe('util', () => {
     it('should sort items by release date desc', () => {
       const items = [
         {
+          artworkUrl: '',
           label: '',
           artist: '',
           title: '',
@@ -76,6 +81,7 @@ describe('util', () => {
           remainingCassettes: 1,
         },
         {
+          artworkUrl: '',
           label: '',
           artist: '',
           title: '',
@@ -89,6 +95,7 @@ describe('util', () => {
       const actual = sortItems(items);
       const expected = [
         {
+          artworkUrl: '',
           label: '',
           artist: '',
           title: '',
@@ -98,6 +105,7 @@ describe('util', () => {
           remainingCassettes: 1,
         },
         {
+          artworkUrl: '',
           label: '',
           artist: '',
           title: '',
@@ -113,6 +121,7 @@ describe('util', () => {
     it('should sort items by artist asc', () => {
       const items = [
         {
+          artworkUrl: '',
           label: '',
           artist: 'z',
           title: '',
@@ -122,6 +131,7 @@ describe('util', () => {
           remainingCassettes: 1,
         },
         {
+          artworkUrl: '',
           label: '',
           artist: 'a',
           title: '',
@@ -135,6 +145,7 @@ describe('util', () => {
       const actual = sortItems(items);
       const expected = [
         {
+          artworkUrl: '',
           label: '',
           artist: 'a',
           title: '',
@@ -144,6 +155,7 @@ describe('util', () => {
           remainingCassettes: 1,
         },
         {
+          artworkUrl: '',
           label: '',
           artist: 'z',
           title: '',
