@@ -130,7 +130,7 @@ workflows:
   scrape_and_deploy_data:
     triggers:
       - schedule:
-          cron: "0 */2 * * *"
+          cron: "0 12 * * *"
           filters:
             branches:
               only:
