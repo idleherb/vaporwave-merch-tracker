@@ -18,6 +18,7 @@ html {
 }
 
 body {
+  background: #e2e1e0;
   font-size: $font-size-normal;
   line-height: 130%;
   font-weight: normal;
@@ -26,11 +27,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 5rem 0;
+  margin: 3rem 0;
 }
 
 a, a:visited, a:active {
-  color: $link-color;
+  color: $fg-color;
+  text-decoration: none;
 }
 
 #root {

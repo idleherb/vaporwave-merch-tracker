@@ -1,372 +1,153 @@
 {
     "bandcamp_merch.json": [
         {
-            "label": "aurawire",
-            "artist": "Renj\u0101",
-            "title": "Xenon",
-            "releaseDate": "20180727",
-            "timestamp": "2019-11-09T06:03:18.962686",
-            "url": "https://aurawire.bandcamp.com/album/xenon"
+            "artworkUrl": "https://f4.bcbits.com/img/0014735290_37.jpg",
+            "label": "Alien Garage",
+            "artist": "The Rubies",
+            "title": "Sleeping World",
+            "releaseDate": "20181024",
+            "timestamp": "2019-11-10T01:10:07.566892",
+            "url": "https://aliengarage.bandcamp.com/album/sleeping-world"
         },
         {
-            "label": "aurawire",
-            "artist": "\ud68c\uc0acAUTO",
-            "title": "Remix M\u00e9taphysique",
-            "releaseDate": "20180831",
-            "timestamp": "2019-11-09T06:03:22.184133",
-            "url": "https://aurawire.bandcamp.com/album/remix-m-taphysique"
+            "artworkUrl": "https://f4.bcbits.com/img/0015031618_37.jpg",
+            "label": "Culture Agency\u6587\u5316\u5e81",
+            "artist": "Zhurnal Mod",
+            "title": "\u0412\u0415\u0413\u0410jams",
+            "releaseDate": "20181212",
+            "timestamp": "2019-11-10T01:10:07.907571",
+            "url": "https://cultureagency.bandcamp.com/album/jams"
         },
         {
-            "label": "Dream Catalogue",
-            "artist": "Chesumasuta",
-            "title": "Return Of The High Intellect Nymphomaniac Anime Legend 3000",
-            "releaseDate": "20180329",
-            "timestamp": "2019-11-09T06:03:22.651993",
-            "url": "https://dreamcatalogue.bandcamp.com/album/return-of-the-high-intellect-nymphomaniac-anime-legend-3000"
+            "artworkUrl": "https://f4.bcbits.com/img/0008206550_37.jpg",
+            "label": "\u00c6scape Sounds",
+            "artist": "Baby Feet",
+            "title": "Glass Families",
+            "releaseDate": "20160830",
+            "timestamp": "2019-11-10T01:10:08.235270",
+            "url": "https://aescapesounds.bandcamp.com/album/glass-families",
+            "remainingCassettes": 5
         },
         {
-            "label": "aurawire",
-            "artist": "HYPERMEDIA",
-            "title": "Dream Sequencer",
-            "releaseDate": "20180822",
-            "timestamp": "2019-11-09T06:03:22.722855",
-            "url": "https://aurawire.bandcamp.com/album/dream-sequencer"
+            "artworkUrl": "https://f4.bcbits.com/img/0015031618_37.jpg",
+            "label": "Culture Agency\u6587\u5316\u5e81",
+            "artist": "Relevant Advertising",
+            "title": "Cheap Champagne and Copacabana Propaganda",
+            "releaseDate": "20190423",
+            "timestamp": "2019-11-10T01:10:09.158212",
+            "url": "https://cultureagency.bandcamp.com/album/cheap-champagne-and-copacabana-propaganda"
         },
         {
-            "label": "Dream Catalogue",
-            "artist": "Halo Acid",
-            "title": "Lines Of Fracture",
-            "releaseDate": "20180126",
-            "timestamp": "2019-11-09T06:03:23.498525",
-            "url": "https://dreamcatalogue.bandcamp.com/album/lines-of-fracture"
+            "artworkUrl": "https://f4.bcbits.com/img/0015988132_37.jpg",
+            "label": "Airlines Records",
+            "artist": "Hypervision",
+            "title": "COMME des GAR\u00c7ONS",
+            "releaseDate": "20190503",
+            "timestamp": "2019-11-10T01:10:09.239415",
+            "url": "https://airlinesrecords.bandcamp.com/album/comme-des-gar-ons"
         },
         {
-            "label": "aurawire",
-            "artist": "Streymoyer",
-            "title": "Where",
-            "releaseDate": "20180928",
-            "timestamp": "2019-11-09T06:03:24.056069",
-            "url": "https://aurawire.bandcamp.com/album/where",
-            "remainingCassettes": 8
+            "artworkUrl": "https://f4.bcbits.com/img/0016025247_37.jpg",
+            "label": "Dark Web Recordings",
+            "artist": "\u7a7a\u6c17\u7cfb",
+            "title": "scenery",
+            "releaseDate": "20190406",
+            "timestamp": "2019-11-10T01:10:10.198459",
+            "url": "https://darkwebrecordings.bandcamp.com/album/scenery"
         },
         {
-            "label": "Dream Catalogue",
-            "artist": "Slime Mask",
-            "title": "Foretoken",
-            "releaseDate": "20180217",
-            "timestamp": "2019-11-09T06:03:24.312005",
-            "url": "https://dreamcatalogue.bandcamp.com/album/foretoken"
-        },
-        {
-            "label": "aurawire",
-            "artist": "No Death",
-            "title": "Cold",
-            "releaseDate": "20181026",
-            "timestamp": "2019-11-09T06:03:25.719604",
-            "url": "https://aurawire.bandcamp.com/album/cold"
-        },
-        {
-            "label": "Dream Catalogue",
-            "artist": "Jade Statues",
-            "title": "Executive Towers",
-            "releaseDate": "20150928",
-            "timestamp": "2019-11-09T06:03:25.960611",
-            "url": "https://dreamcatalogue.bandcamp.com/album/executive-towers"
-        },
-        {
-            "label": "aurawire",
-            "artist": "VHS MIDNIGHT STYLE",
-            "title": "Cure for Pharma",
-            "releaseDate": "20181221",
-            "timestamp": "2019-11-09T06:03:26.031313",
-            "url": "https://aurawire.bandcamp.com/album/cure-for-pharma"
-        },
-        {
-            "label": "aurawire",
-            "artist": "Sangam",
-            "title": "Aspect",
-            "releaseDate": "20190222",
-            "timestamp": "2019-11-09T06:03:26.843301",
-            "url": "https://aurawire.bandcamp.com/album/aspect",
-            "remainingCassettes": 7
-        },
-        {
-            "label": "Dream Catalogue",
-            "artist": "Chungking Mansions",
-            "title": "ShowView",
-            "releaseDate": "20150311",
-            "timestamp": "2019-11-09T06:03:27.005525",
-            "url": "https://dreamcatalogue.bandcamp.com/album/showview"
-        },
-        {
-            "label": "aurawire",
-            "artist": "saihatenoshima",
-            "title": "No Feelings",
-            "releaseDate": "20180223",
-            "timestamp": "2019-11-09T06:03:27.558483",
-            "url": "https://aurawire.bandcamp.com/album/no-feelings",
-            "remainingCassettes": 7
-        },
-        {
-            "label": "aurawire",
-            "artist": "valyri",
-            "title": "incon",
-            "releaseDate": "20180622",
-            "timestamp": "2019-11-09T06:03:28.041620",
-            "url": "https://aurawire.bandcamp.com/album/incon"
-        },
-        {
-            "label": "Dream Catalogue",
-            "artist": "Bruised Skies",
-            "title": "Remnants",
-            "releaseDate": "20180115",
-            "timestamp": "2019-11-09T06:03:28.112931",
-            "url": "https://dreamcatalogue.bandcamp.com/album/remnants"
-        },
-        {
-            "label": "aurawire",
-            "artist": "Vagrant",
-            "title": "Oracle",
-            "releaseDate": "20190315",
-            "timestamp": "2019-11-09T06:03:28.519260",
-            "url": "https://aurawire.bandcamp.com/album/oracle"
-        },
-        {
-            "label": "Dream Catalogue",
-            "artist": "The Jewel Ship",
-            "title": "Integrating Clouds",
-            "releaseDate": "20170502",
-            "timestamp": "2019-11-09T06:03:28.825183",
-            "url": "https://dreamcatalogue.bandcamp.com/album/integrating-clouds"
-        },
-        {
-            "label": "aurawire",
-            "artist": "K\u00f6SHRiMP",
-            "title": "MACROBiOTOPiA",
-            "releaseDate": "20190726",
-            "timestamp": "2019-11-09T06:03:28.982746",
-            "url": "https://aurawire.bandcamp.com/album/macrobiotopia"
-        },
-        {
-            "label": "aurawire",
-            "artist": "VHS MIDNIGHT STYLE",
-            "title": "Exiting Little Pharma",
-            "releaseDate": "20190810",
-            "timestamp": "2019-11-09T06:03:29.429799",
-            "url": "https://aurawire.bandcamp.com/album/exiting-little-pharma"
-        },
-        {
-            "label": "aurawire",
-            "artist": "HELVETICAN",
-            "title": "LIMITED RUN (A CAPSULE COLLECTION)",
-            "releaseDate": "20190809",
-            "timestamp": "2019-11-09T06:03:29.957181",
-            "url": "https://aurawire.bandcamp.com/album/limited-run-a-capsule-collection"
-        },
-        {
-            "label": "aurawire",
-            "artist": "VHS MIDNIGHT STYLE",
-            "title": "heaven Is Other Places.",
-            "releaseDate": "20191108",
-            "timestamp": "2019-11-09T06:03:30.170431",
-            "url": "https://aurawire.bandcamp.com/album/heaven-is-other-places",
-            "remainingCassettes": 2
-        },
-        {
-            "label": "Dream Catalogue",
-            "artist": "Shinatama",
-            "title": "Astrocide (Part I)",
-            "releaseDate": "20170516",
-            "timestamp": "2019-11-09T06:03:30.338911",
-            "url": "https://dreamcatalogue.bandcamp.com/album/astrocide-part-i"
-        },
-        {
-            "label": "Dream Catalogue",
-            "artist": "Sangam",
-            "title": "Mount To Nothing",
-            "releaseDate": "20180315",
-            "timestamp": "2019-11-09T06:03:30.870787",
-            "url": "https://dreamcatalogue.bandcamp.com/album/mount-to-nothing"
-        },
-        {
-            "label": "aurawire",
-            "artist": "Only Swallow",
-            "title": "Mood Obsidian",
-            "releaseDate": "20170526",
-            "timestamp": "2019-11-09T06:03:31.032958",
-            "url": "https://aurawire.bandcamp.com/album/mood-obsidian"
-        },
-        {
+            "artworkUrl": "https://f4.bcbits.com/img/0011377512_37.jpg",
             "label": "aurawire",
             "artist": "HANTASI",
             "title": "CRYSTAL",
             "releaseDate": "20170929",
-            "timestamp": "2019-11-09T06:03:31.108470",
+            "timestamp": "2019-11-10T01:10:10.734528",
             "url": "https://aurawire.bandcamp.com/album/crystal"
         },
         {
-            "label": "Dream Catalogue",
-            "artist": "Yoshimi",
-            "title": "Island",
-            "releaseDate": "20181102",
-            "timestamp": "2019-11-09T06:03:31.833983",
-            "url": "https://dreamcatalogue.bandcamp.com/album/island"
+            "artworkUrl": "https://f4.bcbits.com/img/0012241887_37.jpg",
+            "label": "& Options",
+            "artist": "Slime Domain",
+            "title": "Slime Pop",
+            "releaseDate": "20160824",
+            "timestamp": "2019-11-10T01:10:11.102794",
+            "url": "https://andoptions.bandcamp.com/album/slime-pop"
         },
         {
-            "label": "aurawire",
-            "artist": "VVV x Sangam",
-            "title": "Wanderers Lane",
-            "releaseDate": "20170630",
-            "timestamp": "2019-11-09T06:03:32.050591",
-            "url": "https://aurawire.bandcamp.com/album/wanderers-lane"
+            "artworkUrl": "https://f4.bcbits.com/img/0013538288_37.jpg",
+            "label": "DIY Trashyteria",
+            "artist": "DJ Yung Lil Xany",
+            "title": "Suitable Remixes",
+            "releaseDate": "20180602",
+            "timestamp": "2019-11-10T01:10:11.152846",
+            "url": "https://diytrashyteria.bandcamp.com/album/suitable-remixes",
+            "remainingCassettes": 8
         },
         {
-            "label": "aurawire",
-            "artist": "Renj\u0101",
-            "title": "Titania of the North",
-            "releaseDate": "20170728",
-            "timestamp": "2019-11-09T06:03:32.521150",
-            "url": "https://aurawire.bandcamp.com/album/titania-of-the-north",
+            "artworkUrl": "https://f4.bcbits.com/img/0015736587_37.jpg",
+            "label": "385North",
+            "artist": "Gallery Of Low Art",
+            "title": "Dark Future",
+            "releaseDate": "20190304",
+            "timestamp": "2019-11-10T01:10:11.703840",
+            "url": "https://385northmusic.bandcamp.com/album/dark-future",
             "remainingCassettes": 6
         },
         {
+            "artworkUrl": "https://f4.bcbits.com/img/0011377512_37.jpg",
             "label": "aurawire",
-            "artist": "pure light",
-            "title": "EULOGY",
-            "releaseDate": "20170804",
-            "timestamp": "2019-11-09T06:03:32.992913",
-            "url": "https://aurawire.bandcamp.com/album/eulogy",
-            "remainingCassettes": 4
+            "artist": "Only Swallow",
+            "title": "Mood Obsidian",
+            "releaseDate": "20170526",
+            "timestamp": "2019-11-10T01:10:11.748219",
+            "url": "https://aurawire.bandcamp.com/album/mood-obsidian"
         },
         {
-            "label": "Dream Catalogue",
-            "artist": "Lau\u0308st",
-            "title": "EDELIS",
-            "releaseDate": "20181119",
-            "timestamp": "2019-11-09T06:03:33.378695",
-            "url": "https://dreamcatalogue.bandcamp.com/album/edelis"
+            "artworkUrl": "https://f4.bcbits.com/img/0016382705_37.jpg",
+            "label": "Aloe City Records",
+            "artist": "Forbidden Cremme",
+            "title": "BOON",
+            "releaseDate": "20190512",
+            "timestamp": "2019-11-10T01:10:11.847164",
+            "url": "https://aloecityrecords.bandcamp.com/album/boon"
         },
         {
-            "label": "Dream Catalogue",
-            "artist": "AUT2M",
-            "title": "Corrupt",
-            "releaseDate": "20181123",
-            "timestamp": "2019-11-09T06:03:33.937836",
-            "url": "https://dreamcatalogue.bandcamp.com/album/corrupt"
-        },
-        {
-            "label": "aurawire",
-            "artist": "SOCECO",
-            "title": "Heaven",
-            "releaseDate": "20170929",
-            "timestamp": "2019-11-09T06:03:34.381055",
-            "url": "https://aurawire.bandcamp.com/album/heaven",
+            "artworkUrl": "https://f4.bcbits.com/img/0013538288_37.jpg",
+            "label": "DIY Trashyteria",
+            "artist": "Ken-Oh Beats & Lobstar",
+            "title": "Don\u2019t H8 Da Player Haight Tha Game",
+            "releaseDate": "20180601",
+            "timestamp": "2019-11-10T01:10:12.283001",
+            "url": "https://diytrashyteria.bandcamp.com/album/don-t-h8-da-player-haight-tha-game",
             "remainingCassettes": 7
         },
         {
+            "artworkUrl": "https://f4.bcbits.com/img/0013279283_37.jpg",
             "label": "Dream Catalogue",
-            "artist": "Lighght",
-            "title": "The Skin Falls Off The Body",
-            "releaseDate": "20181202",
-            "timestamp": "2019-11-09T06:03:35.008020",
-            "url": "https://dreamcatalogue.bandcamp.com/album/the-skin-falls-off-the-body"
+            "artist": "Chesumasuta",
+            "title": "Return Of The High Intellect Nymphomaniac Anime Legend 3000",
+            "releaseDate": "20180329",
+            "timestamp": "2019-11-10T01:10:12.347081",
+            "url": "https://dreamcatalogue.bandcamp.com/album/return-of-the-high-intellect-nymphomaniac-anime-legend-3000"
         },
         {
-            "label": "aurawire",
-            "artist": "Kagami Smile",
-            "title": "Under",
-            "releaseDate": "20171027",
-            "timestamp": "2019-11-09T06:03:35.214158",
-            "url": "https://aurawire.bandcamp.com/album/under"
+            "artworkUrl": "https://f4.bcbits.com/img/0013538288_37.jpg",
+            "label": "DIY Trashyteria",
+            "artist": "BLAK_CAMO",
+            "title": "Slouching Towards Branson",
+            "releaseDate": "20180608",
+            "timestamp": "2019-11-10T01:10:12.742656",
+            "url": "https://diytrashyteria.bandcamp.com/album/slouching-towards-branson",
+            "remainingCassettes": 8
         },
         {
-            "label": "Dream Catalogue",
-            "artist": "Halo Acid",
-            "title": "Body Dares",
-            "releaseDate": "20181209",
-            "timestamp": "2019-11-09T06:03:35.308080",
-            "url": "https://dreamcatalogue.bandcamp.com/album/body-dares"
-        },
-        {
-            "label": "aurawire",
-            "artist": "Lucid Sound Driver",
-            "title": "Gradient Departure",
-            "releaseDate": "20171124",
-            "timestamp": "2019-11-09T06:03:36.369584",
-            "url": "https://aurawire.bandcamp.com/album/gradient-departure"
-        },
-        {
-            "label": "aurawire",
-            "artist": "VVV x Sangam",
-            "title": "Tomorrow Comes",
-            "releaseDate": "20180101",
-            "timestamp": "2019-11-09T06:03:36.412848",
-            "url": "https://aurawire.bandcamp.com/album/tomorrow-comes"
-        },
-        {
-            "label": "Dream Catalogue",
-            "artist": "Ross Khmil",
-            "title": "Invisible Empire",
-            "releaseDate": "20181211",
-            "timestamp": "2019-11-09T06:03:36.511987",
-            "url": "https://dreamcatalogue.bandcamp.com/album/invisible-empire"
-        },
-        {
-            "label": "aurawire",
-            "artist": "International Debris",
-            "title": "Eclipsis",
-            "releaseDate": "20180126",
-            "timestamp": "2019-11-09T06:03:37.278463",
-            "url": "https://aurawire.bandcamp.com/album/eclipsis"
-        },
-        {
-            "label": "Dream Catalogue",
-            "artist": "HKE",
-            "title": "Aesthetic 2013\u200b-\u200b2018",
-            "releaseDate": "20181212",
-            "timestamp": "2019-11-09T06:03:38.102910",
-            "url": "https://dreamcatalogue.bandcamp.com/album/aesthetic-2013-2018"
-        },
-        {
-            "label": "aurawire",
-            "artist": "Sour Gout",
-            "title": "As You Leave",
-            "releaseDate": "20180330",
-            "timestamp": "2019-11-09T06:03:38.268243",
-            "url": "https://aurawire.bandcamp.com/album/as-you-leave",
-            "remainingCassettes": 9
-        },
-        {
-            "label": "Dream Catalogue",
-            "artist": "LILLITH twin",
-            "title": "of flame & love",
-            "releaseDate": "20190725",
-            "timestamp": "2019-11-09T06:03:38.526835",
-            "url": "https://dreamcatalogue.bandcamp.com/album/of-flame-love"
-        },
-        {
-            "label": "aurawire",
-            "artist": "Animalman",
-            "title": "a\u200b.\u200bm",
-            "releaseDate": "20180525",
-            "timestamp": "2019-11-09T06:03:39.751647",
-            "url": "https://aurawire.bandcamp.com/album/a-m-2"
-        },
-        {
-            "label": "Dream Catalogue",
-            "artist": "2814",
-            "title": "Lost Fragments",
-            "releaseDate": "20190705",
-            "timestamp": "2019-11-09T06:03:39.937401",
-            "url": "https://dreamcatalogue.bandcamp.com/album/lost-fragments-2"
-        },
-        {
-            "label": "aurawire",
-            "artist": "Glass Double",
-            "title": "Corona",
-            "releaseDate": "20180525",
-            "timestamp": "2019-11-09T06:03:40.037713",
-            "url": "https://aurawire.bandcamp.com/album/corona"
+            "artworkUrl": "https://f4.bcbits.com/img/0010469135_37.jpg",
+            "label": "DISPLAY",
+            "artist": "DISPLAY",
+            "title": "005\u200b/\u200b006 - Know V\u200b.\u200bA. & fknsyd",
+            "releaseDate": "20170602",
+            "timestamp": "2019-11-10T01:10:13.078016",
+            "url": "https://displayseries.bandcamp.com/album/005-006-know-v-a-fknsyd"
         }
     ]
 }

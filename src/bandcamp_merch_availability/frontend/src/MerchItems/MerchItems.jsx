@@ -20,21 +20,9 @@ function MerchItems(props) {
   const { items } = props;
 
   return (
-    <table className={styles.merchItems}>
-      <thead className={styles.tableHeader}>
-        <tr>
-          <th className={styles.tableHeaderCell}>Label</th>
-          <th className={styles.tableHeaderCell}>Artist</th>
-          <th className={styles.tableHeaderCell}>Release&nbsp;Title</th>
-          <th className={styles.tableHeaderCell}>Cassettes&nbsp;Left</th>
-          <th className={styles.tableHeaderCell}>Release&nbsp;Date</th>
-          <th className={styles.tableHeaderCell}>Last&nbsp;Checked</th>
-        </tr>
-      </thead>
-      <tbody>
-        {items.map((item) => <MerchItem className={styles.merchItem} item={item} key={item.url} />)}
-      </tbody>
-    </table>
+    <div className={styles.merchItems}>
+      {items.map((item) => <MerchItem item={item} key={item.url} />)}
+    </div>
   );
 }
 

@@ -34,45 +34,26 @@ describe('MerchItems', () => {
 
     elem = await findByText(items[0].label);
     notNull(elem);
-    hrefIs(elem, items[0].url);
     elem = await findByText(items[0].artist);
     notNull(elem);
-    hrefIs(elem, items[0].url);
     elem = await findByText(items[0].title);
     notNull(elem);
-    hrefIs(elem, items[0].url);
     elem = await findByText(items[0].releaseDate);
     notNull(elem);
-    hrefIs(elem, items[0].url);
-    elem = await findByText(items[0].timestamp);
+    elem = await findByText(`${items[0].remainingCassettes} remaining`);
     notNull(elem);
-    hrefIs(elem, items[0].url);
-    elem = await findByText(`${items[0].remainingCassettes}`);
-    notNull(elem);
-    hrefIs(elem, items[0].url);
 
     elem = await findByText(items[1].label);
     notNull(elem);
-    hrefIs(elem, items[1].url);
     elem = await findByText(items[1].artist);
     notNull(elem);
-    hrefIs(elem, items[1].url);
     elem = await findByText(items[1].title);
     notNull(elem);
-    hrefIs(elem, items[1].url);
     elem = await findByText(items[1].releaseDate);
     notNull(elem);
-    hrefIs(elem, items[1].url);
-    elem = await findByText(items[1].timestamp);
-    notNull(elem);
-    hrefIs(elem, items[1].url);
   });
 
   function notNull(elem) {
     expect(elem).not.toBeNull;
-  }
-
-  function hrefIs(elem, url) {
-    expect(elem.getAttribute('href')).toBe(url);
   }
 });

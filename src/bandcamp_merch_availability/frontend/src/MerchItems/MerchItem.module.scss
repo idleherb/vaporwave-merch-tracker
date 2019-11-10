@@ -1,31 +1,47 @@
 @import "../variables.scss";
 
 .merchItem {
-    .attribute {
-        border-right: 1px solid $primary-accent-color;
+    background-color: $bg-color;
+    border-radius: 2px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    color: $fg-color;
+    margin: 1rem;
+    width: 45rem;
+    display: flex;
 
-        a {
-            color: $fg-color;
-            text-decoration: none;
-            display: flex;
-            padding: 1rem 1rem;
+    .attributes {
+        padding: 1rem 2rem;
+        width: 26rem;
 
-            &.gray {
-                color: $gray-color;
-            }
-
-            &.lightGray {
-                color: $light-gray-color;
-            }
-
-            &.warn {
-                color: $warn-color;
-                font-weight: bold;
-            }
+        .attribute {
+            width: 26rem;
+            margin: 0.4rem 0;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
         }
     }
 
-    .attribute:first-child {
-        border-left: 1px solid $primary-accent-color;
+    .artwork {
+        width: 15rem;
+        height: 15rem;
     }
+
+    .bold {
+        font-weight: bold;
+    }
+
+    .fineprint {
+        color: $gray-color;
+    }
+
+    .warn {
+        color: $warn-color;
+        font-weight: bold;
+    }
+}
+
+.merchItem:hover {    
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }

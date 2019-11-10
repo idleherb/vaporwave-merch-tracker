@@ -4,10 +4,10 @@ import styles from './MerchItem.module.scss';
 
 MerchItem.propTypes = {
   item: PropTypes.shape({
+    artworkUrl: PropTypes.string.isRequired,
     label: PropTypes.string.isRequired,
     artist: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
-    timestamp: PropTypes.string.isRequired,
     remainingCassettes: PropTypes.number,
     releaseDate: PropTypes.string.isRequired,
     url: PropTypes.string.isRequired,
@@ -17,37 +17,28 @@ MerchItem.propTypes = {
 function MerchItem(props) {
   const { item } = props;
   const {
-    label, artist, title, timestamp, remainingCassettes, releaseDate, url,
+    artworkUrl, label, artist, title, remainingCassettes, releaseDate, url,
   } = item;
 
+  const divRemaining = remainingCassettes ? (
+    <div className={styles.warn}>
+      {remainingCassettes}
+      {' '}
+remaining
+    </div>
+  ) : ' ';
+
   return (
-    <tr className={styles.merchItem}>
-      <td className={styles.attribute}>
-        <a href={url} target="_blank" rel="noopener noreferrer">{label}</a>
-      </td>
-      <td className={styles.attribute}>
-        <a href={url} target="_blank" rel="noopener noreferrer">{artist}</a>
-      </td>
-      <td className={styles.attribute}>
-        <a href={url} target="_blank" rel="noopener noreferrer">{title}</a>
-      </td>
-      <td className={styles.attribute}>
-        <a
-          href={url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className={remainingCassettes ? styles.warn : styles.lightGray}
-        >
-          {remainingCassettes || '∞'}
-        </a>
-      </td>
-      <td className={styles.attribute}>
-        <a href={url} target="_blank" rel="noopener noreferrer">{releaseDate}</a>
-      </td>
-      <td className={styles.attribute}>
-        <a className={styles.gray} href={url} target="_blank" rel="noopener noreferrer">{timestamp}</a>
-      </td>
-    </tr>
+    <a href={url} target="_blank" rel="noopener noreferrer" className={styles.merchItem}>
+      <img src={artworkUrl} alt="Album art" />
+      <div className={styles.attributes}>
+        <div className={styles.attribute}>{label !== artist ? label : ' '}</div>
+        <div className={`${styles.attribute} ${styles.bold}`}>{artist}</div>
+        <div className={styles.attribute}>{title}</div>
+        <div className={styles.attribute}>{divRemaining}</div>
+        <div className={`${styles.attribute} ${styles.fineprint}`}>{releaseDate}</div>
+      </div>
+    </a>
   );
 }
 
