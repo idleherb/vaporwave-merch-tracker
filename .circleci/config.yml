@@ -99,7 +99,6 @@ jobs:
             cd src/bandcamp_merch_availability
             rm -f bandcamp_merch.json
             scrapy crawl bandcamp_merch -o bandcamp_merch.json
-            cat bandcamp_merch.json
       # Deploy scraped data
       - aws-s3/copy:
           from: ./scraper/src/bandcamp_merch_availability/bandcamp_merch.json
