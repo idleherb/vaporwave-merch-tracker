@@ -21,6 +21,7 @@ class BandcampMerchSpider(scrapy.Spider):
         base_url = response.url[:response.url.rfind('/')]
         for artwork_url, album_path in self.parse_merch_page_html(response.body):
             album_url = base_url + album_path
+            print('### 1:', artwork_url, album_path)
             yield scrapy.Request(
                 url=album_url,
                 callback=(lambda res: self.parse_album_page(artwork_url, res))
@@ -63,6 +64,7 @@ class BandcampMerchSpider(scrapy.Spider):
         return (artwork_url, release_path)
 
     def parse_album_page(self, artwork_url, response):
+        print('### 2:', artwork_url, response.url)
         yield self.parse_album_page_html(response.body, artwork_url)
 
 
