@@ -91,7 +91,7 @@ class BandcampMerchSpider(scrapy.Spider):
                 @itemprop="datePublished"
             ]/@content''').get()
         result = {
-            'artwork_url': artwork_url,
+            'artworkUrl': artwork_url,
             'label': label,
             'artist': BandcampMerchSpider.normalize_text(artist),
             'title': BandcampMerchSpider.normalize_text(title),

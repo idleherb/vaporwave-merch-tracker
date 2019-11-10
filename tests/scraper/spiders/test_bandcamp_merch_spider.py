@@ -41,7 +41,7 @@ def test_parse_album_page_html():
 
     actual = BandcampMerchSpider.parse_album_page_html(album_page_html, artwork_url)
     expected = {
-        'artwork_url': artwork_url,
+        'artworkUrl': artwork_url,
         'label': 'My Pet Flamingo',
         'artist': 'Donor Lens',
         'title': 'Miracle Lounge มิราเคิล เลานจ์',
@@ -62,7 +62,7 @@ def test_parse_album_page_html_with_remaining():
 
     actual = BandcampMerchSpider.parse_album_page_html(album_page_html, artwork_url)
     expected = {
-        'artwork_url': artwork_url,
+        'artworkUrl': artwork_url,
         'label': 'My Pet Flamingo',
         'artist': 'Various Artists',
         'title': 'VA\u200b:\u200b10 (A Vaporwave Anniversary)',
