@@ -127,12 +127,12 @@ workflows:
             - test_scraper
 
   scrape_and_deploy_data:
-    # triggers:
-    #   - schedule:
-    #       cron: "0 12 * * *"
-    #       filters:
-    #         branches:
-    #           only:
-    #             - master
+    triggers:
+      - schedule:
+          cron: "0 12 * * *"
+          filters:
+            branches:
+              only:
+                - master
     jobs:
       - scrape_and_deploy_data
