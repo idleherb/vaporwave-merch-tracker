@@ -3,6 +3,7 @@
 # https://experimentalrecords.bandcamp.com/merch
 # https://illuminatedpaths.bandcamp.com/merch
 # https://lazerburnaudio.bandcamp.com/merch
+# https://lost-angles.com/merch
 # https://music.businesscasual.biz/merch
 # https://powerlunch.bandcamp.com/merch
 # https://zimaclearmalt.bandcamp.com/merch
@@ -18,6 +19,7 @@ https://aquablanca.bandcamp.com/merch
 https://asurarevolver.bandcamp.com/merch
 https://aurawire.xyz/merch
 https://bedlamtapes.bandcamp.com/merch
+https://blcr-labs.com/merch
 https://crashsymbols.bandcamp.com/merch
 https://cultureagency.net/merch
 https://darkwebrecordings.bandcamp.com/merch
