@@ -36,10 +36,10 @@ describe('App', () => {
     ];
     fetchMerchItems.mockReturnValue(merchItems);
 
-    const { findByText } = render(<App />);
+    const { findAllByText } = render(<App />);
 
-    const actual = await findByText('aurawire', { exact: false });
-    expect(actual).not.toBeNull();
+    const actual = await findAllByText('aurawire', { exact: false });
+    expect(actual.length).toBe(2);
     expect(fetchMerchItems).toHaveBeenCalled();
   });
 });
