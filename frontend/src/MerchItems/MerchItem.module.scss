@@ -26,9 +26,9 @@ $break-small: 46rem;
 
         .attribute {
             width: 26rem;
-            margin: 0.4rem 0;
+            margin: 0.1rem 0;
             @media screen and (max-width: $break-small) {
-                width: 19rem;
+                width: 146.6rem;
                 margin: 0.1rem 0;
             }
             text-overflow: ellipsis;
@@ -39,7 +39,7 @@ $break-small: 46rem;
 
     .artwork {
         width: 16.8rem;
-        height: 14.4rem;
+        height: 12.6rem;
         @media screen and (max-width: $break-small) {
             width: 13rem;
             height: 11rem;

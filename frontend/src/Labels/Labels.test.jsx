@@ -5,21 +5,23 @@ import '@testing-library/jest-dom/extend-expect';
 import Labels from './Labels';
 
 describe('Labels', () => {
-  it('should display 2 labels, one selected', () => {
+  it('should display 2 labels, one selected', async () => {
     const labels = [
       {
         name: 'aurawire',
+        count: 2,
       },
       {
         name: 'Dream Catalogue',
+        count: 5,
         selected: true,
       },
     ];
-    const { queryByText } = render(<Labels labels={labels} />);
+    const { findByText } = render(<Labels labels={labels} />);
 
     /* eslint-disable no-unused-expressions */
-    notNull(queryByText(labels[0].name));
-    notNull(queryByText(labels[1].name));
+    notNull(await findByText(`${labels[0].name} (${labels[0].count})`));
+    notNull(await findByText(`${labels[1].name} (${labels[1].count})`));
   });
 
   function notNull(elem) {

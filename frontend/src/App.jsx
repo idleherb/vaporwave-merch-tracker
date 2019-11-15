@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './App.css';
+import styles from './App.module.scss';
 import MerchItems from './MerchItems/MerchItems';
 import fetchMerchItems from './service/service';
 import Labels from './Labels/Labels';
@@ -16,12 +16,11 @@ function App() {
         if (newMerchItems) {
           setMerchItems(newMerchItems);
           const labelNames = [...new Set(newMerchItems.map((labelItem) => labelItem.label))];
-          const labels = {};
+          const selectedLabels = {};
           labelNames.forEach((labelName) => {
-            labels[labelName] = true;
+            selectedLabels[labelName] = true;
           });
-          console.log(labels)
-          setLabels(labels);
+          setLabels(selectedLabels);
         }
       } catch (error) {
         /* eslint-disable no-console */
@@ -33,25 +32,25 @@ function App() {
     initialize();
   }, []);
 
-  const loading = <div />;
+  const loading = <></>;
   return initialized ? (
-    <div>
+    <div className={styles.app}>
       <Labels labels={
         Object
           .keys(labels)
           .sort((a, b) => a.localeCompare(b))
-          .map(label => {
-            return {
-              name: label,
-              selected: labels[label],
-              cb: () => {
-                setLabels({
-                  ...labels,
-                  [label]: !labels[label],
-                });
-              },
-            };
-          })} />
+          .map((label) => ({
+            count: merchItems.filter((item) => item.label === label).length,
+            name: label,
+            selected: labels[label],
+            afterChange: () => {
+              setLabels({
+                ...labels,
+                [label]: !labels[label],
+              });
+            },
+          }))
+      }/>
       <MerchItems items={merchItems.filter((item) => labels[item.label])} />
     </div>
   ) : loading;
