@@ -50,7 +50,8 @@ function App() {
               });
             },
           }))
-      }/>
+      }
+      />
       <MerchItems items={merchItems.filter((item) => labels[item.label])} />
     </div>
   ) : loading;

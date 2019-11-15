@@ -20,7 +20,9 @@ function Labels(props) {
     <header className={styles.header}>
       <ul className={styles.labels}>
         {labels.map((label) => {
-          const { afterChange, count, name, selected } = label;
+          const {
+            afterChange, count, name, selected,
+          } = label;
           return (
             <Label
               afterChange={afterChange}

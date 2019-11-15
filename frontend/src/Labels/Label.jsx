@@ -15,7 +15,9 @@ Label.defaultProps = {
 };
 
 function Label(props) {
-  const { afterChange, count, name, selected } = props;
+  const {
+    afterChange, count, name, selected,
+  } = props;
   const [checked, setChecked] = useState(selected);
 
   function handleChange(event) {
@@ -29,7 +31,11 @@ function Label(props) {
     /* eslint-disable jsx-a11y/label-has-associated-control */
     <li className={styles.container}>
       <label className={`${checked ? styles.selected : ''} ${styles.filterChip}`}>
-        {name} ({count})
+        {name}
+        {' '}
+(
+        {count}
+)
         <input type="checkbox" checked={checked} onChange={handleChange} />
         <span className={styles.checkmark} />
       </label>
