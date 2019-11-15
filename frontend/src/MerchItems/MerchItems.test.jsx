@@ -5,7 +5,7 @@ import '@testing-library/jest-dom/extend-expect';
 import MerchItems from './MerchItems';
 
 describe('MerchItems', () => {
-  it('should display 2 merch items', async () => {
+  it('should display 2 merch items', () => {
     const items = [
       {
         artworkUrl: 'https://example.com/artwork1.jpg',
@@ -27,33 +27,33 @@ describe('MerchItems', () => {
         url: 'https://dreamcatalogue.bandcamp.com/album/showview',
       },
     ];
-    const { findByText } = render(<MerchItems items={items} />);
+    const { queryByText } = render(<MerchItems items={items} />);
 
     /* eslint-disable no-unused-expressions */
     let elem = null;
 
-    elem = await findByText(items[0].label);
+    elem = queryByText(items[0].label);
     notNull(elem);
-    elem = await findByText(items[0].artist);
+    elem = queryByText(items[0].artist);
     notNull(elem);
-    elem = await findByText(items[0].title);
+    elem = queryByText(items[0].title);
     notNull(elem);
-    elem = await findByText(items[0].releaseDate);
+    elem = queryByText(items[0].releaseDate);
     notNull(elem);
-    elem = await findByText(`${items[0].remainingCassettes} remaining`);
+    elem = queryByText(`${items[0].remainingCassettes} remaining`);
     notNull(elem);
 
-    elem = await findByText(items[1].label);
+    elem = queryByText(items[1].label);
     notNull(elem);
-    elem = await findByText(items[1].artist);
+    elem = queryByText(items[1].artist);
     notNull(elem);
-    elem = await findByText(items[1].title);
+    elem = queryByText(items[1].title);
     notNull(elem);
-    elem = await findByText(items[1].releaseDate);
+    elem = queryByText(items[1].releaseDate);
     notNull(elem);
   });
 
   function notNull(elem) {
-    expect(elem).not.toBeNull;
+    expect(elem).not.toBeNull();
   }
 });
