@@ -1,21 +1,24 @@
+import React, { useEffect, useState } from 'react';
+
+import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
-import Chip from '@material-ui/core/Chip';
-import LinearProgress from '@material-ui/core/LinearProgress';
-import Container from '@material-ui/core/Container';
-import Grid from '@material-ui/core/Grid';
-import Typography from '@material-ui/core/Typography';
-import Paper from '@material-ui/core/Paper';
-import Toolbar from '@material-ui/core/Toolbar';
-import CssBaseline from '@material-ui/core/CssBaseline';
 import CheckIcon from '@material-ui/icons/Check';
-import IconButton from '@material-ui/core/IconButton';
+import Chip from '@material-ui/core/Chip';
+import Container from '@material-ui/core/Container';
+import CssBaseline from '@material-ui/core/CssBaseline';
 import FilterListIcon from '@material-ui/icons/FilterList';
-import { makeStyles } from '@material-ui/core/styles';
-import React, { useEffect, useState } from 'react';
+import FormControlLabel from '@material-ui/core/FormControlLabel';
+import Grid from '@material-ui/core/Grid';
+import IconButton from '@material-ui/core/IconButton';
+import LinearProgress from '@material-ui/core/LinearProgress';
+import Paper from '@material-ui/core/Paper';
+import Switch from '@material-ui/core/Switch';
+import Toolbar from '@material-ui/core/Toolbar';
+import Typography from '@material-ui/core/Typography';
 
 import fetchMerchItems from './service/service';
 
@@ -64,6 +67,7 @@ function App() {
   const [initialized, setInitialized] = useState(false);
   const [showFilter, setShowFilter] = useState(false);
   const [merchItems, setMerchItems] = useState([]);
+  const [selectAll, setSelectAll] = useState(true);
   const [labels, setLabels] = useState({});
   const classes = useStyles();
 
@@ -94,6 +98,16 @@ function App() {
     setShowFilter(!showFilter);
   }
 
+  function handleChangeSelectAll(event) {
+    const selectAllNew = event.target.checked;
+    setSelectAll(selectAllNew);
+    const newLabels = { ...labels };
+    Object.keys(labels).forEach((label) => {
+      newLabels[label] = selectAllNew;
+    });
+    setLabels(newLabels);
+  }
+
   return initialized ? (
     <>
       <CssBaseline />
@@ -107,6 +121,12 @@ function App() {
           </Toolbar>
         </AppBar>
         <Paper className={`${classes.filterArea} ${showFilter ? '' : classes.hidden}`}>
+          <FormControlLabel
+            control={
+              <Switch checked={selectAll} onChange={handleChangeSelectAll} value="selectAll" color="primary" />
+            }
+            label={`${selectAll ? 'Unselect' : 'Select'} all`}
+          />
           {Object
             .keys(labels)
             .sort((a, b) => a.localeCompare(b))
@@ -144,7 +164,7 @@ function App() {
                   artist, artworkUrl, label, releaseDate, remainingCassettes, title, url,
                 } = item;
                 return (
-                  <a href={url} className={classes.card} target="_blank" rel="noopener noreferrer">
+                  <a key={url} href={url} className={classes.card} target="_blank" rel="noopener noreferrer">
                     <Card>
                       <CardActionArea className={classes.flex}>
                         <CardMedia
