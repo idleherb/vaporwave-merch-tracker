@@ -1,13 +1,71 @@
+import AppBar from '@material-ui/core/AppBar';
+import Card from '@material-ui/core/Card';
+import CardActionArea from '@material-ui/core/CardActionArea';
+import CardContent from '@material-ui/core/CardContent';
+import CardMedia from '@material-ui/core/CardMedia';
+import Chip from '@material-ui/core/Chip';
+import LinearProgress from '@material-ui/core/LinearProgress';
+import Container from '@material-ui/core/Container';
+import Grid from '@material-ui/core/Grid';
+import Typography from '@material-ui/core/Typography';
+import Paper from '@material-ui/core/Paper';
+import Toolbar from '@material-ui/core/Toolbar';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import CheckIcon from '@material-ui/icons/Check';
+import IconButton from '@material-ui/core/IconButton';
+import FilterListIcon from '@material-ui/icons/FilterList';
+import { makeStyles } from '@material-ui/core/styles';
 import React, { useEffect, useState } from 'react';
-import styles from './App.module.scss';
-import MerchItems from './MerchItems/MerchItems';
+
 import fetchMerchItems from './service/service';
-import Labels from './Labels/Labels';
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    flexGrow: 1,
+  },
+  grow: {
+    flexGrow: 1,
+  },
+  filterArea: {
+    display: 'flex',
+    justifyContent: 'center',
+    flexWrap: 'wrap',
+    padding: theme.spacing(0.5),
+  },
+  card: {
+    textDecoration: 'none',
+    margin: theme.spacing(1),
+  },
+  flex: {
+    display: 'flex',
+    width: 350,
+  },
+  content: {
+    paddingTop: 0,
+    paddingBottom: 0,
+    width: 182,
+  },
+  merchItems: {
+    maxWidth: 1200,
+  },
+  media: {
+    width: 168,
+    height: 126,
+  },
+  chip: {
+    margin: theme.spacing(0.5),
+  },
+  hidden: {
+    display: 'none',
+  },
+}));
 
 function App() {
   const [initialized, setInitialized] = useState(false);
+  const [showFilter, setShowFilter] = useState(false);
   const [merchItems, setMerchItems] = useState([]);
   const [labels, setLabels] = useState({});
+  const classes = useStyles();
 
   useEffect(() => {
     async function initialize() {
@@ -32,29 +90,96 @@ function App() {
     initialize();
   }, []);
 
-  const loading = <></>;
+  function handleClickFilterButton() {
+    setShowFilter(!showFilter);
+  }
+
   return initialized ? (
-    <div className={styles.app}>
-      <Labels labels={
-        Object
-          .keys(labels)
-          .sort((a, b) => a.localeCompare(b))
-          .map((label) => ({
-            count: merchItems.filter((item) => item.label === label).length,
-            name: label,
-            selected: labels[label],
-            afterChange: () => {
-              setLabels({
-                ...labels,
-                [label]: !labels[label],
-              });
-            },
-          }))
-      }
-      />
-      <MerchItems items={merchItems.filter((item) => labels[item.label])} />
-    </div>
-  ) : loading;
+    <>
+      <CssBaseline />
+      <div className={classes.root}>
+        <AppBar position="static">
+          <Toolbar>
+            <div className={classes.grow} />
+            <IconButton aria-label="filter labels" color="inherit" onClick={handleClickFilterButton}>
+              <FilterListIcon />
+            </IconButton>
+          </Toolbar>
+        </AppBar>
+        <Paper className={`${classes.filterArea} ${showFilter ? '' : classes.hidden}`}>
+          {Object
+            .keys(labels)
+            .sort((a, b) => a.localeCompare(b))
+            .map((label) => {
+              const count = merchItems.filter((item) => item.label === label).length;
+              const selected = labels[label];
+              const handleClick = () => {
+                setLabels({
+                  ...labels,
+                  [label]: !labels[label],
+                });
+              };
+
+              return (
+                <Chip
+                  key={label}
+                  icon={selected && <CheckIcon />}
+                  label={`${label} (${count})`}
+                  className={classes.chip}
+                  onClick={handleClick}
+                />
+              );
+            })}
+        </Paper>
+        <Container className={classes.merchItems}>
+          <Grid
+            container
+            justify="center"
+            alignItems="center"
+          >
+            {merchItems
+              .filter((item) => labels[item.label])
+              .map((item) => {
+                const {
+                  artist, artworkUrl, label, releaseDate, remainingCassettes, title, url,
+                } = item;
+                return (
+                  <a href={url} className={classes.card} target="_blank" rel="noopener noreferrer">
+                    <Card>
+                      <CardActionArea className={classes.flex}>
+                        <CardMedia
+                          className={classes.media}
+                          image={artworkUrl}
+                          title={title}
+                        />
+                        <CardContent className={classes.content}>
+                          <Typography noWrap variant="body2">
+                            {label !== artist ? label : ' '}
+                          </Typography>
+                          <Typography noWrap variant="subtitle2">
+                            {artist}
+                          </Typography>
+                          <Typography noWrap variant="body2" gutterBottom>
+                            {title}
+                          </Typography>
+                          <Typography noWrap variant="body2" color="error">
+                            {remainingCassettes ? `${remainingCassettes} remaining` : ''}
+                          </Typography>
+                          <Typography noWrap variant="body2" color="textSecondary">
+                            {releaseDate}
+                          </Typography>
+                        </CardContent>
+                      </CardActionArea>
+                    </Card>
+                  </a>
+                );
+              })}
+          </Grid>
+        </Container>
+      </div>
+
+    </>
+  ) : <LinearProgress />;
 }
 
 export default App;
