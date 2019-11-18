@@ -68,6 +68,7 @@ function App() {
   const [showFilter, setShowFilter] = useState(false);
   const [merchItems, setMerchItems] = useState([]);
   const [selectAll, setSelectAll] = useState(true);
+  const [selectLimitedOnly, setSelectLimitedOnly] = useState(false);
   const [labels, setLabels] = useState({});
   const classes = useStyles();
 
@@ -108,6 +109,11 @@ function App() {
     setLabels(newLabels);
   }
 
+  function handleChangeSelectLimitedOnly(event) {
+    const selectLimitedOnlyNew = event.target.checked;
+    setSelectLimitedOnly(selectLimitedOnlyNew);
+  }
+
   return initialized ? (
     <>
       <CssBaseline />
@@ -125,13 +131,28 @@ function App() {
             control={
               <Switch checked={selectAll} onChange={handleChangeSelectAll} value="selectAll" color="primary" />
             }
-            label={`${selectAll ? 'Unselect' : 'Select'} all`}
+            label={`Select all (${
+              selectLimitedOnly
+                ? merchItems.filter((item) => !!item.remainingCassettes).length
+                : merchItems.length
+            })`}
+          />
+          <FormControlLabel
+            control={
+              <Switch checked={selectLimitedOnly} onChange={handleChangeSelectLimitedOnly} value="rareOnly" color="primary" />
+            }
+            label={`Only limited items (${
+              merchItems
+                .filter((item) => !!item.remainingCassettes)
+                .length
+            })`}
           />
           {Object
             .keys(labels)
             .sort((a, b) => a.localeCompare(b))
             .map((label) => {
-              const count = merchItems.filter((item) => item.label === label).length;
+              const count = merchItems.filter((item) => item.label === label
+                  && (!selectLimitedOnly || !!item.remainingCassettes)).length;
               const selected = labels[label];
               const handleClick = () => {
                 setLabels({
@@ -140,16 +161,22 @@ function App() {
                 });
               };
 
-              return (
-                <Chip
-                  key={label}
-                  icon={selected && <CheckIcon />}
-                  label={`${label} (${count})`}
-                  className={classes.chip}
-                  onClick={handleClick}
-                />
-              );
-            })}
+              return {
+                count, handleClick, label, selected,
+              };
+            })
+            .filter(({ count }) => count > 0)
+            .map(({
+              count, handleClick, label, selected,
+            }) => (
+              <Chip
+                key={label}
+                icon={selected && <CheckIcon />}
+                label={`${label} (${count})`}
+                className={classes.chip}
+                onClick={handleClick}
+              />
+            ))}
         </Paper>
         <Container className={classes.merchItems}>
           <Grid
@@ -158,7 +185,8 @@ function App() {
             alignItems="center"
           >
             {merchItems
-              .filter((item) => labels[item.label])
+              .filter((item) => labels[item.label]
+                && (!selectLimitedOnly || !!item.remainingCassettes))
               .map((item) => {
                 const {
                   artist, artworkUrl, label, releaseDate, remainingCassettes, title, url,
@@ -197,7 +225,6 @@ function App() {
           </Grid>
         </Container>
       </div>
-
     </>
   ) : <LinearProgress />;
 }
