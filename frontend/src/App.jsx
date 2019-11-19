@@ -171,7 +171,7 @@ function App() {
             }) => (
               <Chip
                 key={label}
-                icon={selected && <CheckIcon />}
+                color={selected ? "primary" : "default"}
                 label={`${label} (${count})`}
                 className={classes.chip}
                 onClick={handleClick}
