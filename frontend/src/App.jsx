@@ -6,7 +6,6 @@ import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
-import CheckIcon from '@material-ui/icons/Check';
 import Chip from '@material-ui/core/Chip';
 import Container from '@material-ui/core/Container';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -171,7 +170,7 @@ function App() {
             }) => (
               <Chip
                 key={label}
-                color={selected ? "primary" : "default"}
+                color={selected ? 'primary' : 'default'}
                 label={`${label} (${count})`}
                 className={classes.chip}
                 onClick={handleClick}
