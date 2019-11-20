@@ -11,6 +11,7 @@ import Container from '@material-ui/core/Container';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import FilterListIcon from '@material-ui/icons/FilterList';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
+import FormGroup from '@material-ui/core/FormGroup';
 import Grid from '@material-ui/core/Grid';
 import IconButton from '@material-ui/core/IconButton';
 import LinearProgress from '@material-ui/core/LinearProgress';
@@ -30,7 +31,6 @@ const useStyles = makeStyles((theme) => ({
   },
   filterArea: {
     display: 'flex',
-    justifyContent: 'center',
     flexWrap: 'wrap',
     padding: theme.spacing(0.5),
   },
@@ -126,32 +126,34 @@ function App() {
           </Toolbar>
         </AppBar>
         <Paper className={`${classes.filterArea} ${showFilter ? '' : classes.hidden}`}>
-          <FormControlLabel
-            control={
-              <Switch checked={selectAll} onChange={handleChangeSelectAll} value="selectAll" color="primary" />
-            }
-            label={`Select all (${
-              selectLimitedOnly
-                ? merchItems.filter((item) => !!item.remainingCassettes).length
-                : merchItems.length
-            })`}
-          />
-          <FormControlLabel
-            control={
-              <Switch checked={selectLimitedOnly} onChange={handleChangeSelectLimitedOnly} value="rareOnly" color="primary" />
-            }
-            label={`Only limited items (${
-              merchItems
-                .filter((item) => !!item.remainingCassettes)
-                .length
-            })`}
-          />
+          <FormGroup row>
+            <FormControlLabel
+              control={
+                <Switch checked={selectAll} onChange={handleChangeSelectAll} value="selectAll" color="primary" />
+              }
+              label={`Select all (${
+                selectLimitedOnly
+                  ? merchItems.filter((item) => !!item.remainingCassettes).length
+                  : merchItems.length
+                })`}
+            />
+            <FormControlLabel
+              control={
+                <Switch checked={selectLimitedOnly} onChange={handleChangeSelectLimitedOnly} value="rareOnly" color="primary" />
+              }
+              label={`Only limited items (${
+                merchItems
+                  .filter((item) => !!item.remainingCassettes)
+                  .length
+                })`}
+            />
+          </FormGroup>
           {Object
             .keys(labels)
             .sort((a, b) => a.localeCompare(b))
             .map((label) => {
               const count = merchItems.filter((item) => item.label === label
-                  && (!selectLimitedOnly || !!item.remainingCassettes)).length;
+                && (!selectLimitedOnly || !!item.remainingCassettes)).length;
               const selected = labels[label];
               const handleClick = () => {
                 setLabels({
@@ -168,14 +170,14 @@ function App() {
             .map(({
               count, handleClick, label, selected,
             }) => (
-              <Chip
-                key={label}
-                color={selected ? 'primary' : 'default'}
-                label={`${label} (${count})`}
-                className={classes.chip}
-                onClick={handleClick}
-              />
-            ))}
+                <Chip
+                  key={label}
+                  color={selected ? 'primary' : 'default'}
+                  label={`${label} (${count})`}
+                  className={classes.chip}
+                  onClick={handleClick}
+                />
+              ))}
         </Paper>
         <Container className={classes.merchItems}>
           <Grid
