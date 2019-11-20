@@ -135,7 +135,7 @@ function App() {
                 selectLimitedOnly
                   ? merchItems.filter((item) => !!item.remainingCassettes).length
                   : merchItems.length
-                })`}
+              })`}
             />
             <FormControlLabel
               control={
@@ -145,7 +145,7 @@ function App() {
                 merchItems
                   .filter((item) => !!item.remainingCassettes)
                   .length
-                })`}
+              })`}
             />
           </FormGroup>
           {Object
@@ -170,14 +170,14 @@ function App() {
             .map(({
               count, handleClick, label, selected,
             }) => (
-                <Chip
-                  key={label}
-                  color={selected ? 'primary' : 'default'}
-                  label={`${label} (${count})`}
-                  className={classes.chip}
-                  onClick={handleClick}
-                />
-              ))}
+              <Chip
+                key={label}
+                color={selected ? 'primary' : 'default'}
+                label={`${label} (${count})`}
+                className={classes.chip}
+                onClick={handleClick}
+              />
+            ))}
         </Paper>
         <Container className={classes.merchItems}>
           <Grid
