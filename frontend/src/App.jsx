@@ -66,27 +66,26 @@ function App() {
   const [initialized, setInitialized] = useState(false);
   const [showFilter, setShowFilter] = useState(false);
   const [merchItems, setMerchItems] = useState([]);
-  const [selectAll, setSelectAll] = useState(true);
-  const [selectLimitedOnly, setSelectLimitedOnly] = useState(false);
-  const [selectedMerchTypes, setSelectedMerchTypes] = useState({
-    cassette: true,
-    vinyl: true,
-  });
-  const [labels, setLabels] = useState({});
+  const [selectAllLabels, setSelectAllLabels] = useState(true);
+  const [selectFewRemaining, setSelectFewRemaining] = useState(false);
+  const [selectedMerchTypes, setSelectedMerchTypes] = useState({});
+  const [selectedLabels, setSelectedLabels] = useState({});
   const classes = useStyles();
 
   useEffect(() => {
     async function initialize() {
       try {
-        const newMerchItems = await fetchMerchItems();
-        if (newMerchItems) {
-          setMerchItems(newMerchItems);
-          const labelNames = [...new Set(newMerchItems.map((labelItem) => labelItem.label))];
-          const selectedLabels = {};
-          labelNames.forEach((labelName) => {
-            selectedLabels[labelName] = true;
+        const allMerchItems = await fetchMerchItems();
+        if (allMerchItems) {
+          const allSelectedLabels = {};
+          const allSelectedMerchTypes = {};
+          allMerchItems.forEach(({ label, merchType }) => {
+            allSelectedLabels[label] = true;
+            allSelectedMerchTypes[merchType] = true;
           });
-          setLabels(selectedLabels);
+          setMerchItems(allMerchItems);
+          setSelectedLabels(allSelectedLabels);
+          setSelectedMerchTypes(allSelectedMerchTypes);
         }
       } catch (error) {
         /* eslint-disable no-console */
@@ -103,32 +102,25 @@ function App() {
   }
 
   function handleChangeSelectAll(event) {
-    const selectAllNew = event.target.checked;
-    setSelectAll(selectAllNew);
-    const newLabels = { ...labels };
-    Object.keys(labels).forEach((label) => {
-      newLabels[label] = selectAllNew;
+    const newSelectAllLabels = event.target.checked;
+    setSelectAllLabels(newSelectAllLabels);
+    const newSelectedLabels = { ...selectedLabels };
+    Object.keys(newSelectedLabels).forEach((label) => {
+      newSelectedLabels[label] = newSelectAllLabels;
     });
-    setLabels(newLabels);
+    setSelectedLabels(newSelectedLabels);
   }
 
-  function handleChangeSelectCassette() {
+  function handleChangeSelectMerchType(merchType) {
     setSelectedMerchTypes({
       ...selectedMerchTypes,
-      cassette: !selectedMerchTypes.cassette,
+      [merchType]: !selectedMerchTypes[merchType],
     });
   }
 
-  function handleChangeSelectVinyl() {
-    setSelectedMerchTypes({
-      ...selectedMerchTypes,
-      vinyl: !selectedMerchTypes.vinyl,
-    });
-  }
-
-  function handleChangeSelectLimitedOnly(event) {
-    const selectLimitedOnlyNew = event.target.checked;
-    setSelectLimitedOnly(selectLimitedOnlyNew);
+  function handleChangeSelectFewRemaining(event) {
+    const newSelectFewRemaining = event.target.checked;
+    setSelectFewRemaining(newSelectFewRemaining);
   }
 
   return initialized ? (
@@ -137,18 +129,6 @@ function App() {
       <div className={classes.root}>
         <AppBar position="static">
           <Toolbar>
-            <Chip
-              className={classes.chip}
-              color={selectedMerchTypes.cassette ? 'secondary' : 'primary'}
-              label="Cassette"
-              onClick={handleChangeSelectCassette}
-            />
-            <Chip
-              className={classes.chip}
-              color={selectedMerchTypes.vinyl ? 'secondary' : 'primary'}
-              label="Vinyl"
-              onClick={handleChangeSelectVinyl}
-            />
             <div className={classes.grow} />
             <IconButton aria-label="filter labels" color="inherit" onClick={handleClickFilterButton}>
               <FilterListIcon />
@@ -159,43 +139,48 @@ function App() {
           <FormGroup row>
             <FormControlLabel
               control={
-                <Switch checked={selectAll} onChange={handleChangeSelectAll} value="selectAll" color="primary" />
+                <Switch checked={selectAllLabels} onChange={handleChangeSelectAll} value="selectAllLabels" color="primary" />
               }
               label={`Select all (${
-                selectLimitedOnly
-                  ? merchItems.filter((item) => !!item.remaining
-                    && ((selectedMerchTypes.cassette && item.merchType === 'Cassette')
-                      || (selectedMerchTypes.vinyl && item.merchType === 'Record/Vinyl'))).length
-                  : merchItems.filter((item) => (selectedMerchTypes.cassette && item.merchType === 'Cassette')
-                    || (selectedMerchTypes.vinyl && item.merchType === 'Record/Vinyl')).length
+                selectFewRemaining
+                  ? merchItems.filter((item) => !!item.remaining && selectedMerchTypes[item.merchType]).length
+                  : merchItems.filter((item) => selectedMerchTypes[item.merchType]).length
               })`}
             />
             <FormControlLabel
               control={
-                <Switch checked={selectLimitedOnly} onChange={handleChangeSelectLimitedOnly} value="rareOnly" color="primary" />
+                <Switch checked={selectFewRemaining} onChange={handleChangeSelectFewRemaining} value="fewRemaining" color="primary" />
               }
-              label={`Only limited items (${
+              label={`Few remaining (${
                 merchItems
-                  .filter((item) => !!item.remaining
-                    && ((selectedMerchTypes.cassette && item.merchType === 'Cassette')
-                      || (selectedMerchTypes.vinyl && item.merchType === 'Record/Vinyl')))
+                  .filter((item) => !!item.remaining && selectedMerchTypes[item.merchType])
                   .length
               })`}
             />
           </FormGroup>
           {Object
-            .keys(labels)
+            .keys(selectedMerchTypes)
+            .sort((a, b) => a.localeCompare(b))
+            .map((merchType) => (
+              <Chip
+                className={classes.chip}
+                color={selectedMerchTypes[merchType] ? 'secondary' : 'default'}
+                label={merchType}
+                onClick={() => handleChangeSelectMerchType(merchType)}
+              />
+            ))}
+          {Object
+            .keys(selectedLabels)
             .sort((a, b) => a.localeCompare(b))
             .map((label) => {
               const count = merchItems.filter((item) => item.label === label
-                && (!selectLimitedOnly || !!item.remaining)
-                && ((selectedMerchTypes.cassette && item.merchType === 'Cassette')
-                  || (selectedMerchTypes.vinyl && item.merchType === 'Record/Vinyl'))).length;
-              const selected = labels[label];
+                && (!selectFewRemaining || !!item.remaining)
+                && selectedMerchTypes[item.merchType]).length;
+              const selected = selectedLabels[label];
               const handleClick = () => {
-                setLabels({
-                  ...labels,
-                  [label]: !labels[label],
+                setSelectedLabels({
+                  ...selectedLabels,
+                  [label]: !selectedLabels[label],
                 });
               };
 
@@ -223,10 +208,9 @@ function App() {
             alignItems="center"
           >
             {merchItems
-              .filter((item) => labels[item.label]
-                && (!selectLimitedOnly || !!item.remaining)
-                && ((selectedMerchTypes.cassette && item.merchType === 'Cassette')
-                  || (selectedMerchTypes.vinyl && item.merchType === 'Record/Vinyl')))
+              .filter((item) => selectedLabels[item.label]
+                && (!selectFewRemaining || !!item.remaining)
+                && selectedMerchTypes[item.merchType])
               .map((item) => {
                 const {
                   artist, artworkUrl, label, releaseDate, remaining, title, url,
