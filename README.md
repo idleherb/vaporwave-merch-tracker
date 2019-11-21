@@ -21,7 +21,7 @@ Live app: <http://merch.iwanttorelease.com>
 
     (venv) cd src/bandcamp_merch_availability
     (venv) rm -f bandcamp_merch.json
-    (venv)  scrapy crawl bandcamp_merch -o bandcamp_merch.json
+    (venv) scrapy crawl bandcamp_merch -o bandcamp_merch.json
     (venv) cat bandcamp_merch.json
 
 ## Frontend
