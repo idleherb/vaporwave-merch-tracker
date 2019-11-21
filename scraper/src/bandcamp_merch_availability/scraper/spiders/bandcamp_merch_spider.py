@@ -3,6 +3,8 @@ import scrapy
 from datetime import datetime
 from scrapy.selector import Selector
 
+import sys
+
 
 
 MERCH_TYPE_CASSETTE = 'Cassette'
@@ -22,9 +24,10 @@ class BandcampMerchSpider(scrapy.Spider):
     def parse(self, response):
         base_url = response.url[:response.url.rfind('/')]
         for album_path in self.parse_merch_page_html(response.body):
+            if album_path.startswith('/merch'):
+                album_path = album_path[6:]
             album_url = base_url + album_path
-            for result in scrapy.Request(url=album_url, callback=self.parse_album_page):
-                yield result
+            yield scrapy.Request(url=album_url, callback=self.parse_album_page)
 
 
     @staticmethod
@@ -49,7 +52,7 @@ class BandcampMerchSpider(scrapy.Spider):
 
 
     def parse_album_page(self, response):
-        yield self.parse_album_page_html(response.body)
+        return self.parse_album_page_html(response.body)
 
 
     @staticmethod
@@ -98,18 +101,10 @@ class BandcampMerchSpider(scrapy.Spider):
                                 or normalize-space()="Buy {MERCH_TYPE_VINYL}"
                         ]
                 ]''').getall()
-        items = [BandcampMerchSpider.parse_raw_item(raw_item) for raw_item in raw_items]
-        # item = {
-        #     artworkUrl: '...',
-        #     merchType: '...',
-        #     remaining: 5,
-        # }
-        print(items)
-        return [{**result_template, **item} for item in items]
 
-        
-
-        return result
+        for raw_item in raw_items:
+            item = BandcampMerchSpider.parse_raw_item(raw_item)
+            yield {**result_template, **item}
 
 
     @staticmethod

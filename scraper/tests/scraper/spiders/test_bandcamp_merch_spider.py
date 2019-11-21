@@ -39,7 +39,7 @@ def test_parse_cassette_page_html_with_remaining():
     with open('tests/scraper/spiders/cassette_page_with_remaining.html') as f:
         album_page_html = f.read()
 
-    actual = BandcampMerchSpider.parse_album_page_html(album_page_html)
+    actual = [item for item in BandcampMerchSpider.parse_album_page_html(album_page_html)]
     expected = [{
         'artworkUrl': 'https://f4.bcbits.com/img/0017811177_38.jpg',
         'label': 'My Pet Flamingo',
@@ -61,7 +61,7 @@ def test_parse_cassette_and_vinyl_page():
     with open('tests/scraper/spiders/cassette_and_vinyl_page.html') as f:
         album_page_html = f.read()
     
-    actual = BandcampMerchSpider.parse_album_page_html(album_page_html)
+    actual = [item for item in BandcampMerchSpider.parse_album_page_html(album_page_html)]
     expected = [
         {
             'artworkUrl': 'https://f4.bcbits.com/img/0017886166_38.jpg',
@@ -115,17 +115,29 @@ def test_parse_vinyl_page_html_with_remaining():
     with open('tests/scraper/spiders/vinyl_page_with_remaining.html') as f:
         album_page_html = f.read()
 
-    actual = BandcampMerchSpider.parse_album_page_html(album_page_html)
-    expected = [{
-        'artworkUrl': 'https://f4.bcbits.com/img/0017567873_38.jpg',
-        'label': 'My Pet Flamingo',
-        'artist': 'My Pet Flamingo',
-        'title': 'Flamingo Funk vol\u200b.\u200b2',
-        'releaseDate': '20190929',
-        'remaining': 20,
-        'timestamp': NOW,
-        'url': 'https://mypetflamingo.bandcamp.com/album/flamingo-funk-vol-2',
-        'merchType': 'Record/Vinyl',
-    }]
+    actual = [item for item in BandcampMerchSpider.parse_album_page_html(album_page_html)]
+    expected = [
+        {
+            'artworkUrl': 'https://f4.bcbits.com/img/0017567873_38.jpg',
+            'label': 'My Pet Flamingo',
+            'artist': 'My Pet Flamingo',
+            'title': 'Flamingo Funk vol\u200b.\u200b2',
+            'releaseDate': '20190929',
+            'remaining': 20,
+            'timestamp': NOW,
+            'url': 'https://mypetflamingo.bandcamp.com/album/flamingo-funk-vol-2',
+            'merchType': 'Record/Vinyl',
+        },
+        # {
+        #     'artworkUrl': 'https://f4.bcbits.com/img/0017568021_38.jpg',
+        #     'label': 'My Pet Flamingo',
+        #     'artist': 'My Pet Flamingo',
+        #     'title': 'Flamingo Funk vol\u200b.\u200b2',
+        #     'releaseDate': '20190929',
+        #     'timestamp': NOW,
+        #     'url': 'https://mypetflamingo.bandcamp.com/album/flamingo-funk-vol-2',
+        #     'merchType': 'Compact Disc',
+        # },
+    ]
 
     assert actual == expected

@@ -1,4 +1,3 @@
-# https://experimentalrecords.bandcamp.com/merch
 https://385northmusic.bandcamp.com/merch
 https://adeptusminor1.bandcamp.com/merch
 https://adhesivesounds.bandcamp.com/merch
@@ -8,11 +7,14 @@ https://aliengarage.bandcamp.com/merch
 https://aloecityrecords.bandcamp.com/merch
 https://andoptions.bandcamp.com/merch
 https://antifur.bandcamp.com/merch
+https://anubisworldwide.bandcamp.com/merch
 https://aquablanca.bandcamp.com/merch
 https://asurarevolver.bandcamp.com/merch
 https://aurawire.xyz/merch
 https://bedlamtapes.bandcamp.com/merch
 https://blcr-labs.com/merch
+https://botanica1.bandcamp.com/merch
+https://cheminuages.bandcamp.com/merch
 https://crashsymbols.bandcamp.com/merch
 https://cultureagency.net/merch
 https://darkwebrecordings.bandcamp.com/merch
@@ -36,9 +38,11 @@ https://globalpattern.bandcamp.com/merch
 https://gorgeouslights.bandcamp.com/merch
 https://gulfaudiocompany.bandcamp.com/merch
 https://haircutsformen.bandcamp.com/merch
+https://hairsablazin.bandcamp.com/merch
 https://halcyontapes.bandcamp.com/merch
 https://hiraeth-records.bandcamp.com/merch
 https://illuminatedpaths.bandcamp.com/merch
+https://indigene.bandcamp.com/merch
 https://internetventures.bandcamp.com/merch
 https://junkmakersounds.bandcamp.com/merch
 https://kudatah.bandcamp.com/merch
@@ -46,6 +50,7 @@ https://l33k5p1n84574rd5.bandcamp.com/merch
 https://lazerburnaudio.bandcamp.com/merch
 https://legendaryent.bandcamp.com/merch
 https://lost-angles.com/merch
+https://midnightmoontapes.bandcamp.com/merch
 https://midwestcollectivecompilations.bandcamp.com/merch
 https://music.businesscasual.biz/merch
 https://music.georgeclanton.com/merch
@@ -86,6 +91,7 @@ https://understall.bandcamp.com/merch
 https://underwater-computing.bandcamp.com/merch
 https://vaporwaveclub.bandcamp.com/merch
 https://vill4in.bandcamp.com/merch
+https://virtua94records.bandcamp.com/merch
 https://watchingwaters.bandcamp.com/merch
 https://zhurnalmod.bandcamp.com/merch
 https://zimaclearmalt.bandcamp.com/merch
