@@ -18,7 +18,7 @@ describe('util', () => {
   });
 
   describe('sorting', () => {
-    it('should sort items by remaining cassettes asc', () => {
+    it('should sort items by remaining items asc', () => {
       const items = [
         {
           artworkUrl: '',
@@ -28,7 +28,8 @@ describe('util', () => {
           releaseDate: '',
           timestamp: '',
           url: '',
-          remainingCassettes: 10,
+          remaining: 10,
+          merchType: 'Cassette',
         },
         {
           artworkUrl: '',
@@ -38,7 +39,8 @@ describe('util', () => {
           releaseDate: '',
           timestamp: '',
           url: '',
-          remainingCassettes: 1,
+          remaining: 1,
+          merchType: 'Cassette',
         },
       ];
 
@@ -52,7 +54,8 @@ describe('util', () => {
           releaseDate: '',
           timestamp: '',
           url: '',
-          remainingCassettes: 1,
+          remaining: 1,
+          merchType: 'Cassette',
         },
         {
           artworkUrl: '',
@@ -62,7 +65,8 @@ describe('util', () => {
           releaseDate: '',
           timestamp: '',
           url: '',
-          remainingCassettes: 10,
+          remaining: 10,
+          merchType: 'Cassette',
         },
       ];
       expect(actual).toStrictEqual(expected);
@@ -78,7 +82,8 @@ describe('util', () => {
           releaseDate: '20151231',
           timestamp: '',
           url: '',
-          remainingCassettes: 1,
+          remaining: 1,
+          merchType: 'Cassette',
         },
         {
           artworkUrl: '',
@@ -88,7 +93,8 @@ describe('util', () => {
           releaseDate: '20190101',
           timestamp: '',
           url: '',
-          remainingCassettes: 1,
+          remaining: 1,
+          merchType: 'Cassette',
         },
       ];
 
@@ -102,7 +108,8 @@ describe('util', () => {
           releaseDate: '20190101',
           timestamp: '',
           url: '',
-          remainingCassettes: 1,
+          remaining: 1,
+          merchType: 'Cassette',
         },
         {
           artworkUrl: '',
@@ -112,7 +119,8 @@ describe('util', () => {
           releaseDate: '20151231',
           timestamp: '',
           url: '',
-          remainingCassettes: 1,
+          remaining: 1,
+          merchType: 'Cassette',
         },
       ];
       expect(actual).toStrictEqual(expected);
@@ -128,7 +136,8 @@ describe('util', () => {
           releaseDate: '20190101',
           timestamp: '',
           url: '',
-          remainingCassettes: 1,
+          remaining: 1,
+          merchType: 'Cassette',
         },
         {
           artworkUrl: '',
@@ -138,7 +147,8 @@ describe('util', () => {
           releaseDate: '20190101',
           timestamp: '',
           url: '',
-          remainingCassettes: 1,
+          remaining: 1,
+          merchType: 'Cassette',
         },
       ];
 
@@ -152,7 +162,8 @@ describe('util', () => {
           releaseDate: '20190101',
           timestamp: '',
           url: '',
-          remainingCassettes: 1,
+          remaining: 1,
+          merchType: 'Cassette',
         },
         {
           artworkUrl: '',
@@ -162,7 +173,8 @@ describe('util', () => {
           releaseDate: '20190101',
           timestamp: '',
           url: '',
-          remainingCassettes: 1,
+          remaining: 1,
+          merchType: 'Cassette',
         },
       ];
       expect(actual).toStrictEqual(expected);

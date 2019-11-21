@@ -14,16 +14,16 @@ export function formatTimestamp(str) {
 
 export function sortItems(items) {
   return items.sort((item1, item2) => {
-    if (item1.remainingCassettes && !item2.remainingCassettes) {
+    if (item1.remaining && !item2.remaining) {
       return -1;
     }
-    if (item2.remainingCassettes && !item1.remainingCassettes) {
+    if (item2.remaining && !item1.remaining) {
       return 1;
     }
-    if (item1.remainingCassettes < item2.remainingCassettes) {
+    if (item1.remaining < item2.remaining) {
       return -1;
     }
-    if (item2.remainingCassettes < item1.remainingCassettes) {
+    if (item2.remaining < item1.remaining) {
       return 1;
     }
     if (item1.releaseDate > item2.releaseDate) {

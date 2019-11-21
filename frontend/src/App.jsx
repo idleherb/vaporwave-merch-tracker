@@ -68,6 +68,10 @@ function App() {
   const [merchItems, setMerchItems] = useState([]);
   const [selectAll, setSelectAll] = useState(true);
   const [selectLimitedOnly, setSelectLimitedOnly] = useState(false);
+  const [selectedMerchTypes, setSelectedMerchTypes] = useState({
+    cassette: true,
+    vinyl: true,
+  });
   const [labels, setLabels] = useState({});
   const classes = useStyles();
 
@@ -108,6 +112,20 @@ function App() {
     setLabels(newLabels);
   }
 
+  function handleChangeSelectCassette() {
+    setSelectedMerchTypes({
+      ...selectedMerchTypes,
+      cassette: !selectedMerchTypes.cassette,
+    });
+  }
+
+  function handleChangeSelectVinyl() {
+    setSelectedMerchTypes({
+      ...selectedMerchTypes,
+      vinyl: !selectedMerchTypes.vinyl,
+    });
+  }
+
   function handleChangeSelectLimitedOnly(event) {
     const selectLimitedOnlyNew = event.target.checked;
     setSelectLimitedOnly(selectLimitedOnlyNew);
@@ -119,6 +137,18 @@ function App() {
       <div className={classes.root}>
         <AppBar position="static">
           <Toolbar>
+            <Chip
+              className={classes.chip}
+              color={selectedMerchTypes.cassette ? 'secondary' : 'primary'}
+              label="Cassette"
+              onClick={handleChangeSelectCassette}
+            />
+            <Chip
+              className={classes.chip}
+              color={selectedMerchTypes.vinyl ? 'secondary' : 'primary'}
+              label="Vinyl"
+              onClick={handleChangeSelectVinyl}
+            />
             <div className={classes.grow} />
             <IconButton aria-label="filter labels" color="inherit" onClick={handleClickFilterButton}>
               <FilterListIcon />
@@ -133,8 +163,11 @@ function App() {
               }
               label={`Select all (${
                 selectLimitedOnly
-                  ? merchItems.filter((item) => !!item.remainingCassettes).length
-                  : merchItems.length
+                  ? merchItems.filter((item) => !!item.remaining
+                    && ((selectedMerchTypes.cassette && item.merchType === 'Cassette')
+                      || (selectedMerchTypes.vinyl && item.merchType === 'Record/Vinyl'))).length
+                  : merchItems.filter((item) => (selectedMerchTypes.cassette && item.merchType === 'Cassette')
+                    || (selectedMerchTypes.vinyl && item.merchType === 'Record/Vinyl')).length
               })`}
             />
             <FormControlLabel
@@ -143,7 +176,9 @@ function App() {
               }
               label={`Only limited items (${
                 merchItems
-                  .filter((item) => !!item.remainingCassettes)
+                  .filter((item) => !!item.remaining
+                    && ((selectedMerchTypes.cassette && item.merchType === 'Cassette')
+                      || (selectedMerchTypes.vinyl && item.merchType === 'Record/Vinyl')))
                   .length
               })`}
             />
@@ -153,7 +188,9 @@ function App() {
             .sort((a, b) => a.localeCompare(b))
             .map((label) => {
               const count = merchItems.filter((item) => item.label === label
-                && (!selectLimitedOnly || !!item.remainingCassettes)).length;
+                && (!selectLimitedOnly || !!item.remaining)
+                && ((selectedMerchTypes.cassette && item.merchType === 'Cassette')
+                  || (selectedMerchTypes.vinyl && item.merchType === 'Record/Vinyl'))).length;
               const selected = labels[label];
               const handleClick = () => {
                 setLabels({
@@ -187,10 +224,12 @@ function App() {
           >
             {merchItems
               .filter((item) => labels[item.label]
-                && (!selectLimitedOnly || !!item.remainingCassettes))
+                && (!selectLimitedOnly || !!item.remaining)
+                && ((selectedMerchTypes.cassette && item.merchType === 'Cassette')
+                  || (selectedMerchTypes.vinyl && item.merchType === 'Record/Vinyl')))
               .map((item) => {
                 const {
-                  artist, artworkUrl, label, releaseDate, remainingCassettes, title, url,
+                  artist, artworkUrl, label, releaseDate, remaining, title, url,
                 } = item;
                 return (
                   <a key={url} href={url} className={classes.card} target="_blank" rel="noopener noreferrer">
@@ -212,7 +251,7 @@ function App() {
                             {title}
                           </Typography>
                           <Typography noWrap variant="body2" color="error">
-                            {remainingCassettes ? `${remainingCassettes} remaining` : ''}
+                            {remaining ? `${remaining} remaining` : ''}
                           </Typography>
                           <Typography noWrap variant="body2" color="textSecondary">
                             {releaseDate}
