@@ -143,7 +143,8 @@ function App() {
               }
               label={`Select all (${
                 selectFewRemaining
-                  ? merchItems.filter((item) => !!item.remaining && selectedMerchTypes[item.merchType]).length
+                  ? merchItems.filter((item) => !!item.remaining
+                    && selectedMerchTypes[item.merchType]).length
                   : merchItems.filter((item) => selectedMerchTypes[item.merchType]).length
               })`}
             />
