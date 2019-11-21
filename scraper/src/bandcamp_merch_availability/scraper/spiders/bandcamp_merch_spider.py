@@ -1,12 +1,12 @@
 import scrapy
 
 from datetime import datetime
-from functools import partial
 from scrapy.selector import Selector
 
 
 
 MERCH_TYPE_CASSETTE = 'Cassette'
+MERCH_TYPE_VINYL = 'Record/Vinyl'
 
 
 class BandcampMerchSpider(scrapy.Spider):
@@ -18,21 +18,18 @@ class BandcampMerchSpider(scrapy.Spider):
         raw_start_urls = open('../../labels.txt').read().strip().split('\n')
     start_urls = [url for url in raw_start_urls if not url.startswith('#')]
 
+
     def parse(self, response):
         base_url = response.url[:response.url.rfind('/')]
-        for artwork_url, album_path in self.parse_merch_page_html(response.body):
+        for album_path in self.parse_merch_page_html(response.body):
             album_url = base_url + album_path
-            # Use partial function here since lambda wouldn't work (always used last artwork_url)
-            partial_parse = partial(self.parse_album_page, artwork_url)
-            yield scrapy.Request(
-                url=album_url,
-                callback=partial_parse
-            )
+            for result in scrapy.Request(url=album_url, callback=self.parse_album_page):
+                yield result
 
 
     @staticmethod
     def parse_merch_page_html(html):
-        anchors = Selector(text=html).xpath(f'''
+        release_paths = Selector(text=html).xpath(f'''
             //li[
                 (contains(@class,"merch-grid-item")
                     or contains(@class,"featured-item"))
@@ -40,37 +37,23 @@ class BandcampMerchSpider(scrapy.Spider):
                         contains(@class,"merchtype")
                     ]/text()[
                         normalize-space()="{MERCH_TYPE_CASSETTE}"
+                            or normalize-space()="{MERCH_TYPE_VINYL}"
                     ]
                     and ./p[
                         contains(@class,"price")
                             and not(contains(@class,"sold-out"))
                     ]
-            ]/a[./div[@class="art"]]''').getall()
+            ]/a[./div[@class="art"]]/@href''').getall()
 
-        return [BandcampMerchSpider.parse_anchor_html(anchor) for anchor in anchors]
+        return set(release_paths)
 
 
-    @staticmethod
-    def parse_anchor_html(html):
-        artwork_url = Selector(text=html).xpath(f'''
-            //div[@class="art"]/img[starts-with(@src,"http")]/@src
-        ''').get()
-        if not artwork_url:
-            artwork_url = Selector(text=html).xpath(f'''
-                //div[@class="art"]/img/@data-original
-            ''').get()
-        release_path = Selector(text=html).xpath(f'''
-            //a[./div[@class="art"]]/@href
-        ''').get()
-
-        return (artwork_url, release_path)
-
-    def parse_album_page(self, artwork_url, response):
-        yield self.parse_album_page_html(response.body, artwork_url)
+    def parse_album_page(self, response):
+        yield self.parse_album_page_html(response.body)
 
 
     @staticmethod
-    def parse_album_page_html(html, artwork_url):
+    def parse_album_page_html(html):
         timestamp = datetime.now().isoformat()
         url = Selector(text=html).xpath('''
             //meta[
@@ -93,8 +76,7 @@ class BandcampMerchSpider(scrapy.Spider):
             //meta[
                 @itemprop="datePublished"
             ]/@content''').get()
-        result = {
-            'artworkUrl': artwork_url,
+        result_template = {
             'label': label,
             'artist': BandcampMerchSpider.normalize_text(artist),
             'title': BandcampMerchSpider.normalize_text(title),
@@ -103,20 +85,75 @@ class BandcampMerchSpider(scrapy.Spider):
             'url': url,
         }
 
-        remaining_cassettes = Selector(text=html) \
+        raw_items = Selector(text=html) \
+            .xpath(f'''
+                //li[
+                    contains(@class,"buyItem")
+                        and contains(@class,"package")
+                        and .//button[
+                            contains(@class,"order_package_link")
+                                and contains(@class,"buy-link")
+                        ]/text()[
+                            normalize-space()="Buy {MERCH_TYPE_CASSETTE}"
+                                or normalize-space()="Buy {MERCH_TYPE_VINYL}"
+                        ]
+                ]''').getall()
+        items = [BandcampMerchSpider.parse_raw_item(raw_item) for raw_item in raw_items]
+        # item = {
+        #     artworkUrl: '...',
+        #     merchType: '...',
+        #     remaining: 5,
+        # }
+        print(items)
+        return [{**result_template, **item} for item in items]
+
+        
+
+        return result
+
+
+    @staticmethod
+    def parse_raw_item(html):
+        item = {}
+        buy_button_text = Selector(text=html) \
+            .xpath('''
+                //button[
+                    contains(@class,"order_package_link")
+                        and contains(@class,"buy-link")
+                ]/text()[
+                    normalize-space()
+                ]''').get()
+        merch_type = buy_button_text.strip()[4:]
+        item['merchType'] = merch_type
+
+        artwork_url = Selector(text=html) \
+            .xpath('''
+                //ul[
+                    contains(@class,"popupImageGallery")
+                        and contains(@class,"gallery_array")
+                        and contains(@class,"gallery_viewer")
+                ]/li[
+                    contains(@class,"gallery_item")
+                        and contains(@class,"viewer")
+                        and contains(@class,"first")
+                ]/a/img/@src
+            ''').get()
+        item['artworkUrl'] = artwork_url
+
+        remaining = Selector(text=html) \
             .xpath('''
                 //span[
                     contains(@class,"notable")
                         and contains(@class,"end")
                 ]/text()''') \
             .get()
-        if remaining_cassettes:
-            raw_number = (remaining_cassettes
+        if remaining:
+            raw_number = (remaining
                 .rstrip('remaining')
                 .strip())
-            result['remainingCassettes'] = int(raw_number)
+            item['remaining'] = int(raw_number)
 
-        return result
+        return item
 
     
     @staticmethod
