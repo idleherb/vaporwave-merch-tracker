@@ -36,9 +36,6 @@ class BandcampMerchSpider(scrapy.Spider):
                     or contains(@class,"featured-item"))
                     and ./div[
                         contains(@class,"merchtype")
-                    ]/text()[
-                        normalize-space()="{MERCH_TYPE_CASSETTE}"
-                            or normalize-space()="{MERCH_TYPE_VINYL}"
                     ]
                     and ./p[
                         contains(@class,"price")
@@ -94,9 +91,6 @@ class BandcampMerchSpider(scrapy.Spider):
                         and .//button[
                             contains(@class,"order_package_link")
                                 and contains(@class,"buy-link")
-                        ]/text()[
-                            normalize-space()="Buy {MERCH_TYPE_CASSETTE}"
-                                or normalize-space()="Buy {MERCH_TYPE_VINYL}"
                         ]
                 ]''').getall()
 
