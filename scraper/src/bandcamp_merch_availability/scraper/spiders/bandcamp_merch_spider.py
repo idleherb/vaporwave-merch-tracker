@@ -24,6 +24,8 @@ class BandcampMerchSpider(scrapy.Spider):
     def parse(self, response):
         base_url = response.url[:response.url.rfind('/')]
         for album_path in self.parse_merch_page_html(response.body):
+            if album_path.startswith('/merch'):
+                album_path = album_path[6:]
             album_url = base_url + album_path
             yield scrapy.Request(url=album_url, callback=self.parse_album_page)
 
@@ -36,6 +38,9 @@ class BandcampMerchSpider(scrapy.Spider):
                     or contains(@class,"featured-item"))
                     and ./div[
                         contains(@class,"merchtype")
+                    ]/text()[
+                        normalize-space()="{MERCH_TYPE_CASSETTE}"
+                            or normalize-space()="{MERCH_TYPE_VINYL}"
                     ]
                     and ./p[
                         contains(@class,"price")
@@ -91,6 +96,9 @@ class BandcampMerchSpider(scrapy.Spider):
                         and .//button[
                             contains(@class,"order_package_link")
                                 and contains(@class,"buy-link")
+                        ]/text()[
+                            normalize-space()="Buy {MERCH_TYPE_CASSETTE}"
+                                or normalize-space()="Buy {MERCH_TYPE_VINYL}"
                         ]
                 ]''').getall()
 

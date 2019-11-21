@@ -128,16 +128,16 @@ def test_parse_vinyl_page_html_with_remaining():
             'url': 'https://mypetflamingo.bandcamp.com/album/flamingo-funk-vol-2',
             'merchType': 'Record/Vinyl',
         },
-        {
-            'artworkUrl': 'https://f4.bcbits.com/img/0017568021_38.jpg',
-            'label': 'My Pet Flamingo',
-            'artist': 'My Pet Flamingo',
-            'title': 'Flamingo Funk vol\u200b.\u200b2',
-            'releaseDate': '20190929',
-            'timestamp': NOW,
-            'url': 'https://mypetflamingo.bandcamp.com/album/flamingo-funk-vol-2',
-            'merchType': 'Compact Disc',
-        },
+        # {
+        #     'artworkUrl': 'https://f4.bcbits.com/img/0017568021_38.jpg',
+        #     'label': 'My Pet Flamingo',
+        #     'artist': 'My Pet Flamingo',
+        #     'title': 'Flamingo Funk vol\u200b.\u200b2',
+        #     'releaseDate': '20190929',
+        #     'timestamp': NOW,
+        #     'url': 'https://mypetflamingo.bandcamp.com/album/flamingo-funk-vol-2',
+        #     'merchType': 'Compact Disc',
+        # },
     ]
 
     assert actual == expected
