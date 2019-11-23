@@ -169,7 +169,8 @@ function App() {
                 color={selectedMerchTypes[merchType] ? 'secondary' : 'default'}
                 label={`${merchType} (${
                   merchItems
-                    .filter((item) => item.merchType === merchType)
+                    .filter((item) => item.merchType === merchType
+                      && (!selectFewRemaining || (item.remaining && item.remaining < 10)))
                     .length
                 })`}
                 onClick={() => handleChangeSelectMerchType(merchType)}
