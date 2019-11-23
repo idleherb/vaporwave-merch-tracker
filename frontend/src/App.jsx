@@ -240,7 +240,7 @@ function App() {
                             {title}
                           </Typography>
                           <Typography noWrap variant="body2" color={remaining && remaining <= 10 ? 'error' : 'primary'}>
-                            {remaining ? `${remaining}${editionOf && ` of ${editionOf}`} remaining` : ''}
+                            {remaining ? `${remaining}${editionOf ? ` of ${editionOf}` : ''} remaining` : ''}
                           </Typography>
                           <Typography noWrap variant="body2" color="textSecondary">
                             {releaseDate}
