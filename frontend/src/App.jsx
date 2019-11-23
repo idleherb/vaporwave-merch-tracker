@@ -144,8 +144,8 @@ function App() {
               label={`Select all (${
                 selectFewRemaining
                   ? merchItems.filter((item) => !!item.remaining
-                    && selectedMerchTypes[item.merchType]).length
-                  : merchItems.filter((item) => selectedMerchTypes[item.merchType]).length
+                    && !!selectedMerchTypes[item.merchType]).length
+                  : merchItems.filter((item) => !!selectedMerchTypes[item.merchType]).length
               })`}
             />
             <FormControlLabel
@@ -154,7 +154,7 @@ function App() {
               }
               label={`Few remaining (${
                 merchItems
-                  .filter((item) => !!item.remaining && selectedMerchTypes[item.merchType])
+                  .filter((item) => !!item.remaining && !!selectedMerchTypes[item.merchType])
                   .length
               })`}
             />
@@ -166,7 +166,11 @@ function App() {
               <Chip
                 className={classes.chip}
                 color={selectedMerchTypes[merchType] ? 'secondary' : 'default'}
-                label={merchType}
+                label={`${merchType} (${
+                  merchItems
+                    .filter((item) => !!selectedMerchTypes[item.merchType])
+                    .length
+                  })`}
                 onClick={() => handleChangeSelectMerchType(merchType)}
               />
             ))}
@@ -176,7 +180,7 @@ function App() {
             .map((label) => {
               const count = merchItems.filter((item) => item.label === label
                 && (!selectFewRemaining || !!item.remaining)
-                && selectedMerchTypes[item.merchType]).length;
+                && !!selectedMerchTypes[item.merchType]).length;
               const selected = selectedLabels[label];
               const handleClick = () => {
                 setSelectedLabels({
@@ -211,18 +215,18 @@ function App() {
             {merchItems
               .filter((item) => selectedLabels[item.label]
                 && (!selectFewRemaining || !!item.remaining)
-                && selectedMerchTypes[item.merchType])
+                && !!selectedMerchTypes[item.merchType])
               .map((item) => {
                 const {
-                  artist, artworkUrl, label, releaseDate, remaining, title, url,
+                  artist, editionOf, id, image_id, label, releaseDate, remaining, title, url,
                 } = item;
                 return (
-                  <a key={url} href={url} className={classes.card} target="_blank" rel="noopener noreferrer">
+                  <a key={`${id}`} href={url} className={classes.card} target="_blank" rel="noopener noreferrer">
                     <Card>
                       <CardActionArea className={classes.flex}>
                         <CardMedia
                           className={classes.media}
-                          image={artworkUrl}
+                          image={`https://f4.bcbits.com/img/${image_id}_37.jpg`}
                           title={title}
                         />
                         <CardContent className={classes.content}>
@@ -235,8 +239,8 @@ function App() {
                           <Typography noWrap variant="body2" gutterBottom>
                             {title}
                           </Typography>
-                          <Typography noWrap variant="body2" color="error">
-                            {remaining ? `${remaining} remaining` : ''}
+                          <Typography noWrap variant="body2" color={remaining && remaining <= 10 ? 'error' : 'primary'}>
+                            {remaining ? `${remaining}${editionOf && ' of ' + editionOf} remaining` : ''}
                           </Typography>
                           <Typography noWrap variant="body2" color="textSecondary">
                             {releaseDate}

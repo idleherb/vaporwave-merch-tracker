@@ -3,8 +3,8 @@ import { formatDate, formatTimestamp, sortItems } from './util';
 describe('util', () => {
   describe('date and time formatting', () => {
     it('should format a date as mmm d yyyy', () => {
-      const actual = formatDate('20180928');
-      const expected = 'Sep 28 2018';
+      const actual = formatDate('17 Nov 2019 16:20:55 GMT');
+      const expected = 'Nov 17 2019';
 
       expect(actual).toBe(expected);
     });

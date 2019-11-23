@@ -3,12 +3,19 @@ import scrapy
 from datetime import datetime
 from scrapy.selector import Selector
 
+import json
+import re
 import sys
 
 
 
 MERCH_TYPE_CASSETTE = 'Cassette'
 MERCH_TYPE_VINYL = 'Record/Vinyl'
+RE_PACKAGES = re.compile(r'^\s*packages:\s*(?P<DATA>.+?),?\s*$', re.MULTILINE)
+RE_QUOT = re.compile(r'&quot[^;]*;')
+RE_FLOPPY = re.compile(r'floppy', re.IGNORECASE)
+RE_MINIDISC = re.compile(r'mini\s*disc', re.IGNORECASE)
+RE_VINYL = re.compile(r'\bvinyl\b', re.IGNORECASE)
 
 
 class BandcampMerchSpider(scrapy.Spider):
@@ -32,125 +39,65 @@ class BandcampMerchSpider(scrapy.Spider):
 
     @staticmethod
     def parse_merch_page_html(html):
-        release_paths = Selector(text=html).xpath(f'''
-            //li[
-                (contains(@class,"merch-grid-item")
-                    or contains(@class,"featured-item"))
-                    and ./div[
-                        contains(@class,"merchtype")
-                    ]/text()[
-                        normalize-space()="{MERCH_TYPE_CASSETTE}"
-                            or normalize-space()="{MERCH_TYPE_VINYL}"
-                    ]
-                    and ./p[
-                        contains(@class,"price")
-                            and not(contains(@class,"sold-out"))
-                    ]
-            ]/a[./div[@class="art"]]/@href''').getall()
+        releases_raw_dirty = Selector(text=html).xpath(f'''
+            //ol[
+                contains(@class,"merch-grid")
+                    and @data-edit-callback="/merch_reorder"
+            ]/@data-initial-values''').get()
+        releases_raw = RE_QUOT.sub('"', releases_raw_dirty)
+        releases = json.loads(releases_raw)
+        release_paths = (release['url'] for release in releases if not release['sold_out'] and not release['album_private'])
 
         return set(release_paths)
 
 
     def parse_album_page(self, response):
-        return self.parse_album_page_html(response.body)
+        return self.parse_album_page_html(response.body.decode('utf-8'))
 
 
     @staticmethod
     def parse_album_page_html(html):
         timestamp = datetime.now().isoformat()
-        url = Selector(text=html).xpath('''
-            //meta[
-                @property="og:url"
-            ]/@content''').get()
         label = Selector(text=html).xpath('''
             //meta[
                 @property="og:site_name"
             ]/@content''').get()
-        artist = Selector(text=html).xpath('''
-            //span[
-                @itemprop="byArtist"
-            ]/a/text()''').get()
-        title = Selector(text=html).xpath('''
-            //h2[
-                @class="trackTitle"
-                    and @itemprop="name"
-            ]/text()''').get()
-        release_date = Selector(text=html).xpath('''
+        url = Selector(text=html).xpath('''
             //meta[
-                @itemprop="datePublished"
+                @property="og:url"
             ]/@content''').get()
-        result_template = {
-            'label': label,
-            'artist': BandcampMerchSpider.normalize_text(artist),
-            'title': BandcampMerchSpider.normalize_text(title),
-            'releaseDate': release_date,
-            'timestamp': timestamp,
-            'url': url,
-        }
-
-        raw_items = Selector(text=html) \
-            .xpath(f'''
-                //li[
-                    contains(@class,"buyItem")
-                        and contains(@class,"package")
-                        and .//button[
-                            contains(@class,"order_package_link")
-                                and contains(@class,"buy-link")
-                        ]/text()[
-                            normalize-space()="Buy {MERCH_TYPE_CASSETTE}"
-                                or normalize-space()="Buy {MERCH_TYPE_VINYL}"
-                        ]
-                ]''').getall()
-
-        for raw_item in raw_items:
-            item = BandcampMerchSpider.parse_raw_item(raw_item)
-            yield {**result_template, **item}
+        match = RE_PACKAGES.search(html)
+        if match:
+            releases_raw = match.group('DATA')
+            releases = json.loads(releases_raw)
+            for release in releases:
+                if release['quantity_available'] == 0:
+                    continue
+                yield {
+                    'artist': release['album_artist'] or release['download_artist'],
+                    'currency': release['currency'],
+                    'editionOf': release['edition_size'],
+                    'id': release['id'],
+                    'image_id': release['arts'][0]['image_id'],
+                    'label': label,
+                    'merchType': BandcampMerchSpider.normalize_merch_type(release['type_name'], release['title']),
+                    'price': release['price'],
+                    'releaseDate': release['new_date'],
+                    'remaining': release['quantity_available'],
+                    'timestamp': timestamp,
+                    'title': release['album_title'] or release['title'],
+                    'url': url,
+                }
 
 
     @staticmethod
-    def parse_raw_item(html):
-        item = {}
-        buy_button_text = Selector(text=html) \
-            .xpath('''
-                //button[
-                    contains(@class,"order_package_link")
-                        and contains(@class,"buy-link")
-                ]/text()[
-                    normalize-space()
-                ]''').get()
-        merch_type = buy_button_text.strip()[4:]
-        item['merchType'] = merch_type
+    def normalize_merch_type(raw_merch_type, title):
+        merch_type = raw_merch_type
+        if RE_VINYL.search(raw_merch_type):
+            merch_type = 'Vinyl'
+        if RE_FLOPPY.search(title):
+            merch_type = 'Floppy'
+        elif RE_MINIDISC.search(title):
+            merch_type = 'Minidisc'
 
-        artwork_url = Selector(text=html) \
-            .xpath('''
-                //ul[
-                    contains(@class,"popupImageGallery")
-                        and contains(@class,"gallery_array")
-                        and contains(@class,"gallery_viewer")
-                ]/li[
-                    contains(@class,"gallery_item")
-                        and contains(@class,"viewer")
-                        and contains(@class,"first")
-                ]/a/img/@src
-            ''').get()
-        item['artworkUrl'] = artwork_url
-
-        remaining = Selector(text=html) \
-            .xpath('''
-                //span[
-                    contains(@class,"notable")
-                        and contains(@class,"end")
-                ]/text()''') \
-            .get()
-        if remaining:
-            raw_number = (remaining
-                .rstrip('remaining')
-                .strip())
-            item['remaining'] = int(raw_number)
-
-        return item
-
-    
-    @staticmethod
-    def normalize_text(text):
-        return text.strip()
+        return merch_type
