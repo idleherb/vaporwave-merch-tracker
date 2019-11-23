@@ -78,7 +78,7 @@ class BandcampMerchSpider(scrapy.Spider):
                     'currency': release['currency'],
                     'editionOf': release['edition_size'],
                     'id': release['id'],
-                    'image_id': release['arts'][0]['image_id'],
+                    'imageId': release['arts'][0]['image_id'],
                     'label': label,
                     'merchType': BandcampMerchSpider.normalize_merch_type(release['type_name'], release['title']),
                     'price': release['price'],

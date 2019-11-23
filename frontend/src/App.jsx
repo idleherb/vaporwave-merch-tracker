@@ -170,7 +170,7 @@ function App() {
                   merchItems
                     .filter((item) => !!selectedMerchTypes[item.merchType])
                     .length
-                  })`}
+                })`}
                 onClick={() => handleChangeSelectMerchType(merchType)}
               />
             ))}
@@ -218,7 +218,7 @@ function App() {
                 && !!selectedMerchTypes[item.merchType])
               .map((item) => {
                 const {
-                  artist, editionOf, id, image_id, label, releaseDate, remaining, title, url,
+                  artist, editionOf, id, imageId, label, releaseDate, remaining, title, url,
                 } = item;
                 return (
                   <a key={`${id}`} href={url} className={classes.card} target="_blank" rel="noopener noreferrer">
@@ -226,7 +226,7 @@ function App() {
                       <CardActionArea className={classes.flex}>
                         <CardMedia
                           className={classes.media}
-                          image={`https://f4.bcbits.com/img/${image_id}_37.jpg`}
+                          image={`https://f4.bcbits.com/img/${imageId}_37.jpg`}
                           title={title}
                         />
                         <CardContent className={classes.content}>
@@ -240,7 +240,7 @@ function App() {
                             {title}
                           </Typography>
                           <Typography noWrap variant="body2" color={remaining && remaining <= 10 ? 'error' : 'primary'}>
-                            {remaining ? `${remaining}${editionOf && ' of ' + editionOf} remaining` : ''}
+                            {remaining ? `${remaining}${editionOf && ` of ${editionOf}`} remaining` : ''}
                           </Typography>
                           <Typography noWrap variant="body2" color="textSecondary">
                             {releaseDate}
