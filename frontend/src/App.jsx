@@ -143,7 +143,7 @@ function App() {
               }
               label={`Select all (${
                 selectFewRemaining
-                  ? merchItems.filter((item) => !!item.remaining
+                  ? merchItems.filter((item) => (item.remaining && item.remaining < 10)
                     && !!selectedMerchTypes[item.merchType]).length
                   : merchItems.filter((item) => !!selectedMerchTypes[item.merchType]).length
               })`}
@@ -154,7 +154,8 @@ function App() {
               }
               label={`Few remaining (${
                 merchItems
-                  .filter((item) => !!item.remaining && !!selectedMerchTypes[item.merchType])
+                  .filter((item) => (item.remaining && item.remaining < 10)
+                    && !!selectedMerchTypes[item.merchType])
                   .length
               })`}
             />
@@ -179,7 +180,7 @@ function App() {
             .sort((a, b) => a.localeCompare(b))
             .map((label) => {
               const count = merchItems.filter((item) => item.label === label
-                && (!selectFewRemaining || !!item.remaining)
+                && (!selectFewRemaining || (item.remaining && item.remaining < 10))
                 && !!selectedMerchTypes[item.merchType]).length;
               const selected = selectedLabels[label];
               const handleClick = () => {
@@ -214,7 +215,7 @@ function App() {
           >
             {merchItems
               .filter((item) => selectedLabels[item.label]
-                && (!selectFewRemaining || !!item.remaining)
+                && (!selectFewRemaining || (item.remaining && item.remaining < 10))
                 && !!selectedMerchTypes[item.merchType])
               .map((item) => {
                 const {
