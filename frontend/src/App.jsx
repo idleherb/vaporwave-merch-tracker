@@ -163,16 +163,19 @@ function App() {
           {Object
             .keys(selectedMerchTypes)
             .sort((a, b) => a.localeCompare(b))
-            .map((merchType) => (
+            .map((merchType) => {
+              const count = merchItems
+                .filter((item) => item.merchType === merchType
+                  && (!selectFewRemaining || (item.remaining && item.remaining < 10)))
+                .length;
+              return { merchType, count };
+            })
+            .filter(({ count }) => count > 0)
+            .map(({ merchType, count }) => (
               <Chip
                 className={classes.chip}
                 color={selectedMerchTypes[merchType] ? 'secondary' : 'default'}
-                label={`${merchType} (${
-                  merchItems
-                    .filter((item) => item.merchType === merchType
-                      && (!selectFewRemaining || (item.remaining && item.remaining < 10)))
-                    .length
-                })`}
+                label={`${merchType} (${count})`}
                 onClick={() => handleChangeSelectMerchType(merchType)}
               />
             ))}
