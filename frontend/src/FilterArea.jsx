@@ -1,4 +1,5 @@
 import React from 'react';
+import * as PropTypes from 'prop-types';
 
 import Chip from '@material-ui/core/Chip';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
@@ -7,8 +8,6 @@ import Paper from '@material-ui/core/Paper';
 import Switch from '@material-ui/core/Switch';
 
 import { makeStyles } from '@material-ui/core/styles';
-
-import * as PropTypes from 'prop-types';
 
 
 const useStyles = makeStyles((theme) => ({

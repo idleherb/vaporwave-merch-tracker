@@ -8,6 +8,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import FilterArea from './FilterArea';
 import MerchItemsArea from './MerchItemsArea';
 import ToolBar from './ToolBar';
+
 import fetchMerchItems from './service/service';
 
 
