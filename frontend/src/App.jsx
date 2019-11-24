@@ -23,6 +23,7 @@ function App() {
   const [showFilter, setShowFilter] = useState(false);
   const [merchItems, setMerchItems] = useState([]);
   const [selectAllLabels, setSelectAllLabels] = useState(true);
+  const [selectAllMerchTypes, setSelectAllMerchTypes] = useState(true);
   const [selectFewRemaining, setSelectFewRemaining] = useState(false);
   const [selectedMerchTypes, setSelectedMerchTypes] = useState({});
   const [selectedLabels, setSelectedLabels] = useState({});
@@ -65,7 +66,7 @@ function App() {
     setShowFilter(!showFilter);
   }
 
-  function handleChangeSelectAll(event) {
+  function handleChangeSelectAllLabels(event) {
     const newSelectAllLabels = event.target.checked;
     setSelectAllLabels(newSelectAllLabels);
     const newSelectedLabels = { ...selectedLabels };
@@ -73,6 +74,23 @@ function App() {
       newSelectedLabels[label] = newSelectAllLabels;
     });
     setSelectedLabels(newSelectedLabels);
+  }
+
+  function handleChangeSelectAllMerchTypes(event) {
+    const newSelectAllMerchTypes = event.target.checked;
+    setSelectAllMerchTypes(newSelectAllMerchTypes);
+    const newSelectedMerchTypes = { ...selectedMerchTypes };
+    Object.keys(newSelectedMerchTypes).forEach((merchType) => {
+      newSelectedMerchTypes[merchType] = newSelectAllMerchTypes;
+    });
+    setSelectedMerchTypes(newSelectedMerchTypes);
+  }
+
+  function handleChangeSelectLabel(label) {
+    setSelectedLabels({
+      ...selectedLabels,
+      [label]: !selectedLabels[label],
+    });
   }
 
   function handleChangeSelectMerchType(merchType) {
@@ -94,16 +112,13 @@ function App() {
         <ToolBar onClickFilter={handleClickFilterButton} />
         <FilterArea
           merchItems={merchItems}
-          onChangeSelectAll={handleChangeSelectAll}
+          onChangeSelectAllLabels={handleChangeSelectAllLabels}
+          onChangeSelectAllMerchTypes={handleChangeSelectAllMerchTypes}
           onChangeSelectFewRemaining={handleChangeSelectFewRemaining}
-          onChangeSelectLabel={(label) => {
-            setSelectedLabels({
-              ...selectedLabels,
-              [label]: !selectedLabels[label],
-            });
-          }}
+          onChangeSelectLabel={handleChangeSelectLabel}
           onChangeSelectMerchType={handleChangeSelectMerchType}
           selectAllLabels={selectAllLabels}
+          selectAllMerchTypes={selectAllMerchTypes}
           selectedLabels={selectedLabels}
           selectedMerchTypes={selectedMerchTypes}
           selectFewRemaining={selectFewRemaining}

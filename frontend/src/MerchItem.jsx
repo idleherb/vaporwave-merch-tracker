@@ -16,7 +16,6 @@ const useStyles = makeStyles((theme) => ({
   },
   card: {
     margin: theme.spacing(1),
-    padding: theme.spacing(2),
   },
   price: {
     display: 'flex',
@@ -26,6 +25,7 @@ const useStyles = makeStyles((theme) => ({
   flex: {
     display: 'flex',
     alignItems: 'flex-start',
+    padding: theme.spacing(2),
   },
   flexCol: {
     display: 'flex',

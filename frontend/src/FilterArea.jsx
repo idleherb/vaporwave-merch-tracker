@@ -27,11 +27,13 @@ const useStyles = makeStyles((theme) => ({
 
 export default function FilterArea({
   merchItems,
-  onChangeSelectAll,
+  onChangeSelectAllLabels,
+  onChangeSelectAllMerchTypes,
   onChangeSelectFewRemaining,
   onChangeSelectLabel,
   onChangeSelectMerchType,
   selectAllLabels,
+  selectAllMerchTypes,
   selectedLabels,
   selectedMerchTypes,
   selectFewRemaining,
@@ -44,25 +46,9 @@ export default function FilterArea({
       <FormGroup row>
         <FormControlLabel
           control={
-            <Switch checked={selectAllLabels} onChange={onChangeSelectAll} value="selectAllLabels" color="primary" />
+            <Switch checked={selectAllMerchTypes} onChange={onChangeSelectAllMerchTypes} value="selectAllMerchTypes" color="secondary" />
           }
-          label={`Select all (${
-            selectFewRemaining
-              ? merchItems.filter((item) => (item.remaining && item.remaining < 10)
-                && !!selectedMerchTypes[item.merchType]).length
-              : merchItems.filter((item) => !!selectedMerchTypes[item.merchType]).length
-          })`}
-        />
-        <FormControlLabel
-          control={
-            <Switch checked={selectFewRemaining} onChange={onChangeSelectFewRemaining} value="fewRemaining" color="primary" />
-          }
-          label={`Few remaining (${
-            merchItems
-              .filter((item) => (item.remaining && item.remaining < 10)
-                && !!selectedMerchTypes[item.merchType])
-              .length
-          })`}
+          label="All merch types"
         />
       </FormGroup>
       {Object
@@ -85,6 +71,30 @@ export default function FilterArea({
             onClick={() => onChangeSelectMerchType(merchType)}
           />
         ))}
+      <FormGroup row>
+        <FormControlLabel
+          control={
+            <Switch checked={selectAllLabels} onChange={onChangeSelectAllLabels} value="selectAllLabels" color="primary" />
+          }
+          label={`All labels (${
+            selectFewRemaining
+              ? merchItems.filter((item) => (item.remaining && item.remaining < 10)
+                && !!selectedMerchTypes[item.merchType]).length
+              : merchItems.filter((item) => !!selectedMerchTypes[item.merchType]).length
+          })`}
+        />
+        <FormControlLabel
+          control={
+            <Switch checked={selectFewRemaining} onChange={onChangeSelectFewRemaining} value="fewRemaining" color="primary" />
+          }
+          label={`Few remaining (${
+            merchItems
+              .filter((item) => (item.remaining && item.remaining < 10)
+                && !!selectedMerchTypes[item.merchType])
+              .length
+          })`}
+        />
+      </FormGroup>
       {Object
         .keys(selectedLabels)
         .sort((a, b) => a.localeCompare(b))
@@ -132,11 +142,13 @@ FilterArea.propTypes = {
       url: PropTypes.string.isRequired,
     }),
   ).isRequired,
-  onChangeSelectAll: PropTypes.func.isRequired,
+  onChangeSelectAllLabels: PropTypes.func.isRequired,
+  onChangeSelectAllMerchTypes: PropTypes.func.isRequired,
   onChangeSelectFewRemaining: PropTypes.func.isRequired,
   onChangeSelectLabel: PropTypes.func.isRequired,
   onChangeSelectMerchType: PropTypes.func.isRequired,
   selectAllLabels: PropTypes.bool.isRequired,
+  selectAllMerchTypes: PropTypes.bool.isRequired,
   selectedLabels: PropTypes.objectOf(PropTypes.bool).isRequired,
   selectedMerchTypes: PropTypes.objectOf(PropTypes.bool).isRequired,
   selectFewRemaining: PropTypes.bool.isRequired,
