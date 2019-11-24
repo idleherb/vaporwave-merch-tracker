@@ -72,7 +72,7 @@ export default function MerchItem({
       <Card className={classes.card}>
         <CardActionArea className={classes.flex}>
           <CardContent className={classes.content}>
-            <Typography noWrap variant="overline" className={classes.overline} component="div" paragraph  color="textSecondary">
+            <Typography noWrap variant="overline" className={classes.overline} component="div" paragraph color="textSecondary">
               {label !== artist ? label : ' '}
             </Typography>
             <Typography noWrap variant="h6" gutterBottom>
@@ -81,7 +81,7 @@ export default function MerchItem({
             <Typography noWrap variant="body2" className={classes.attribute}>
               {artist}
             </Typography>
-            <Typography noWrap variant="body2" color={remaining && remaining <= 10 ? 'error' : 'primary'}  className={classes.attribute}>
+            <Typography noWrap variant="body2" color={remaining && remaining <= 10 ? 'error' : 'primary'} className={classes.attribute}>
               {remaining ? `${remaining}${editionOf ? ` of ${editionOf}` : ''} remaining` : ''}
             </Typography>
             <Typography noWrap variant="body2" color="textSecondary">

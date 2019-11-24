@@ -52,7 +52,17 @@ export default function MerchItemsArea({
               && (!selectFewRemaining || (remaining && remaining < 10))
               && !!selectedMerchTypes[merchType])
           .map(({
-            artist, currency, editionOf, id, imageId, label, price, releaseDate, remaining, title, url,
+            artist,
+            currency,
+            editionOf,
+            id,
+            imageId,
+            label,
+            price,
+            releaseDate,
+            remaining,
+            title,
+            url,
           }) => (
             <MerchItem
               key={id}
