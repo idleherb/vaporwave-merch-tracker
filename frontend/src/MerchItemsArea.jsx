@@ -114,11 +114,7 @@ MerchItemsArea.propTypes = {
       url: PropTypes.string.isRequired,
     }),
   ).isRequired,
-  selectedLabels: PropTypes.arrayOf(
-    PropTypes.objectOf(PropTypes.boolean),
-  ).isRequired,
-  selectedMerchTypes: PropTypes.arrayOf(
-    PropTypes.objectOf(PropTypes.boolean),
-  ).isRequired,
+  selectedLabels: PropTypes.objectOf(PropTypes.bool).isRequired,
+  selectedMerchTypes: PropTypes.objectOf(PropTypes.bool).isRequired,
   selectFewRemaining: PropTypes.bool.isRequired,
 };

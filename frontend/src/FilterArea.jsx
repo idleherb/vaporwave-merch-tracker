@@ -30,12 +30,12 @@ export default function FilterArea({
   merchItems,
   onChangeSelectAll,
   onChangeSelectFewRemaining,
+  onChangeSelectLabel,
   onChangeSelectMerchType,
   selectAllLabels,
   selectedLabels,
   selectedMerchTypes,
   selectFewRemaining,
-  setSelectedLabels,
   showFilter,
 }) {
   const classes = useStyles();
@@ -79,6 +79,7 @@ export default function FilterArea({
         .filter(({ count }) => count > 0)
         .map(({ merchType, count }) => (
           <Chip
+            key={`merchType.${merchType}`}
             className={classes.chip}
             color={selectedMerchTypes[merchType] ? 'secondary' : 'default'}
             label={`${merchType} (${count})`}
@@ -93,27 +94,21 @@ export default function FilterArea({
             && (!selectFewRemaining || (item.remaining && item.remaining < 10))
             && !!selectedMerchTypes[item.merchType]).length;
           const selected = selectedLabels[label];
-          const handleClick = () => {
-            setSelectedLabels({
-              ...selectedLabels,
-              [label]: !selectedLabels[label],
-            });
-          };
 
           return {
-            count, handleClick, label, selected,
+            count, label, selected,
           };
         })
         .filter(({ count }) => count > 0)
         .map(({
-          count, handleClick, label, selected,
+          count, label, selected,
         }) => (
           <Chip
             key={label}
             color={selected ? 'primary' : 'default'}
             label={`${label} (${count})`}
             className={classes.chip}
-            onClick={handleClick}
+            onClick={() => onChangeSelectLabel(label)}
           />
         ))}
     </Paper>
@@ -140,15 +135,11 @@ FilterArea.propTypes = {
   ).isRequired,
   onChangeSelectAll: PropTypes.func.isRequired,
   onChangeSelectFewRemaining: PropTypes.func.isRequired,
+  onChangeSelectLabel: PropTypes.func.isRequired,
   onChangeSelectMerchType: PropTypes.func.isRequired,
   selectAllLabels: PropTypes.bool.isRequired,
-  selectedLabels: PropTypes.arrayOf(
-    PropTypes.objectOf(PropTypes.boolean),
-  ).isRequired,
-  selectedMerchTypes: PropTypes.arrayOf(
-    PropTypes.objectOf(PropTypes.boolean),
-  ).isRequired,
+  selectedLabels: PropTypes.objectOf(PropTypes.bool).isRequired,
+  selectedMerchTypes: PropTypes.objectOf(PropTypes.bool).isRequired,
   selectFewRemaining: PropTypes.bool.isRequired,
-  setSelectedLabels: PropTypes.func.isRequired,
   showFilter: PropTypes.bool.isRequired,
 };

@@ -95,12 +95,17 @@ function App() {
           merchItems={merchItems}
           onChangeSelectAll={handleChangeSelectAll}
           onChangeSelectFewRemaining={handleChangeSelectFewRemaining}
+          onChangeSelectLabel={(label) => {
+            setSelectedLabels({
+              ...selectedLabels,
+              [label]: !selectedLabels[label],
+            });
+          }}
           onChangeSelectMerchType={handleChangeSelectMerchType}
           selectAllLabels={selectAllLabels}
           selectedLabels={selectedLabels}
           selectedMerchTypes={selectedMerchTypes}
           selectFewRemaining={selectFewRemaining}
-          setSelectedLabels={setSelectedLabels}
           showFilter={showFilter}
         />
         <MerchItemsArea
