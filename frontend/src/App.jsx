@@ -83,7 +83,15 @@ function App() {
             allSelectedLabels[label] = true;
             allSelectedMerchTypes[merchType] = true;
           });
-          setMerchItems(allMerchItems);
+          const merchItemIds = new Set();
+          const uniqueMerchItems = allMerchItems.filter((item) => {
+            if (!merchItemIds.has(item.id)) {
+              merchItemIds.add(item.id);
+              return true;
+            }
+            return false;
+          });
+          setMerchItems(uniqueMerchItems);
           setSelectedLabels(allSelectedLabels);
           setSelectedMerchTypes(allSelectedMerchTypes);
         }
