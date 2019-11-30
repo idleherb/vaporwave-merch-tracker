@@ -39,16 +39,33 @@ class BandcampMerchSpider(scrapy.Spider):
 
     @staticmethod
     def parse_merch_page_html(html):
-        releases_raw_dirty = Selector(text=html).xpath(f'''
-            //ol[
-                contains(@class,"merch-grid")
-                    and @data-edit-callback="/merch_reorder"
-            ]/@data-initial-values''').get()
-        releases_raw = RE_QUOT.sub('"', releases_raw_dirty)
-        releases = json.loads(releases_raw)
-        release_paths = (release['url'] for release in releases if not release['sold_out'] and not release['album_private'])
+        anchors = Selector(text=html).xpath(f'''
+            //li[
+                (contains(@class,"merch-grid-item")
+                    or contains(@class,"featured-item"))
+                    and ./div[
+                        contains(@class,"merchtype")
+                    ]
+                    and ./p[
+                        contains(@class,"price")
+                            and not(contains(@class,"sold-out"))
+                    ]
+            ]/a[./div[@class="art"]]''').getall()
 
-        return set(release_paths)
+        return set([BandcampMerchSpider.parse_anchor_html(anchor) for anchor in anchors])
+
+
+    @staticmethod
+    def parse_anchor_html(html):
+        release_path = Selector(text=html).xpath(f'''
+            //a[./div[@class="art"]]/@href
+        ''').get()
+
+        return release_path
+
+
+    def parse_album_page(self, artwork_url, response):
+        yield self.parse_album_page_html(response.body, artwork_url)
 
 
     def parse_album_page(self, response):

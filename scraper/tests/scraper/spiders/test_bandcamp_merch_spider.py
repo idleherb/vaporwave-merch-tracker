@@ -24,19 +24,6 @@ def test_parse_merch_page_html():
             "/album/lost-love",
             "/album/flamingo-funk-vol-2",
             "/album/miracle-lounge",
-            "/album/toyamas-love-island",
-            "/album/swing-tournament",
-            "/album/with-love",
-            "/album/reconnect",
-            "/album/malibu-condos-v20",
-            "/merch/my-pet-flamingo-dual-logo-sweatshirt-blue-with-pink-logo",
-            "/merch/malibu-condos-v20-t-shirt-edition",
-            "/album/late-night-delight",
-            "/merch/my-pet-flamingo-dual-logo-t-shirt-blue-with-pink-logo",
-            "/album/escape-to-new-york",
-            "/merch/my-pet-flamingo-dual-logo-t-shirt-white-with-black-logo",
-            "/album/blush",
-            "/album/pink-dance-ep",
         ]
     )
 
