@@ -22,10 +22,12 @@ export function sortItems(items) {
     if (item2.remaining < item1.remaining) {
       return 1;
     }
-    if (item1.releaseDate > item2.releaseDate) {
+    const releaseDate1 = Date.parse(item1.releaseDate);
+    const releaseDate2 = Date.parse(item2.releaseDate);
+    if (releaseDate1 > releaseDate2) {
       return -1;
     }
-    if (item2.releaseDate > item1.releaseDate) {
+    if (releaseDate2 > releaseDate1) {
       return 1;
     }
     if (item1.artist < item2.artist) {
