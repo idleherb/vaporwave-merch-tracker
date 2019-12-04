@@ -15,7 +15,6 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     flexWrap: 'wrap',
     padding: theme.spacing(1),
-    backgroundColor: theme.palette.background.paper,
   },
   chip: {
     margin: theme.spacing(0.5),
@@ -27,6 +26,10 @@ const useStyles = makeStyles((theme) => ({
   },
   hidden: {
     display: 'none',
+  },
+  switch: {
+    paddingLeft: theme.spacing(0.5),
+    display: 'block',
   },
 }));
 
@@ -51,6 +54,7 @@ export default function FilterArea({
     <Paper className={`${classes.filterArea} ${showFilter ? '' : classes.hidden}`}>
       <div>
         <FormControlLabel
+          className={classes.switch}
           control={(
             <Switch
               checked={selectAllMerchTypes}
@@ -88,6 +92,7 @@ export default function FilterArea({
       <Divider className={classes.divider} />
       <div>
         <FormControlLabel
+          className={classes.switch}
           control={(
             <Switch
               checked={selectAllLabels}
@@ -104,6 +109,7 @@ export default function FilterArea({
           })`}
         />
         <FormControlLabel
+          className={classes.switch}
           control={(
             <Switch
               checked={selectFewRemaining}
