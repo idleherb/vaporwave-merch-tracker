@@ -12,6 +12,7 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(1),
   },
   chip: {
+    cursor: 'inherit',
     margin: theme.spacing(0.5),
     textAlign: 'justify',
   },

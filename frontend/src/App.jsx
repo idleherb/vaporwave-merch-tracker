@@ -17,6 +17,21 @@ const useStyles = makeStyles(() => ({
   root: {
     flexGrow: 1,
   },
+  noStyle: {
+    cursor: 'pointer',
+    minHeight: 0,
+    minWidth: 0,
+    textAlign: 'left',
+    margin: 0,
+    padding: 0,
+    border: 'none',
+    width: '100%',
+    backgroundColor: 'transparent',
+    borderRadius: 0,
+    '&:focus': {
+      outline: 'none',
+    },
+  },
 }));
 
 function App() {
@@ -129,10 +144,12 @@ function App() {
             selectFewRemaining={selectFewRemaining}
           />
         ) : (
-          <FilterSummaryArea
-            selectedLabels={selectedLabels}
-            selectedMerchTypes={selectedMerchTypes}
-          />
+          <button className={classes.noStyle} type="button" onClick={() => setShowFilter(true)}>
+            <FilterSummaryArea
+              selectedLabels={selectedLabels}
+              selectedMerchTypes={selectedMerchTypes}
+            />
+          </button>
         )}
         <MerchItemsArea
           merchItems={merchItems}
