@@ -24,9 +24,6 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: theme.spacing(1),
     width: '100%',
   },
-  hidden: {
-    display: 'none',
-  },
   switch: {
     paddingLeft: theme.spacing(0.5),
     display: 'block',
@@ -46,12 +43,11 @@ export default function FilterArea({
   selectedLabels,
   selectedMerchTypes,
   selectFewRemaining,
-  showFilter,
 }) {
   const classes = useStyles();
 
   return (
-    <Paper className={`${classes.filterArea} ${showFilter ? '' : classes.hidden}`}>
+    <Paper className={`${classes.filterArea}`}>
       <div>
         <FormControlLabel
           className={classes.switch}
@@ -185,5 +181,4 @@ FilterArea.propTypes = {
   selectedLabels: PropTypes.objectOf(PropTypes.bool).isRequired,
   selectedMerchTypes: PropTypes.objectOf(PropTypes.bool).isRequired,
   selectFewRemaining: PropTypes.bool.isRequired,
-  showFilter: PropTypes.bool.isRequired,
 };

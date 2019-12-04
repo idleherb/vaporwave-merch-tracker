@@ -59,6 +59,7 @@ function App() {
         setInitialized(true);
       }
     }
+
     initialize();
   }, []);
 
@@ -70,9 +71,10 @@ function App() {
     const newSelectAllLabels = event.target.checked;
     setSelectAllLabels(newSelectAllLabels);
     const newSelectedLabels = { ...selectedLabels };
-    Object.keys(newSelectedLabels).forEach((label) => {
-      newSelectedLabels[label] = newSelectAllLabels;
-    });
+    Object.keys(newSelectedLabels)
+      .forEach((label) => {
+        newSelectedLabels[label] = newSelectAllLabels;
+      });
     setSelectedLabels(newSelectedLabels);
   }
 
@@ -80,9 +82,10 @@ function App() {
     const newSelectAllMerchTypes = event.target.checked;
     setSelectAllMerchTypes(newSelectAllMerchTypes);
     const newSelectedMerchTypes = { ...selectedMerchTypes };
-    Object.keys(newSelectedMerchTypes).forEach((merchType) => {
-      newSelectedMerchTypes[merchType] = newSelectAllMerchTypes;
-    });
+    Object.keys(newSelectedMerchTypes)
+      .forEach((merchType) => {
+        newSelectedMerchTypes[merchType] = newSelectAllMerchTypes;
+      });
     setSelectedMerchTypes(newSelectedMerchTypes);
   }
 
@@ -110,20 +113,21 @@ function App() {
       <CssBaseline />
       <div className={classes.root}>
         <ToolBar onClickFilter={handleClickFilterButton} />
-        <FilterArea
-          merchItems={merchItems}
-          onChangeSelectAllLabels={handleChangeSelectAllLabels}
-          onChangeSelectAllMerchTypes={handleChangeSelectAllMerchTypes}
-          onChangeSelectFewRemaining={handleChangeSelectFewRemaining}
-          onChangeSelectLabel={handleChangeSelectLabel}
-          onChangeSelectMerchType={handleChangeSelectMerchType}
-          selectAllLabels={selectAllLabels}
-          selectAllMerchTypes={selectAllMerchTypes}
-          selectedLabels={selectedLabels}
-          selectedMerchTypes={selectedMerchTypes}
-          selectFewRemaining={selectFewRemaining}
-          showFilter={showFilter}
-        />
+        {showFilter && (
+          <FilterArea
+            merchItems={merchItems}
+            onChangeSelectAllLabels={handleChangeSelectAllLabels}
+            onChangeSelectAllMerchTypes={handleChangeSelectAllMerchTypes}
+            onChangeSelectFewRemaining={handleChangeSelectFewRemaining}
+            onChangeSelectLabel={handleChangeSelectLabel}
+            onChangeSelectMerchType={handleChangeSelectMerchType}
+            selectAllLabels={selectAllLabels}
+            selectAllMerchTypes={selectAllMerchTypes}
+            selectedLabels={selectedLabels}
+            selectedMerchTypes={selectedMerchTypes}
+            selectFewRemaining={selectFewRemaining}
+          />
+        )}
         <MerchItemsArea
           merchItems={merchItems}
           selectedLabels={selectedLabels}
