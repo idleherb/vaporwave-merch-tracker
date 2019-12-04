@@ -149,3 +149,6 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 src/bandcamp_merch_availability/bandcamp_merch.json
+
+.idea
+*.iml

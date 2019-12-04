@@ -2,8 +2,8 @@ import React from 'react';
 import * as PropTypes from 'prop-types';
 
 import Chip from '@material-ui/core/Chip';
+import Divider from '@material-ui/core/Divider';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
-import FormGroup from '@material-ui/core/FormGroup';
 import Paper from '@material-ui/core/Paper';
 import Switch from '@material-ui/core/Switch';
 
@@ -14,10 +14,16 @@ const useStyles = makeStyles((theme) => ({
   filterArea: {
     display: 'flex',
     flexWrap: 'wrap',
-    padding: theme.spacing(0.5),
+    padding: theme.spacing(1),
+    backgroundColor: theme.palette.background.paper,
   },
   chip: {
     margin: theme.spacing(0.5),
+  },
+  divider: {
+    marginTop: theme.spacing(1),
+    marginBottom: theme.spacing(1),
+    width: '100%',
   },
   hidden: {
     display: 'none',
@@ -43,50 +49,69 @@ export default function FilterArea({
 
   return (
     <Paper className={`${classes.filterArea} ${showFilter ? '' : classes.hidden}`}>
-      <FormGroup row>
+      <div>
         <FormControlLabel
-          control={
-            <Switch checked={selectAllMerchTypes} onChange={onChangeSelectAllMerchTypes} value="selectAllMerchTypes" color="secondary" />
-          }
+          control={(
+            <Switch
+              checked={selectAllMerchTypes}
+              onChange={onChangeSelectAllMerchTypes}
+              value="selectAllMerchTypes"
+              color="secondary"
+            />
+          )}
           label="All merch types"
         />
-      </FormGroup>
-      {Object
-        .keys(selectedMerchTypes)
-        .sort((a, b) => a.localeCompare(b))
-        .map((merchType) => {
-          const count = merchItems
-            .filter((item) => item.merchType === merchType
-              && (!selectFewRemaining || (item.remaining && item.remaining < 10)))
-            .length;
-          return { merchType, count };
-        })
-        .filter(({ count }) => count > 0)
-        .map(({ merchType, count }) => (
-          <Chip
-            key={`merchType.${merchType}`}
-            className={classes.chip}
-            color={selectedMerchTypes[merchType] ? 'secondary' : 'default'}
-            label={`${merchType} (${count})`}
-            onClick={() => onChangeSelectMerchType(merchType)}
-          />
-        ))}
-      <FormGroup row>
+        {Object
+          .keys(selectedMerchTypes)
+          .sort((a, b) => a.localeCompare(b))
+          .map((merchType) => {
+            const count = merchItems
+              .filter((item) => item.merchType === merchType
+                && (!selectFewRemaining || (item.remaining && item.remaining < 10)))
+              .length;
+            return {
+              merchType,
+              count,
+            };
+          })
+          .filter(({ count }) => count > 0)
+          .map(({ merchType, count }) => (
+            <Chip
+              key={`merchType.${merchType}`}
+              className={classes.chip}
+              color={selectedMerchTypes[merchType] ? 'secondary' : 'default'}
+              label={`${merchType} (${count})`}
+              onClick={() => onChangeSelectMerchType(merchType)}
+            />
+          ))}
+      </div>
+      <Divider className={classes.divider} />
+      <div>
         <FormControlLabel
-          control={
-            <Switch checked={selectAllLabels} onChange={onChangeSelectAllLabels} value="selectAllLabels" color="primary" />
-          }
+          control={(
+            <Switch
+              checked={selectAllLabels}
+              onChange={onChangeSelectAllLabels}
+              value="selectAllLabels"
+              color="primary"
+            />
+          )}
           label={`All labels (${
             selectFewRemaining
               ? merchItems.filter((item) => (item.remaining && item.remaining < 10)
-                && !!selectedMerchTypes[item.merchType]).length
+              && !!selectedMerchTypes[item.merchType]).length
               : merchItems.filter((item) => !!selectedMerchTypes[item.merchType]).length
           })`}
         />
         <FormControlLabel
-          control={
-            <Switch checked={selectFewRemaining} onChange={onChangeSelectFewRemaining} value="fewRemaining" color="primary" />
-          }
+          control={(
+            <Switch
+              checked={selectFewRemaining}
+              onChange={onChangeSelectFewRemaining}
+              value="fewRemaining"
+              color="primary"
+            />
+          )}
           label={`Few remaining (${
             merchItems
               .filter((item) => (item.remaining && item.remaining < 10)
@@ -94,32 +119,34 @@ export default function FilterArea({
               .length
           })`}
         />
-      </FormGroup>
-      {Object
-        .keys(selectedLabels)
-        .sort((a, b) => a.localeCompare(b))
-        .map((label) => {
-          const count = merchItems.filter((item) => item.label === label
-            && (!selectFewRemaining || (item.remaining && item.remaining < 10))
-            && !!selectedMerchTypes[item.merchType]).length;
-          const selected = selectedLabels[label];
+        {Object
+          .keys(selectedLabels)
+          .sort((a, b) => a.localeCompare(b))
+          .map((label) => {
+            const count = merchItems.filter((item) => item.label === label
+              && (!selectFewRemaining || (item.remaining && item.remaining < 10))
+              && !!selectedMerchTypes[item.merchType]).length;
+            const selected = selectedLabels[label];
 
-          return {
+            return {
+              count,
+              label,
+              selected,
+            };
+          })
+          .filter(({ count }) => count > 0)
+          .map(({
             count, label, selected,
-          };
-        })
-        .filter(({ count }) => count > 0)
-        .map(({
-          count, label, selected,
-        }) => (
-          <Chip
-            key={label}
-            color={selected ? 'primary' : 'default'}
-            label={`${label} (${count})`}
-            className={classes.chip}
-            onClick={() => onChangeSelectLabel(label)}
-          />
-        ))}
+          }) => (
+            <Chip
+              key={label}
+              color={selected ? 'primary' : 'default'}
+              label={`${label} (${count})`}
+              className={classes.chip}
+              onClick={() => onChangeSelectLabel(label)}
+            />
+          ))}
+      </div>
     </Paper>
   );
 }
