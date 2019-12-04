@@ -6,6 +6,7 @@ import LinearProgress from '@material-ui/core/LinearProgress';
 import { makeStyles } from '@material-ui/core/styles';
 
 import FilterArea from './FilterArea';
+import FilterSummaryArea from './FilterSummaryArea';
 import MerchItemsArea from './MerchItemsArea';
 import ToolBar from './ToolBar';
 
@@ -113,7 +114,7 @@ function App() {
       <CssBaseline />
       <div className={classes.root}>
         <ToolBar onClickFilter={handleClickFilterButton} />
-        {showFilter && (
+        {showFilter ? (
           <FilterArea
             merchItems={merchItems}
             onChangeSelectAllLabels={handleChangeSelectAllLabels}
@@ -126,6 +127,11 @@ function App() {
             selectedLabels={selectedLabels}
             selectedMerchTypes={selectedMerchTypes}
             selectFewRemaining={selectFewRemaining}
+          />
+        ) : (
+          <FilterSummaryArea
+            selectedLabels={selectedLabels}
+            selectedMerchTypes={selectedMerchTypes}
           />
         )}
         <MerchItemsArea
