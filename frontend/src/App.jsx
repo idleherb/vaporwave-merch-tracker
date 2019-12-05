@@ -27,7 +27,6 @@ const useStyles = makeStyles(() => ({
     border: 'none',
     width: '100%',
     backgroundColor: 'transparent',
-    borderRadius: 0,
     '&:focus': {
       outline: 'none',
     },
@@ -132,6 +131,7 @@ function App() {
         {showFilter ? (
           <FilterArea
             merchItems={merchItems}
+            onClickClose={() => setShowFilter(false)}
             onChangeSelectAllLabels={handleChangeSelectAllLabels}
             onChangeSelectAllMerchTypes={handleChangeSelectAllMerchTypes}
             onChangeSelectFewRemaining={handleChangeSelectFewRemaining}
