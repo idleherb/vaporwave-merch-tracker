@@ -123,8 +123,8 @@ workflows:
           filters:
             branches:
               only: master
-          requires:
-            - test_scraper
+          # requires:
+          #   - test_scraper
       - scrape_and_deploy_data
 
   scrape_and_deploy_data:
