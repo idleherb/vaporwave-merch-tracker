@@ -11,8 +11,7 @@ import sys
 
 MERCH_TYPE_CASSETTE = 'Cassette'
 MERCH_TYPE_VINYL = 'Record/Vinyl'
-RE_PACKAGES = re.compile(r'^\s*packages:\s*(?P<DATA>.+?),?\s*$', re.MULTILINE)
-RE_QUOT = re.compile(r'&quot[^;]*;')
+RE_DATA_TRALBUM = re.compile(r'data-tralbum="(?P<DATA>.+?)"', re.MULTILINE)
 RE_FLOPPY = re.compile(r'floppy', re.IGNORECASE)
 RE_MINIDISC = re.compile(r'mini\s*disc', re.IGNORECASE)
 RE_VINYL = re.compile(r'\bvinyl\b', re.IGNORECASE)
@@ -83,10 +82,11 @@ class BandcampMerchSpider(scrapy.Spider):
             //meta[
                 @property="og:url"
             ]/@content''').get()
-        match = RE_PACKAGES.search(html)
+        match = RE_DATA_TRALBUM.search(html)
         if match:
-            releases_raw = match.group('DATA')
-            releases = json.loads(releases_raw)
+            data_tralbum_raw = match.group('DATA')
+            data_tralbum_raw = data_tralbum_raw.replace('&quot;', '"')
+            releases = json.loads(data_tralbum_raw)['packages']
             for release in releases:
                 if release['quantity_available'] == 0:
                     continue
