@@ -29,11 +29,15 @@ class BandcampMerchSpider(scrapy.Spider):
 
     def parse(self, response):
         base_url = response.url[:response.url.rfind('/')]
-        for album_path in self.parse_merch_page_html(response.body):
-            if album_path.startswith('/merch'):
-                album_path = album_path[6:]
-            album_url = base_url + album_path
-            yield scrapy.Request(url=album_url, callback=self.parse_album_page)
+        album_paths = self.parse_merch_page_html(response.body)
+        if len(album_paths):
+            for album_path in album_paths:
+                if album_path.startswith('/merch'):
+                    album_path = album_path[6:]
+                album_url = base_url + album_path
+                yield scrapy.Request(url=album_url, callback=self.parse_album_page)
+        else:
+            yield scrapy.Request(url=response.url, callback=self.parse_album_page)
 
 
     @staticmethod
@@ -51,8 +55,7 @@ class BandcampMerchSpider(scrapy.Spider):
                     ]
             ]/a[./div[@class="art"]]''').getall()
 
-        return set([BandcampMerchSpider.parse_anchor_html(anchor) for anchor in anchors]) if len(anchors) \
-            else set([BandcampMerchSpider.parse_album_page_html(html)])
+        return set([BandcampMerchSpider.parse_anchor_html(anchor) for anchor in anchors])
 
 
     @staticmethod
