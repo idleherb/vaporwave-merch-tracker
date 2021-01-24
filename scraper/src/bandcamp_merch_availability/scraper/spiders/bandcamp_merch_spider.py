@@ -51,7 +51,8 @@ class BandcampMerchSpider(scrapy.Spider):
                     ]
             ]/a[./div[@class="art"]]''').getall()
 
-        return set([BandcampMerchSpider.parse_anchor_html(anchor) for anchor in anchors])
+        return set([BandcampMerchSpider.parse_anchor_html(anchor) for anchor in anchors]) if len(anchors)
+            else set([BandcampMerchSpider.parse_album_page_html(html)])
 
 
     @staticmethod
