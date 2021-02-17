@@ -77,6 +77,9 @@ class BandcampMerchSpider(scrapy.Spider):
 
     @staticmethod
     def parse_album_page_html(html):
+        def normalized_result(raw_result):
+            return {k : html.unescape(v) for k, v in raw_result.items()}
+
         timestamp = datetime.now().isoformat()
         label = Selector(text=html).xpath('''
             //meta[
@@ -94,7 +97,7 @@ class BandcampMerchSpider(scrapy.Spider):
             for release in releases:
                 if release['quantity_available'] == 0:
                     continue
-                yield {
+                raw_result = {
                     'artist': release['album_artist'] or release['download_artist'],
                     'currency': release['currency'],
                     'editionOf': release['edition_size'],
@@ -109,6 +112,7 @@ class BandcampMerchSpider(scrapy.Spider):
                     'title': release['album_title'] or release['title'],
                     'url': url,
                 }
+                yield normalized_result(raw_result)
 
 
     @staticmethod
