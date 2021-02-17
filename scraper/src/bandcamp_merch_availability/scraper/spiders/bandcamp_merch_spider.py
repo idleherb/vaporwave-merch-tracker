@@ -79,7 +79,7 @@ class BandcampMerchSpider(scrapy.Spider):
     @staticmethod
     def parse_album_page_html(html):
         def normalized_result(raw_result):
-            return {k : html_lib.unescape(v) for k, v in raw_result.items()}
+            return {k : (html_lib.unescape(v) if isinstance(v, str) else v) for k, v in raw_result.items()}
 
         timestamp = datetime.now().isoformat()
         label = Selector(text=html).xpath('''
