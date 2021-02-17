@@ -3,6 +3,7 @@ import scrapy
 from datetime import datetime
 from scrapy.selector import Selector
 
+import html as html_lib
 import json
 import re
 import sys
@@ -78,7 +79,7 @@ class BandcampMerchSpider(scrapy.Spider):
     @staticmethod
     def parse_album_page_html(html):
         def normalized_result(raw_result):
-            return {k : html.unescape(v) for k, v in raw_result.items()}
+            return {k : html_lib.unescape(v) for k, v in raw_result.items()}
 
         timestamp = datetime.now().isoformat()
         label = Selector(text=html).xpath('''
