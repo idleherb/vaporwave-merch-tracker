@@ -28,7 +28,7 @@ export default function ToolBar({ onClickFilter, onRequestSearch }) {
       <Toolbar>
         <SearchBar
           className={classes.grow}
-          placeholder={'Search by artist or title'}
+          placeholder="Search by artist or title"
           value={searchInput}
           onChange={(newValue) => setSearchInput(newValue)}
           onRequestSearch={() => onRequestSearch(searchInput.toLowerCase())}
@@ -43,4 +43,5 @@ export default function ToolBar({ onClickFilter, onRequestSearch }) {
 
 ToolBar.propTypes = {
   onClickFilter: PropTypes.func.isRequired,
+  onRequestSearch: PropTypes.func.isRequired,
 };

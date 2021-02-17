@@ -59,7 +59,6 @@ function App() {
           const merchItemIds = new Set();
           const uniqueMerchItems = allMerchItems
             .filter((item) => {
-              console.log(item)
               if (!merchItemIds.has(item.id)) {
                 merchItemIds.add(item.id);
                 return true;
@@ -73,7 +72,7 @@ function App() {
                 ...item,
                 normalizedArtist,
                 normalizedTitle,
-              }
+              };
             });
           setMerchItems(uniqueMerchItems);
           setSelectedLabels(allSelectedLabels);
@@ -94,8 +93,8 @@ function App() {
     setShowFilter(!showFilter);
   }
 
-  function handleRequestSearch(searchText) {
-    setSearchText(searchText);
+  function handleRequestSearch(searchText_) {
+    setSearchText(searchText_);
   }
 
   function handleChangeSelectAllLabels(event) {

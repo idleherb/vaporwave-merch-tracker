@@ -49,10 +49,14 @@ export default function MerchItemsArea({
         alignItems="center"
       >
         {merchItems
-          .filter(({ label, merchType, normalizedArtist, normalizedTitle, remaining }) => selectedLabels[label]
+          .filter(({
+            label, merchType, normalizedArtist, normalizedTitle, remaining,
+          }) => selectedLabels[label]
               && (!selectFewRemaining || (remaining && remaining < 10))
               && !!selectedMerchTypes[merchType]
-              && (!searchText || normalizedArtist.includes(searchText) || normalizedTitle.includes(searchText)))
+              && (!searchText
+                || normalizedArtist.includes(searchText)
+                || normalizedTitle.includes(searchText)))
           .map(({
             artist,
             currency,
@@ -103,6 +107,7 @@ MerchItemsArea.propTypes = {
       url: PropTypes.string.isRequired,
     }),
   ).isRequired,
+  searchText: PropTypes.string.isRequired,
   selectedLabels: PropTypes.objectOf(PropTypes.bool).isRequired,
   selectedMerchTypes: PropTypes.objectOf(PropTypes.bool).isRequired,
   selectFewRemaining: PropTypes.bool.isRequired,
