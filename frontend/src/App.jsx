@@ -37,6 +37,7 @@ function App() {
   const [initialized, setInitialized] = useState(false);
   const [showFilter, setShowFilter] = useState(false);
   const [merchItems, setMerchItems] = useState([]);
+  const [searchText, setSearchText] = useState('');
   const [selectAllLabels, setSelectAllLabels] = useState(true);
   const [selectAllMerchTypes, setSelectAllMerchTypes] = useState(true);
   const [selectFewRemaining, setSelectFewRemaining] = useState(false);
@@ -56,13 +57,24 @@ function App() {
             allSelectedMerchTypes[merchType] = true;
           });
           const merchItemIds = new Set();
-          const uniqueMerchItems = allMerchItems.filter((item) => {
-            if (!merchItemIds.has(item.id)) {
-              merchItemIds.add(item.id);
-              return true;
-            }
-            return false;
-          });
+          const uniqueMerchItems = allMerchItems
+            .filter((item) => {
+              console.log(item)
+              if (!merchItemIds.has(item.id)) {
+                merchItemIds.add(item.id);
+                return true;
+              }
+              return false;
+            })
+            .map((item) => {
+              const normalizedArtist = item.artist ? item.artist.normalize('NFD').toLowerCase() : '';
+              const normalizedTitle = item.title ? item.title.normalize('NFD').toLowerCase() : '';
+              return {
+                ...item,
+                normalizedArtist,
+                normalizedTitle,
+              }
+            });
           setMerchItems(uniqueMerchItems);
           setSelectedLabels(allSelectedLabels);
           setSelectedMerchTypes(allSelectedMerchTypes);
@@ -80,6 +92,10 @@ function App() {
 
   function handleClickFilterButton() {
     setShowFilter(!showFilter);
+  }
+
+  function handleRequestSearch(searchText) {
+    setSearchText(searchText);
   }
 
   function handleChangeSelectAllLabels(event) {
@@ -127,7 +143,7 @@ function App() {
     <>
       <CssBaseline />
       <div className={classes.root}>
-        <ToolBar onClickFilter={handleClickFilterButton} />
+        <ToolBar onClickFilter={handleClickFilterButton} onRequestSearch={handleRequestSearch} />
         {showFilter ? (
           <FilterArea
             merchItems={merchItems}
@@ -156,6 +172,7 @@ function App() {
           selectedLabels={selectedLabels}
           selectedMerchTypes={selectedMerchTypes}
           selectFewRemaining={selectFewRemaining}
+          searchText={searchText}
         />
       </div>
     </>

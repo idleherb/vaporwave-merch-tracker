@@ -37,6 +37,7 @@ export default function MerchItemsArea({
   selectedLabels,
   selectedMerchTypes,
   selectFewRemaining,
+  searchText,
 }) {
   const classes = useStyles();
 
@@ -48,9 +49,10 @@ export default function MerchItemsArea({
         alignItems="center"
       >
         {merchItems
-          .filter(({ label, merchType, remaining }) => selectedLabels[label]
+          .filter(({ label, merchType, normalizedArtist, normalizedTitle, remaining }) => selectedLabels[label]
               && (!selectFewRemaining || (remaining && remaining < 10))
-              && !!selectedMerchTypes[merchType])
+              && !!selectedMerchTypes[merchType]
+              && (!searchText || normalizedArtist.includes(searchText) || normalizedTitle.includes(searchText)))
           .map(({
             artist,
             currency,
