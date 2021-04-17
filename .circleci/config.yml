@@ -6,7 +6,7 @@ orbs:
 jobs:
   test_scraper:
     docker:
-      - image: circleci/python:3.6.1
+      - image: cimg/python:3.9.4
 
     working_directory: ~/repo
 
