@@ -64,7 +64,6 @@ jobs:
           aws-region: AWS_REGION
           arguments: |
             --acl public-read
-          overwrite: false
 
 
   scrape_and_deploy_data:
