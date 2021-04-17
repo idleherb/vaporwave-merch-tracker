@@ -1,5 +1,5 @@
-freezegun==0.3.12
-pytest==5.2.2
-pytest-mock==1.11.2
-requests==2.22.0
-scrapy==1.8
+freezegun==1.1.0
+pytest==6.2.3
+pytest-mock==3.5.1
+requests==2.25.1
+scrapy==2.5.0
