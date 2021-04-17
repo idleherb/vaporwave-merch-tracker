@@ -9,6 +9,7 @@ https://andoptions.bandcamp.com/merch
 https://antifur.bandcamp.com/merch
 https://anubisworldwide.bandcamp.com/merch
 https://aquablanca.bandcamp.com/merch
+https://aquaoscura.bandcamp.com/merch
 https://aqvaria.bandcamp.com/merch
 https://asurarevolver.bandcamp.com/merch
 https://aurawire.xyz/merch
@@ -17,6 +18,7 @@ https://blcr-labs.com/merch
 https://bludhoney.com/merch/
 https://botanica1.bandcamp.com/merch
 https://cheminuages.bandcamp.com/merch
+https://coraspect.bandcamp.com/merch
 https://crashsymbols.bandcamp.com/merch
 https://cultureagency.net/merch
 https://darkwebrecordings.bandcamp.com/merch
@@ -45,25 +47,25 @@ https://haircutsformen.bandcamp.com/merch
 https://hairsablazin.bandcamp.com/merch
 https://halcyontapes.bandcamp.com/merch
 https://hiraeth-records.bandcamp.com/merch
-# https://illuminatedpaths.bandcamp.com/merch
 https://indigene.bandcamp.com/merch
 https://internetventures.bandcamp.com/merch
 https://junkmakersounds.bandcamp.com/merch
 https://kudatah.bandcamp.com/merch
 https://l33k5p1n84574rd5.bandcamp.com/merch
-# https://lazerburnaudio.bandcamp.com/merch
 https://legendaryent.bandcamp.com/merch
 https://lost-angles.com/merch
 https://midnightmoontapes.bandcamp.com/merch
 https://midwestcollectivecompilations.bandcamp.com/merch
 https://music.businesscasual.biz/merch
 https://music.georgeclanton.com/merch
+https://music.hollowaytapes.com/merch
 https://mypetflamingo.bandcamp.com/merch
 https://naughtynightrecords.bandcamp.com/merch
 https://neoncityrecords.bandcamp.com/merch
 https://newmotion.ca/merch
 https://nightlighttapes.bandcamp.com/merch
 https://noproblematapes.bandcamp.com/merch
+https://oasisltd.bandcamp.com/merch
 https://pacificplaza.bandcamp.com/merch
 https://palm84.bandcamp.com/merch
 https://paradiserecordshtml.bandcamp.com/merch
@@ -82,15 +84,16 @@ https://seikomart.bandcamp.com/merch
 https://shop.virtualdreamplaza.com/merch
 https://skylinecollective.bandcamp.com/merch
 https://sleeplesstapes.bandcamp.com/merch
+https://stachy.bandcamp.com/merch
 https://steviasphere.bandcamp.com/merch
 https://strudelsoft.bandcamp.com/merch/
 https://sunsetrecordings.bandcamp.com/merch
 https://surfing.100percentelectronica.com/merch
 https://tek-res.bandcamp.com/merch
+https://theexpandingearth.bandcamp.com/merch
 https://theinfinitipool.com/merch
 https://thirdeye.bandcamp.com/merch
 https://tigerbloodtapes.bandcamp.com/merch
-# https://timeslaves.bandcamp.com/merch
 https://tracking-waves.bandcamp.com/merch
 https://tripleblvkdvrkness.bandcamp.com/merch
 https://tumakassetten.bandcamp.com/merch
@@ -101,6 +104,7 @@ https://vaporwaveclub.bandcamp.com/merch
 https://vill4in.bandcamp.com/merch
 https://virtua94records.bandcamp.com/merch
 https://watchingwaters.bandcamp.com/merch
+https://watersend.bandcamp.com/merch
 https://waveracerscollective.bandcamp.com/merch
 https://zhurnalmod.bandcamp.com/merch
 https://zimaclearmalt.bandcamp.com/merch
