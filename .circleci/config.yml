@@ -4,36 +4,6 @@ orbs:
   aws-s3: circleci/aws-s3@2.0.0
   
 jobs:
-  test_scraper:
-    docker:
-      - image: cimg/python:3.9.4
-
-    working_directory: ~/repo
-
-    steps:
-      - checkout
-      - restore_cache:
-          keys:
-            - v1-dependencies-{{ checksum "./scraper/requirements.txt" }}
-            - v1-dependencies-
-      - run:
-          name: install dependencies
-          command: |
-            cd scraper
-            python3 -m venv venv
-            . venv/bin/activate
-            pip install -r requirements.txt
-      - save_cache:
-          paths:
-            - ./scraper/venv
-          key: v1-dependencies-{{ checksum "./scraper/requirements.txt" }}
-      - run:
-          name: run tests
-          command: |
-            cd scraper
-            . venv/bin/activate
-            pytest -vv
-
   deploy_frontend:
     docker:
       - image: circleci/node:10
@@ -65,73 +35,12 @@ jobs:
           arguments: |
             --acl public-read
 
-
-  scrape_and_deploy_data:
-    docker:
-      - image: cimg/python:3.9.4
-
-    working_directory: ~/repo
-
-    steps:
-      - checkout
-      - restore_cache:
-          keys:
-            - v1-dependencies-{{ checksum "./scraper/requirements.txt" }}
-            - v1-dependencies-
-      - run:
-          name: install dependencies
-          command: |
-            cd scraper
-            python3 -m venv venv
-            . venv/bin/activate
-            pip install -r requirements.txt
-      - save_cache:
-          paths:
-            - ./scraper/venv
-          key: v1-dependencies-{{ checksum "./scraper/requirements.txt" }}
-      - run:
-          name: run scraper and deploy results
-          command: |
-            cd scraper
-            . venv/bin/activate
-            cd src/bandcamp_merch_availability
-            rm -f bandcamp_merch.json
-            scrapy crawl bandcamp_merch -o bandcamp_merch.json
-      # Deploy scraped data
-      - aws-s3/copy:
-          from: ./scraper/src/bandcamp_merch_availability/bandcamp_merch.json
-          to: 's3://bandcamp-merch-availability'
-          aws-access-key-id: AWS_ACCESS_KEY_ID
-          aws-secret-access-key: AWS_SECRET_ACCESS_KEY
-          aws-region: AWS_REGION
-          arguments: |
-            --acl public-read
-
-
 workflows:
   version: 2
 
   deploy_app:
     jobs:
-      # - test_scraper:
-      #     filters:
-      #       branches:
-      #         only: master
       - deploy_frontend:
           filters:
             branches:
               only: master
-          # requires:
-          #   - test_scraper
-      - scrape_and_deploy_data
-
-  scrape_and_deploy_data:
-    triggers:
-      - schedule:
-          cron: "0 12 * * *"
-          filters:
-            branches:
-              only:
-                - master
-    jobs:
-      - scrape_and_deploy_data
