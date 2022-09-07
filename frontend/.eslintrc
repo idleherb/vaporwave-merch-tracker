@@ -17,6 +17,7 @@
   "rules": {
     "no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
     "no-use-before-define": "off",
-    "no-param-reassign": ["error", { "props": true, "ignorePropertyModificationsFor": ["draftState"] }]
+    "no-param-reassign": ["error", { "props": true, "ignorePropertyModificationsFor": ["draftState"] }],
+    "react/jsx-no-bind": "off",
   }
 }

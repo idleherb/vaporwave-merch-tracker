@@ -7,7 +7,6 @@ import { makeStyles } from '@material-ui/core/styles';
 
 import MerchItem from './MerchItem';
 
-
 const useStyles = makeStyles((theme) => ({
   card: {
     textDecoration: 'none',
@@ -30,7 +29,6 @@ const useStyles = makeStyles((theme) => ({
     height: 126,
   },
 }));
-
 
 export default function MerchItemsArea({
   merchItems,

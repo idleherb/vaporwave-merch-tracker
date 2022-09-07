@@ -12,7 +12,6 @@ import ToolBar from './ToolBar';
 
 import fetchMerchItems from './service/service';
 
-
 const useStyles = makeStyles(() => ({
   root: {
     flexGrow: 1,

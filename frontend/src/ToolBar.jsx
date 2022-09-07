@@ -10,13 +10,11 @@ import { makeStyles } from '@material-ui/core/styles';
 
 import * as PropTypes from 'prop-types';
 
-
 const useStyles = makeStyles(() => ({
   grow: {
     flexGrow: 1,
   },
 }));
-
 
 export default function ToolBar({ onClickFilter, onRequestSearch }) {
   const classes = useStyles();

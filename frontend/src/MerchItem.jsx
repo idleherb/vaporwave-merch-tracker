@@ -9,7 +9,6 @@ import Typography from '@material-ui/core/Typography';
 
 import { makeStyles } from '@material-ui/core/styles';
 
-
 const useStyles = makeStyles((theme) => ({
   merchItem: {
     textDecoration: 'none',
@@ -51,7 +50,6 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: theme.spacing(0.4),
   },
 }));
-
 
 export default function MerchItem({
   artist,

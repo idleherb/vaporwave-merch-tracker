@@ -12,7 +12,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import IconButton from '@material-ui/core/IconButton';
 import Box from '@material-ui/core/Box';
 
-
 const useStyles = makeStyles((theme) => ({
   filterArea: {
     display: 'flex',
@@ -41,7 +40,6 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'space-between',
   },
 }));
-
 
 export default function FilterArea({
   merchItems,
