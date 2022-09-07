@@ -4,10 +4,17 @@ Track vaporwave music labels for available merch.
 
 Live app: http://merch.iwanttorelease.com
 
+## Pre-requisites
+
+[Node.js 16](https://nodejs.org/en/download/) installed.
+
 ## Setup
 
-    cd frontend
     npm install
+
+## test
+
+    npm run test
 
 ## Run Local Dev Server
 

@@ -4,30 +4,29 @@ orbs:
   aws-s3: circleci/aws-s3@2.0.0
   
 jobs:
-  deploy_frontend:
+  deploy:
     docker:
       - image: circleci/node:16
     steps:
       - checkout
       - restore_cache:
           keys:
-            - dependency-cache-{{ checksum "./frontend/package.json" }}
+            - dependency-cache-{{ checksum "./package.json" }}
             - v1-dependencies-
       - run:
-          name: Install, test, and build frontend
+          name: Install, test, and build
           command: |
-            cd frontend
             npm install
             npm run test
             npm run build
       - save_cache:
-          key: dependency-cache-{{ checksum "./frontend/package.json" }}
+          key: dependency-cache-{{ checksum "./package.json" }}
           paths:
-            - ./frontend/node_modules
+            - ./node_modules
 
-      # deploy frontend
+      # deploy
       - aws-s3/sync:
-          from: ./frontend/build
+          from: ./build
           to: 's3://bandcamp-merch-availability'
           aws-access-key-id: AWS_ACCESS_KEY_ID
           aws-secret-access-key: AWS_SECRET_ACCESS_KEY
@@ -38,9 +37,9 @@ jobs:
 workflows:
   version: 2
 
-  deploy_app:
+  deploy:
     jobs:
-      - deploy_frontend:
+      - deploy:
           filters:
             branches:
               only: master

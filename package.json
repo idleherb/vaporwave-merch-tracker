@@ -1,5 +1,5 @@
 {
-  "name": "frontend",
+  "name": "vaporwave-merch-tracker",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -21,8 +21,8 @@
     "build": "react-scripts build",
     "test": "npm run lint && react-scripts test --transformIgnorePatterns \"node_modules/(?!@toolz/allow-react)/\" --env=jsdom --resetMocks false",
     "eject": "react-scripts eject",
-    "lint": "eslint --ext .js --ext .jsx .",
-    "lint:fix": "eslint --ext .js --ext .jsx --fix ."
+    "lint": "eslint --ext .js --ext .jsx",
+    "lint:fix": "eslint --ext .js --ext .jsx --fix"
   },
   "eslintConfig": {
     "extends": "react-app"

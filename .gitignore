@@ -2,5 +2,5 @@
 .idea
 
 # npm
-frontend/node_modules
-frontend/build
+node_modules
+build
