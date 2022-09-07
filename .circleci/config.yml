@@ -6,7 +6,7 @@ orbs:
 jobs:
   deploy_frontend:
     docker:
-      - image: circleci/node:10
+      - image: circleci/node:16
     steps:
       - checkout
       - restore_cache:
