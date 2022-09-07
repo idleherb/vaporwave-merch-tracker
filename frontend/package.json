@@ -19,7 +19,7 @@
     "start": "react-scripts start",
     "dev-db": "npx json-server --port 3004 --watch test_data_bandcamp_merch.json",
     "build": "react-scripts build",
-    "test": "npm run lint && react-scripts test",
+    "test": "npm run lint && react-scripts test --transformIgnorePatterns \"node_modules/(?!@toolz/allow-react)/\" --env=jsdom --resetMocks false",
     "eject": "react-scripts eject",
     "lint": "eslint --ext .js --ext .jsx .",
     "lint:fix": "eslint --ext .js --ext .jsx --fix ."
