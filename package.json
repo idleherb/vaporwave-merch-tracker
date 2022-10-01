@@ -8,7 +8,7 @@
     "axios": "^0.27.2",
     "dateformat": "^5.0.3",
     "material-ui-search-bar": "^1.0.0",
-    "node-sass": "^7.0.1",
+    "node-sass": "^7.0.3",
     "prop-types": "^15.8.1",
     "react": "^16.8.0",
     "react-dom": "^16.8.0",
