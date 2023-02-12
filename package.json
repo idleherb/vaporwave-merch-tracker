@@ -49,6 +49,6 @@
     "eslint-plugin-react": "^7.31.7",
     "eslint-plugin-react-hooks": "^4.6.0",
     "jest-when": "^3.5.1",
-    "json-server": "^0.17.0"
+    "json-server": "^0.17.1"
   }
 }
